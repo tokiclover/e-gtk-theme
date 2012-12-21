@@ -1,0 +1,101 @@
+@define-color fg_color #fafafa;
+@define-color unfocused_fg_color darker(#fafafa);
+@define-color bg_color #383838;
+@define-color bg_color #383838;
+@define-color base_color #484848;
+@define-color text_color #fafafa;
+@define-color selected_bg_color #245f99;
+@define-color unfocused_selected_bg_color shade(#245f99,0.76);
+@define-color selected_fg_color #181818;
+@define-color unfocused_selected_fg_color shade(#181818,0.76);
+@define-color tooltip_bg_color #101010;
+@define-color tooltip_fg_color #aaaaaa;
+@define-color insensitive_fg_color #282828;
+@define-color insensitive_fg_color #686868;
+@define-color link_color shade(@selected_bg_color,1.1);
+
+@define-color info_fg_color @fg_color;
+@define-color info_bg_color @bg_color;
+@define-color warning_fg_color @text_color;
+@define-color warning_bg_color @base_color;
+@define-color question_fg_color @text_color;
+@define-color question_bg_color @base_color;
+@define-color error_fg_color @text_color;
+@define-color error_bg_color @base_color;
+@define-color error_color mix(0.8,@selected_bg_color,#ff000);
+
+@import url("common.css");
+
+* {
+	engine: adwaita;
+	-adwaita-focus-border-color: alpha(@selected_bg_color,0.3);
+	-adwaita-focus-border-radius: 0;
+	-adwaita-focus-border-dashes: 1;
+
+	padding: 2px;
+	background-clip: padding-box;
+	background-color: @base_color;
+	color: @fg_color;
+
+	-GtkRange-trough-border: 1px;
+	-GtkScrollbar-has-backward-stepper: true;
+	-GtkScrollbar-has-forward-stepper: true;
+	-GtkRange-stepper-spacing: 0;
+	-GtkRange-trough-under-steppers: false;
+	-GtkRange-slider-width: 11;
+	-GtkScrollbar-min-slider-length: 42;
+
+	-GtkScale-slider-width: 14;
+	-GtkScale-slider-length: 42;
+	-GtkScale-trough-border: 0;
+	-GtkScale-value-spacing: 0;
+
+	-GtkArrow-arrow-scaling: 1.0;
+	-GtkCheckButton-indicator-size: 11;
+	-GtkCheckMenuItem-indicator-size: 11;
+	-GtkToolButton-icon-spacing: 0;
+	-GtkTextView-error-underline-color: @text_color;
+	-GtkPaned-handle-size: 6;
+	-GtkProgressBar-min-horizontal-bar-height: 22;
+	-GtkProgressBar-min-vertical-bar-width: 22;
+	-GtkScrolledWindow-scrollbar-spacing: 0;
+	-GtkScrolledWindow-scrollbars-within-bevel: 0;
+	-GtkToolItemGroup-expander-size: 15;
+	-GtkExpander-expander-size: 15;
+	-GtkMenu-horizontal-padding: 0;
+	-GtkMenu-vertical-padding: 0;
+	-GtkIMHtml-hyperlink-color: @link_color;
+	-GtkHTML-link-color: @link_color;
+	-WnckTasklist-fade-overlay-rect: 0;
+
+	-GtkWidget-link-color: @link_color;
+	-GtkWidget-visited-link-color: darker(@link_color);
+	-GtkWidget-focus-padding: 2;
+	-GtkWidget-focus-line-width: 1;
+	-GtkWindow-resize-grip-width: 4;
+	-GtkWindow-resize-grip-height: 4; 
+	-GtkWidget-cursor-color: @text_color;
+	-GtkWidget-cursor-aspect-ratio: 0.1; 
+	-GtkWidget-secondary-cursor-color: darker(@text_color);  
+}
+
+GtkStockItem items["gtk-close"] = {
+	{ url("img/sym_close_light_normal.png"), *, NORMAL, * },
+	{ url("img/sym_close_dark_normal.png"), *, INSENSITIVE, * },
+	{ url("img/sym_close_light_selected.png"), *, PRELIGHT, * },
+	{ url("img/sym_close_dark_selected.png"), *, ACTIVE, * }
+};
+GtkStockItem items["gtk-fullscreen"] = {
+	{ url("img/sym_up_light_normal.png"), *, NORMAL, * },
+	{ url("img/sym_up_dark_normal.png"), *, INSENSITIVE, * },
+	{ url("img/sym_up_glow_normal.png"), *, PRELIGHT, * },
+	{ url("img/sym_up_dark_selected.png"), *, ACTIVE, * }
+};
+GtkStockItem items["gtk-leave-fullscreen"] = {
+	{ url("img/sym_down_light_normal.png"), *, NORMAL, * },
+	{ url("img/sym_down_dark_normal.png"), *, INSENSITIVE, * },
+	{ url("img/sym_down_glow_normal.png"), *, PRELIGHT, * },
+	{ url("img/sym_down_dark_selected.png"), *, ACTIVE, * }
+};
+
+

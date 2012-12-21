@@ -1,0 +1,43 @@
+style "tasklist-button" {
+
+	xthickness = 1
+	ythickness = 0
+	text[ACTIVE]	= @selected_bg_color
+	text[PRELIGHT]	= @selected_bg_color
+
+	engine "pixmap" {
+		image {
+			function	= BOX
+			state		= NORMAL
+			file		= "img/tasklist_button_normal.png"
+			border		= {0,0,0,0}
+			stretch		= TRUE
+		}
+		image {
+			function	= BOX
+			state		= ACTIVE
+			file		= "img/vgrad_dark.png"
+			border		= {0,0,0,0}
+			stretch		= TRUE
+		}
+		image {
+			function	= BOX
+			state		= PRELIGHT
+			file		= "img/vgrad_dark.png"
+			border		= {0,0,0,0}
+			stretch		= TRUE
+		}
+	}
+}
+widget_class "*Panel*Button" style:highest "tasklist-button"
+widget_class "*Tasklist*Button" style:highest "tasklist-button"
+
+style "panel" {
+	xthickness = 2
+	ythickness = 1
+	bg_pixmap[NORMAL] = "img/panel_bg.png"
+}
+class "*Panel*" style "panel"
+
+widget "*.tasklist-button" style "button" 
+widget "GtkWindow.gnome-panel-main-menu*" style "menu"

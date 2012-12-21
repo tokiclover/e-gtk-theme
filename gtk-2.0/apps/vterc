@@ -1,0 +1,6 @@
+style "vte" {
+	bg[NORMAL] = @tooltip_bg_color
+	base[NORMAL] = @tooltip_bg_color
+}
+
+widget_class "*PanelTopLevel*" style:highest "vte"

@@ -1,0 +1,88 @@
+!! e-openbox-theme-0.16
+!! This is a theme to match the new enlightenment DR17 default theme
+!! window manager, by tclover.
+!! License: GPL-2
+
+!! menu background
+menu.items.bg: gradient splitvertical raised
+menu.items.bg.color.splitTo: #6c6c6c
+menu.items.bg.color: #515151
+menu.items.bg.colorTo: #505050
+menu.items.bg.colorTo.splitTo: #3e3e3e
+
+!! menu text
+menu.items.text.color: #fafafa
+menu.items.justify: left
+menu.items.disabled.text.color: #181818
+
+!! menu headers
+menu.title.bg: gradient splitvertical raised
+menu.title.bg.color: #484848
+menu.title.bg.colorTo: #181818
+menu.title.text.color: #fafafa
+menu.title.text.justify: center
+
+!! selected menu item
+menu.items.active.bg: gradient splitvertical raised
+menu.items.active.bg.color.splitTo: #2d2d2d
+menu.items.active.bg.color: #202020
+menu.items.active.bg.colorTo: #1f1f1f
+menu.items.active.bg.colorTo.splitTo: #121212
+menu.items.active.text.color: #245f99
+
+!! menu separator
+menu.separator.padding.height: 1
+menu.separator.padding.width: 6
+menu.separator.color: #383838
+
+!! titlebar
+window.active.title.bg: gradient splitvertical raised
+window.active.title.bg.color.splitTo: #2d2d2d
+window.active.title.bg.color: #202020
+window.active.title.bg.colorTo: #1f1f1f
+window.active.title.bg.colorTo.splitTo: #121212
+window.inactive.title.bg: gradient splitvertical raised
+window.inactive.title.bg.color.splitTo: #6c6c6c
+window.inactive.title.bg.color: #515151
+window.inactive.title.bg.colorTo: #505050
+window.inactive.title.bg.colorTo.splitTo: #3e3e3e
+
+!! titlebar text
+window.label.text.justify: center
+window.active.label.bg: parentrelative
+window.active.label.text.color: #fafafa
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #181818
+
+!! window buttons
+window.*.button.*.bg: parentrelative
+
+window.active.button.*.image.color: #e0e0e0
+window.active.button.disabled.image.color: #f0f0f0
+window.inactive.button.*.image.color: #181818
+window.inactive.button.disabled.image.color: #121212
+
+!! borders
+window.active.border.color: #080808
+window.inactive.border.color: #282888
+window.*.title.separator.color: #383838
+border.width: 0
+padding.width: 4
+window.handle.width: 4
+window.*.client.color:  #404040
+window.client.padding.width: 0
+window.client.padding.height: 0
+menu.overlap: 0
+
+!! handle & grip
+window.*.handle.bg: solid raised
+window.*.handle.bg.color: #404040
+window.*.grip.bg: parentrelative
+
+!! font shadows
+menu.items.font:shadow=n:shadowtint=0
+window.*.label.text.font:shadow=y:shadowtint=10:shadowoffset=1
+
+!! On-screen displays
+osd.bg: solid raised
+osd.bg.color: #484848

@@ -1,0 +1,5 @@
+style "gnome-panel" {
+	PanelToplevel::arrow-size = DEFAULT_ARROW_SIZE 
+}
+
+widget_class "*PanelTopLevel*" style "gnome-panel"

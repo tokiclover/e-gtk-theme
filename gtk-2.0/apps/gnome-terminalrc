@@ -1,0 +1,8 @@
+style "terminal" {
+	text[NORMAL] = "#aaaaaa"
+	base[NORMAL] = "#080808"
+
+	TerminalScreen::background-darkness = 0.9
+}
+
+class "TerminalScreen" style "terminal"
