@@ -1,4 +1,4 @@
-`$Id: README.md, 2012/06/25 18:11:51 -tclover Exp $`
+`$Id: README.md, 2012/12/26 10:13:16 -tclover Exp $`
 
 ---
 
@@ -20,7 +20,7 @@ in the next release.
 * To use firefox.stylish theme, one will need to install stylish addon, and
 then copy/paste the file in stylish styles editor.
 
-* Everything coded in stylish is just try to force firefox to use gtk default
+* Everything coded in stylish is to just force firefox to use gtk default
 theme. No hardcoded style is need. Plus glitches fixes. That's all. It should
 be normaly the opposite, don't you think? Why te hell Mozzilla is hardcoding
 dependent engine theme. They should just respect the user choice!
@@ -49,6 +49,8 @@ use images for th trough and then... the rendered object is ugly;
 * inset_shadow.png cannot be included in GtkWidget... gtk+-3 may improve this;
 * fix for/background and text color in icon view (text has the same color as the background),
 pcmanfm has this issue but nothing found to fix it;
+* gt+-3 require background multilayers, so >=gtk+-3.6 is required, tried to make the sliders
+with gtk+-3.6.2 but it does not yet work as expected;
 
 PS: an ebuild is available in my overlay (on github) for gentoo users.
 
