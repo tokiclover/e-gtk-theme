@@ -112,25 +112,25 @@ style "default" {
 		{ "img/icon_border_minimize.png", *, *, * }
 	}
 	stock["gtk-media-play"] = {
-		{ "img/stock_media-play.png", *, *, * }
+		{ "img/media_play.png", *, *, * }
 	}
 	stock["gtk-media-pause"] = {
-		{ "img/stock_media-pause.png", *, *, * }
+		{ "img/media_pause.png", *, *, * }
 	}
 	stock["gtk-media-forward"] = {
-		{ "img/stock_media-forward.png", *, *, * }
+		{ "img/media_next.png", *, *, * }
 	}
 	stock["gtk-media-rewind"] = {
-		{ "img/stock_media-rewind.png", *, *, * }
+		{ "img/media_previous.png", *, *, * }
 	}
 	stock["gtk-media-next"] = {
-		{ "img/stock_media-next.png", *, *, * }
+		{ "img/media_next.png", *, *, * }
 	}
 	stock["gtk-media-previous"] = {
-		{ "img/stock_media-previous.png", *, *, * }
+		{ "img/media_previous.png", *, *, * }
 	}
 	stock["gtk-media-stop"] = {
-		{ "img/stock_media-stop.png", *, *, * }
+		{ "img/media_stop.png", *, *, * }
 	}
 	stock["gtk-network"] = {
 		{ "img/eth.png", *, *, * }
@@ -651,7 +651,7 @@ style "scrollbar" = "default" {
 			function		= SLIDER
 			state 			= NORMAL
 			file			= "img/slider_horiz.png"
-			border			= {2,2,2,2}
+			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= HORIZONTAL
 			overlay_file	= "img/holes_tiny_horiz.png"
@@ -660,10 +660,12 @@ style "scrollbar" = "default" {
 		image {
 			function		= SLIDER
 			state 			= ACTIVE
-			file			= "img/slider_glow_horiz.png"
-			border			= {2,2,2,2}
+			file			= "img/slider_horiz.png"
+			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= HORIZONTAL
+			overlay_file	= "img/slider_glow_horiz.png"
+			overlay_stretch	= TRUE
 			overlay_file	= "img/holes_tiny_glow_horiz.png"
 			overlay_stretch	= FALSE
 		}
@@ -671,7 +673,7 @@ style "scrollbar" = "default" {
 			function		= SLIDER
 			state 			= PRELIGHT
 			file			= "img/slider_horiz.png"
-			border			= {2,2,2,2}
+			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= HORIZONTAL
 			overlay_file	= "img/holes_tiny_glow_horiz.png"
@@ -681,7 +683,7 @@ style "scrollbar" = "default" {
 			function		= SLIDER
 			state 			= INSENSITIVE
 			file			= "img/slider_horiz.png"
-			border			= {2,2,2,2}
+			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= HORIZONTAL
 			overlay_file	= "img/holes_tiny_horiz.png"
@@ -691,7 +693,7 @@ style "scrollbar" = "default" {
 			function		= SLIDER
 			state 			= NORMAL
 			file			= "img/slider_vert.png"
-			border			= {2,2,2,2}
+			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= VERTICAL
 			overlay_file	= "img/holes_tiny_vert.png"
@@ -700,11 +702,12 @@ style "scrollbar" = "default" {
 		image {
 			function		= SLIDER
 			state 			= ACTIVE
-			shadow			= IN
-			file			= "img/slider_glow_vert.png"
-			border			= {2,2,2,2}
+			file			= "img/slider_vert.png"
+			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= VERTICAL
+			overlay_file	= "img/slider_glow_vert.png"
+			overlay_stretch	= TRUE
 			overlay_file	= "img/holes_tiny_glow_vert.png"
 			overlay_stretch	= FALSE
 		}
@@ -712,7 +715,7 @@ style "scrollbar" = "default" {
 			function		= SLIDER
 			state 			= PRELIGHT
 			file			= "img/slider_vert.png"
-			border			= {2,2,2,2}
+			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= VERTICAL
 			overlay_file	= "img/holes_tiny_glow_vert.png"
@@ -722,7 +725,7 @@ style "scrollbar" = "default" {
 			function		= SLIDER
 			state 			= INSENSITIVE
 			file			= "img/slider_vert.png"
-			border			= {2,2,2,2}
+			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= VERTICAL
 			overlay_file	= "img/holes_tiny_vert.png"
