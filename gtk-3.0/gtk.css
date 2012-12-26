@@ -22,7 +22,6 @@
 @define-color question_bg_color @base_color;
 @define-color error_fg_color @text_color;
 @define-color error_bg_color @base_color;
-@define-color error_color mix(0.8,@selected_bg_color,#ff000);
 
 @import url("common.css");
 
