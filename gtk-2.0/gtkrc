@@ -2,7 +2,7 @@
 # e-gtk-theme-0.16          #
 #############################
 
-# This is a theme to match the new enlightenment DR17 default theme
+# This is a theme to match the e default theme for the DR17
 # window manager, by tclover. 
 # Check here: http://trac.enlightenment.org/e/wiki/Themes.
 # License: GPL-2
@@ -40,7 +40,7 @@ style "default" {
 	GtkScrollbar::has-forward-stepper	= 1
 	GtkScrollbar::has-backward-stepper	= 1
 	GtkCheckButton::indicator-spacing	= 3
-	GtkMenuBar::internal_padding		= 1
+	GtkMenuBar::internal-padding		= 1
 	GtkOptionMenu::indicator-size		= {15,8}
 	GtkOptionMenu::indicator-spacing	= {8,2,0,0}
 	GtkStatusbar::shadow-type 			= GTK_SHADOW_NONE
@@ -84,9 +84,9 @@ style "default" {
 	text[SELECTED]		= @selected_bg_color
 	text[INSENSITIVE]	= darker (@insens_fg_color)
 
-	stock["gtk-add"] = {
-		{ "img/sym_icon_op_add.png", *, *, * }
-	}
+#	stock["gtk-add"] = {
+#		{ "img/sym_icon_op_add.png", *, *, * }
+#	}
 	stock["gtk-copy"] = {
 		{ "img/sym_icon_op_copy.png", *, *, * }
 	}
@@ -111,29 +111,26 @@ style "default" {
 	stock["gtk-leave-fullscreen"] = {
 		{ "img/icon_border_minimize.png", *, *, * }
 	}
-	stock["gtk-remove"] = {
-		{ "img/sym_icon_op_remove.png", *, *, * }
-	}
 	stock["gtk-media-play"] = {
-		{ "img/media_play.png", *, *, * }
+		{ "img/stock_media-play.png", *, *, * }
 	}
 	stock["gtk-media-pause"] = {
-		{ "img/media_pause.png", *, *, * }
+		{ "img/stock_media-pause.png", *, *, * }
 	}
 	stock["gtk-media-forward"] = {
-		{ "img/media_forward.png", *, *, * }
+		{ "img/stock_media-forward.png", *, *, * }
 	}
 	stock["gtk-media-rewind"] = {
-		{ "img/media_rewind.png", *, *, * }
+		{ "img/stock_media-rewind.png", *, *, * }
 	}
 	stock["gtk-media-next"] = {
-		{ "img/media_next.png", *, *, * }
+		{ "img/stock_media-next.png", *, *, * }
 	}
 	stock["gtk-media-previous"] = {
-		{ "img/media_previous.png", *, *, * }
+		{ "img/stock_media-previous.png", *, *, * }
 	}
 	stock["gtk-media-stop"] = {
-		{ "img/media_stop.png", *, *, * }
+		{ "img/stock_media-stop.png", *, *, * }
 	}
 	stock["gtk-network"] = {
 		{ "img/eth.png", *, *, * }
@@ -143,9 +140,6 @@ style "default" {
 	}
 	stock["gtk-page-setup"] = {
 		{ "img/icon_border_pager.png", *, *, * }
-	}
-	stock["gtk-quit"] = {
-		{ "img/icon_border_kill.png", *, *, * }
 	}
 	stock["gtk-yes"] = {
 		{ "img/icon_border_remember.png", *, *, * }
@@ -854,8 +848,11 @@ widget_class "*Tool*GtkButton" style "toolbuttons"
 
 style "menu" = "default" {
 
-	xthickness	= 1
-	ythickness	= 1
+	xthickness	= 0
+	ythickness	= 0
+
+	GtkMenu::horizontal-offset	= 0
+	GtkMenu::horizontal-padding	= 0
 
 	engine "pixmap" {
 		image {
