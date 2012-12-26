@@ -1,6 +1,5 @@
 .background {
-	background-color: transparent;
-	background-image: url("img/bg_radgrad.png");
+	background-color: @base_color;
 }
 
 .check,
@@ -97,13 +96,15 @@
 	background-image: url("img/holes_vert.png");
 }
 
-shadow.in,
-shadow.etched.in {
+.shadow.in,
+.shadow.etched.in {
+	background-image: url("img/inset_shadow.png");
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 2 2 2 2 stretch;
 }
 
-shadow.out,
-shadow.etched.out {
+.shadow.out,
+.shadow.etched.out {
+	background-image: url("img/inset_shadow.png");
 	border-image: url("img/bevel_out.png") 1 1 1 1 / 2 2 2 2 stretch;
 }
 
@@ -116,70 +117,27 @@ shadow.etched.out {
 	background-color: @base_color;
 }
 
-.scrollbars-junction {
-	background-color: transparent;
-	box-shadow: none;
-}
-
-.scrollbar.button.top {
-	background-image: url("img/sym_up_light_normal.png");
-}
-.scrollbar.button.top:active,
-.scrollbar.button.top:hover {
-	background-image: url("img/sym_up_glow_normal.png");
-}
-.scrollbar.button.top:insensitive {
-	background-image: url("img/sym_up_dark_normal.png");
-}
-
-.scrollbar.button.bottom {
-	background-image: url("img/sym_down_light_normal.png");
-}
-.scrollbar.button:active,
-.scrollbar.button.bottom:hover {
-	background-image: url("img/sym_down_glow_normal.png");
-}
-.scrollbar.button.bottom:insensitive {
-	background-image: url("img/sym_down_dark_normal.png");
-}
-
-.scrollbar.button.right,
-.scrollbar.button.right:insensitive {
-	background-image: url("img/sym_right_light_normal.png");
-}
-.scrollbar.button.right:active,
-.scrollbar.button.right:hover {
-	background-image: url("img/sym_right_glow_normal.png");
-}
-
-.scrollbar.button.left,
-.scrollbar.button.leftt:insensitive {
-	background-image: url("img/sym_left_light_normal.png");
-}
-.scrollbar.button.left:active,
-.scrollbar.button.leftt:hover {
-	background-image: url("img/sym_left_glow_normal.png");
-}
-
 .scrollbar.slider.vertical,
 .scrollbar.slider.vertical:insensitive {
-	background-image: url("img/slider_base_vert.png");
-	border-image-repeat: stretch;
+	background-image: url("img/slider_vert.png"),
+		url("img/holes_tiny_vert.png");
+	background-position: center center, center center;
 }
 .scrollbar.slider.vertical:active,
 .scrollbar.slider.vertical:hover {
-	background-image: url("img/slider_base_vert.png");
-	border-image-repeat: stretch;
+	background-image: url("img/slider_vert.png"),
+		url("img/holes_tiny_glow_vert.png");
+	background-position: center center, center center;
 }
 .scrollbar.slider.horizontal,
 .scrollbar.slider.horizontal:insensitive {
-	background-image: url("img/slider_base_horiz.png");
-	border-image-repeat: stretch;
+	background-image: url("img/slider_horiz.png");
+	background-image: url("img/holes_tiny_vert.png");
 }
 .scrollbar.slider.horizontal:active,
 .scrollbar.slider.horizontal:hover {
-	background-image: url("img/slider_base_horiz.png");
-	border-image-repeat: stretch;
+	background-image: url("img/slider_horiz.png");
+	background-image: url("img/holes_tiny_glow_horiz.png");
 }
 
 .column-header:active,
