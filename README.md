@@ -1,4 +1,4 @@
-`$Id: README.md, 2012/12/26 10:13:16 -tclover Exp $`
+`$Id: README.md, 2012/12/29 01:25:54 -tclover Exp $`
 
 ---
 
@@ -28,7 +28,7 @@ dependent engine theme. They should just respect the user choice!
 # TO DO:
 
 * improve toolbar/entry padding (spent minutes to that already);
-* better slider images (slider_{horiz,vert}.png;
+* better slider images (slider_{horiz,vert}.png);
 * better insensitive left and right arrows (sym_{left,right}_dark_{normal,selected}.png);
 * better memu image;
 * better tabs (notebook) image?;
@@ -49,8 +49,7 @@ use images for th trough and then... the rendered object is ugly;
 * inset_shadow.png cannot be included in GtkWidget... gtk+-3 may improve this;
 * fix for/background and text color in icon view (text has the same color as the background),
 pcmanfm has this issue but nothing found to fix it;
-* gt+-3 require background multilayers, so >=gtk+-3.6 is required, tried to make the sliders
-with gtk+-3.6.2 but it does not yet work as expected;
+* gt+-3 require background multilayers, so >=gtk+-3.6 is required;
 
 PS: an ebuild is available in my overlay (on github) for gentoo users.
 
