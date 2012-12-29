@@ -2,6 +2,19 @@
 	background-color: @base_color;
 }
 
+.button:active,
+.button:insensitive {
+	background-image: url("img/button_clicked.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.button,
+.button:prelight {
+	background-image: url("img/button_normal.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .check,
 .check:insensitive,
 .check:inconsistent,
@@ -136,6 +149,13 @@
 	background-size: auto;
 }
 
+resize.grip {
+	background-image: url("img/hole_tiny.png");
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+
 .shadow.in,
 .shadow.etched.in {
 	background-image: url("img/inset_shadow.png");
@@ -192,6 +212,77 @@
 	background-position: center, center;
 	background-repeat: no-repeat, no-repeat;
 	background-size: auto, cover;
+}
+
+.scrollbar.button,
+.scrollbar.button:active,
+.scrollbar.button:active:hover,
+.scrollbar.button:insensitive {
+    border-style: solid;
+    border-image: none;
+    border-radius: 0;
+    border-color: transparent;
+    border-width: 1px;
+    background-image: none;
+    background-color: transparent;
+    color: transparent;
+}
+
+.scrollbar.button.top {
+	background-image: url("img/sym_up_light_normal.png");
+}
+.scrollbar.button.top:active {
+	background-image: url("img/sym_up_dark_selected.png");
+}
+.scrollbar.button.top:hover {
+	background-image: url("img/sym_up_glow_normal.png");
+}
+.scrollbar.button.top:insensitive {
+	background-image: url("img/sym_up_dark_normal.png");
+}
+
+.scrollbar.button.bottom {
+	background-image: url("img/sym_down_light_normal.png");
+}
+.scrollbar.button.bottom:active {
+	background-image: url("img/sym_down_dark_selected.png");
+}
+.scrollbar.button.bottom:hover {
+	background-image: url("img/sym_down_glow_normal.png");
+}
+.scrollbar.button.bottom:insensitive {
+	background-image: url("img/sym_down_dark_normal.png");
+}
+
+.scrollbar.button.left {
+	background-image: url("img/sym_left_light_normal.png");
+}
+.scrollbar.button.left:active {
+	background-image: url("img/sym_left_dark_selected.png");
+}
+.scrollbar.button.left:hover {
+	background-image: url("img/sym_left_glow_normal.png");
+}
+.scrollbar.button.left:insensitive {
+	background-image: url("img/sym_left_dark_normal.png");
+}
+
+.scrollbar.button.right {
+	background-image: url("img/sym_right_light_normal.png");
+}
+.scrollbar.button.right:active {
+	background-image: url("img/sym_right_dark_selected.png");
+}
+.scrollbar.button.right:hover {
+	background-image: url("img/sym_right_glow_normal.png");
+}
+.scrollbar.button.right:insensitive {
+	background-image: url("img/sym_right_dark_normal.png");
+}
+
+.scrollbars-junction {
+    background-color: transparent;
+    box-shadow: none;
 }
 
 .column-header:active,
