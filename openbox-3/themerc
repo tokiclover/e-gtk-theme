@@ -1,7 +1,7 @@
-!! e-openbox-theme-0.16
-!! This is a theme to match the new enlightenment DR17 default theme
-!! window manager, by tclover.
-!! License: GPL-2
+!! e-openbox-theme-0.16.2
+!! This is a theme to match the new enlightenment DR17
+!! window manager default theme, by tclover.
+!! License: BSD-2
 
 !! menu background
 menu.items.bg: gradient splitvertical raised

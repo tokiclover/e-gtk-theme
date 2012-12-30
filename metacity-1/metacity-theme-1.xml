@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-   <name>e-metacity-theme-0.16</name>
+   <name>e-metacity-theme-0.16.2</name>
    <author>tclover</author>
-   <copyright>GPL-2</copyright>
+   <copyright>BSD-2</copyright>
    <date>December 10, 2012</date>
-   <description>e-metacity-theme is a theme to match enlightenment DR17 default theme</description>
+   <description>e-metacity-theme is a theme to match the new enlightenment DR17 default theme</description>
 </info>
 
    <!-- This is where we need to start specifying your theme -->
