@@ -1,3 +1,15 @@
+/* 
+ * e-gtk-theme-0.16.2
+ * e/gtk-3.0/gtk.css
+ */
+
+/* 
+ * This is a gtk+-3 theme to match the new enlightenment DR17
+ * window manager default theme, by tclover. 
+ * Check here: http://trac.enlightenment.org/e/wiki/Themes.
+ * License: BSD-2
+ */
+
 @define-color fg_color #fafafa;
 @define-color unfocused_fg_color darker(#fafafa);
 @define-color bg_color #383838;
@@ -23,29 +35,22 @@
 @define-color error_fg_color @text_color;
 @define-color error_bg_color @base_color;
 
-@import url("common.css");
-
 * {
-	engine: adwaita;
-	-adwaita-focus-border-color: alpha(@selected_bg_color,0.3);
-	-adwaita-focus-border-radius: 0;
-	-adwaita-focus-border-dashes: 1;
-
 	padding: 2px;
 	background-clip: padding-box;
 	background-color: @base_color;
 	color: @fg_color;
 
-	-GtkRange-trough-border: 1px;
 	-GtkScrollbar-has-backward-stepper: true;
 	-GtkScrollbar-has-forward-stepper: true;
 	-GtkRange-stepper-spacing: 0;
+	-GtkRange-trough-border: 0px;
 	-GtkRange-trough-under-steppers: false;
-	-GtkRange-slider-width: 11;
+	-GtkRange-slider-width: 15;
 	-GtkScrollbar-min-slider-length: 42;
 
-	-GtkScale-slider-width: 14;
-	-GtkScale-slider-length: 42;
+	-GtkScale-slider-width: 16;
+	-GtkScale-slider-length: 16;
 	-GtkScale-trough-border: 0;
 	-GtkScale-value-spacing: 0;
 
@@ -70,31 +75,16 @@
 	-GtkWidget-link-color: @link_color;
 	-GtkWidget-visited-link-color: darker(@link_color);
 	-GtkWidget-focus-padding: 2;
-	-GtkWidget-focus-line-width: 1;
-	-GtkWindow-resize-grip-width: 4;
-	-GtkWindow-resize-grip-height: 4; 
+	-GtkWidget-focus-line-width: 2;
+	-GtkWindow-resize-grip-width: 5;
+	-GtkWindow-resize-grip-height: 5; 
 	-GtkWidget-cursor-color: @text_color;
 	-GtkWidget-cursor-aspect-ratio: 0.1; 
 	-GtkWidget-secondary-cursor-color: darker(@text_color);  
 }
 
-GtkStockItem items["gtk-close"] = {
-	{ url("img/sym_close_light_normal.png"), *, NORMAL, * },
-	{ url("img/sym_close_dark_normal.png"), *, INSENSITIVE, * },
-	{ url("img/sym_close_light_selected.png"), *, PRELIGHT, * },
-	{ url("img/sym_close_dark_selected.png"), *, ACTIVE, * }
-};
-GtkStockItem items["gtk-fullscreen"] = {
-	{ url("img/sym_up_light_normal.png"), *, NORMAL, * },
-	{ url("img/sym_up_dark_normal.png"), *, INSENSITIVE, * },
-	{ url("img/sym_up_glow_normal.png"), *, PRELIGHT, * },
-	{ url("img/sym_up_dark_selected.png"), *, ACTIVE, * }
-};
-GtkStockItem items["gtk-leave-fullscreen"] = {
-	{ url("img/sym_down_light_normal.png"), *, NORMAL, * },
-	{ url("img/sym_down_dark_normal.png"), *, INSENSITIVE, * },
-	{ url("img/sym_down_glow_normal.png"), *, PRELIGHT, * },
-	{ url("img/sym_down_dark_selected.png"), *, ACTIVE, * }
-};
+@import url("common.css");
 
-
+/*
+ * vim:fenc=utf-8:ft=css:ci:pi:sts=0:sw=4:ts=4:
+ */
