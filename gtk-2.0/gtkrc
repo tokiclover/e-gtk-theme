@@ -22,16 +22,16 @@ style "default" {
 	GtkButton::default-border			= {0,0,0,0}
 	GtkButton::default-outside-border	= {0,0,0,0}
 
-	GtkRange::trough-border				= 2
-	GtkRange::slider-width				= 11
+	GtkRange::trough-border				= 0
+	GtkRange::slider-width				= 15
 	GtkRange::stepper-size				= 15
 	GtkRange::trough-under-steppers		= 0
 	GtkRange::stepper-spacing 			= 0
 
 	GtkVScale::slider-length 			= 42
-	GtkVScale::slider-width 			= 14
+	GtkVScale::slider-width 			= 15
 	GtkHScale::slider-length 			= 42
-	GtkHScale::slider-width 			= 14
+	GtkHScale::slider-width 			= 15
 
 	GtkPaned::handle-size				= 6
 	GtkScrolledWindow::scrollbar-spacing= 0
@@ -579,8 +579,8 @@ style "spinbutton" = "entry" {
 
 style "scrollbar" = "default" {
 
-	xthickness = 1
-	ythickness = 1
+	xthickness = 0
+	ythickness = 0
 
 	bg[ACTIVE]  = @bg_color
 	bg[NORMAL]  = @bg_color
@@ -590,7 +590,7 @@ style "scrollbar" = "default" {
 		image {
 			function		= SLIDER
 			state 			= NORMAL
-			file			= "img/slider.png"
+			file			= "img/slider_horiz.png"
 			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= HORIZONTAL
@@ -600,7 +600,7 @@ style "scrollbar" = "default" {
 		image {
 			function		= SLIDER
 			state 			= ACTIVE
-			file			= "img/slider.png"
+			file			= "img/slider_horiz.png"
 			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= HORIZONTAL
@@ -610,7 +610,7 @@ style "scrollbar" = "default" {
 		image {
 			function		= SLIDER
 			state 			= PRELIGHT
-			file			= "img/slider.png"
+			file			= "img/slider_horiz.png"
 			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= HORIZONTAL
@@ -620,7 +620,7 @@ style "scrollbar" = "default" {
 		image {
 			function		= SLIDER
 			state 			= INSENSITIVE
-			file			= "img/slider.png"
+			file			= "img/slider_horiz.png"
 			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= HORIZONTAL
@@ -630,7 +630,7 @@ style "scrollbar" = "default" {
 		image {
 			function		= SLIDER
 			state 			= NORMAL
-			file			= "img/slider.png"
+			file			= "img/slider_vert.png"
 			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= VERTICAL
@@ -640,7 +640,7 @@ style "scrollbar" = "default" {
 		image {
 			function		= SLIDER
 			state 			= ACTIVE
-			file			= "img/slider.png"
+			file			= "img/slider_vert.png"
 			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= VERTICAL
@@ -650,7 +650,7 @@ style "scrollbar" = "default" {
 		image {
 			function		= SLIDER
 			state 			= PRELIGHT
-			file			= "img/slider.png"
+			file			= "img/slider_vert.png"
 			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= VERTICAL
@@ -660,7 +660,7 @@ style "scrollbar" = "default" {
 		image {
 			function		= SLIDER
 			state 			= INSENSITIVE
-			file			= "img/slider.png"
+			file			= "img/slider_vert.png"
 			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= VERTICAL
@@ -970,6 +970,15 @@ style "tooltips" = "default" {
 	bg[NORMAL] = @tooltip_bg_color
 	bg[ACTIVE] = @tooltip_bg_color
 	fg[NORMAL] = @tooltip_fg_color
+	
+	engine "pixmap" {
+		image {
+			function	= BOX
+			file		= "img/bevel_dark_out.png"
+			border		= {1,1,1,1}
+			stretch		= TRUE
+		}
+	}
 }
 
 style "ruler" = "default" {
@@ -1130,7 +1139,7 @@ class "GtkEventBox" 		style "flat"
 class "GtkPaned" 			style "handlebox"
 class "GtkLayout" 			style "layout"
 class "SPButton" 			style "SPbutton"
-widget "gtk-tooltips" 		style "tooltips"
+widget "GtkTooltip" 		style "tooltips"
 widget_class "*Combo*" 		style "optionmenu"
 
 # colorize ugly white line at the top of the vertical scrollbar in Nautilus
