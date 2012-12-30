@@ -1,17 +1,18 @@
 #############################
-# e-gtk-theme-0.16          #
+# e-gtk-theme-0.16.2        #
+# e/gtk-2.0/gtkrc           #
 #############################
 
-# This is a theme to match the e default theme for the DR17
-# window manager, by tclover. 
+# This is a gtk+-2 theme to match the new enlightenment DR17
+# window manager default theme, by tclover. 
 # Check here: http://trac.enlightenment.org/e/wiki/Themes.
-# License: GPL-2
+# License: BSD-2
 
 gtk-menu-drop-shadow = 0
 gtk-menu-shadow-delay = 0
 
 gtk_color_scheme = "fg_color:#fafafa; bg_color:#383838; base_color:#484848; text_color:#fafafa; selected_bg_color:#245f99; selected_fg_color:#181818; tooltip_bg_color:#101010; tooltip_fg_color:#aaaaaa; insens_fg_color:#282828"
-gtk-icon-sizes = "panel-menu=20,20:panel=20,20:gtk-button=16,16:gtk-menu=10,10:gtk-large-toolbar=22,22"
+gtk-icon-sizes = "gtk-menu=16,16:gtk-button=20,20:gtk-small-toolbar=16,16:gtk-large-toolbar=20,20:gtk-dnd=24,24:gtk-dialog=28,28"
 
 style "default" {
 	GtkWidget::interior-focus			= 7
@@ -83,67 +84,6 @@ style "default" {
 	text[ACTIVE]		= @text_color
 	text[SELECTED]		= @selected_bg_color
 	text[INSENSITIVE]	= darker (@insens_fg_color)
-
-#	stock["gtk-add"] = {
-#		{ "img/sym_icon_op_add.png", *, *, * }
-#	}
-	stock["gtk-copy"] = {
-		{ "img/sym_icon_op_copy.png", *, *, * }
-	}
-	stock["gtk-close"] = {
-		{ "img/icon_border_close.png", *, *, * }
-	}
-	stock["gtk-cut"] = {
-		{ "img/sym_icon_op_move.png", *, *, * }
-	}
-	stock["gtk-dialog-question"] = {
-		{ "img/sym_icon_op_ask.png", *, *, * }
-	}
-	stock["gtk-dnd"] = {
-		{ "img/icon_border_close.png", *, *, * }
-	}
-	stock["gtk-dnd-multiple"] = {
-		{ "img/icon_border_move.png", *, *, * }
-	}
-	stock["gtk-fullscreen"] = {
-		{ "img/icon_border_move.png", *, *, * }
-	}
-	stock["gtk-leave-fullscreen"] = {
-		{ "img/icon_border_minimize.png", *, *, * }
-	}
-	stock["gtk-media-play"] = {
-		{ "img/media_play.png", *, *, * }
-	}
-	stock["gtk-media-pause"] = {
-		{ "img/media_pause.png", *, *, * }
-	}
-	stock["gtk-media-forward"] = {
-		{ "img/media_next.png", *, *, * }
-	}
-	stock["gtk-media-rewind"] = {
-		{ "img/media_previous.png", *, *, * }
-	}
-	stock["gtk-media-next"] = {
-		{ "img/media_next.png", *, *, * }
-	}
-	stock["gtk-media-previous"] = {
-		{ "img/media_previous.png", *, *, * }
-	}
-	stock["gtk-media-stop"] = {
-		{ "img/media_stop.png", *, *, * }
-	}
-	stock["gtk-network"] = {
-		{ "img/eth.png", *, *, * }
-	}
-	stock["gtk-ok"] = {
-		{ "img/icon_border_remember.png", *, *, * }
-	}
-	stock["gtk-page-setup"] = {
-		{ "img/icon_border_pager.png", *, *, * }
-	}
-	stock["gtk-yes"] = {
-		{ "img/icon_border_remember.png", *, *, * }
-	}
 
 	engine "pixmap" {
 		image {
@@ -616,8 +556,8 @@ style "entry" = "default" {
 
 style "spinbutton" = "entry" {
 
-	xthickness = 2
-	ythickness = 2
+	xthickness = 1
+	ythickness = 1
 
 	base[NORMAL] = shade (0.76,@base_color)
 
@@ -639,7 +579,7 @@ style "spinbutton" = "entry" {
 
 style "scrollbar" = "default" {
 
-	xthickness = 2
+	xthickness = 1
 	ythickness = 1
 
 	bg[ACTIVE]  = @bg_color
@@ -650,7 +590,7 @@ style "scrollbar" = "default" {
 		image {
 			function		= SLIDER
 			state 			= NORMAL
-			file			= "img/slider_horiz.png"
+			file			= "img/slider.png"
 			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= HORIZONTAL
@@ -660,19 +600,17 @@ style "scrollbar" = "default" {
 		image {
 			function		= SLIDER
 			state 			= ACTIVE
-			file			= "img/slider_horiz.png"
+			file			= "img/slider.png"
 			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= HORIZONTAL
-			overlay_file	= "img/slider_glow_horiz.png"
-			overlay_stretch	= TRUE
 			overlay_file	= "img/holes_tiny_glow_horiz.png"
 			overlay_stretch	= FALSE
 		}
 		image {
 			function		= SLIDER
 			state 			= PRELIGHT
-			file			= "img/slider_horiz.png"
+			file			= "img/slider.png"
 			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= HORIZONTAL
@@ -682,7 +620,7 @@ style "scrollbar" = "default" {
 		image {
 			function		= SLIDER
 			state 			= INSENSITIVE
-			file			= "img/slider_horiz.png"
+			file			= "img/slider.png"
 			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= HORIZONTAL
@@ -692,7 +630,7 @@ style "scrollbar" = "default" {
 		image {
 			function		= SLIDER
 			state 			= NORMAL
-			file			= "img/slider_vert.png"
+			file			= "img/slider.png"
 			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= VERTICAL
@@ -702,19 +640,17 @@ style "scrollbar" = "default" {
 		image {
 			function		= SLIDER
 			state 			= ACTIVE
-			file			= "img/slider_vert.png"
+			file			= "img/slider.png"
 			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= VERTICAL
-			overlay_file	= "img/slider_glow_vert.png"
-			overlay_stretch	= TRUE
 			overlay_file	= "img/holes_tiny_glow_vert.png"
 			overlay_stretch	= FALSE
 		}
 		image {
 			function		= SLIDER
 			state 			= PRELIGHT
-			file			= "img/slider_vert.png"
+			file			= "img/slider.png"
 			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= VERTICAL
@@ -724,7 +660,7 @@ style "scrollbar" = "default" {
 		image {
 			function		= SLIDER
 			state 			= INSENSITIVE
-			file			= "img/slider_vert.png"
+			file			= "img/slider.png"
 			border			= {0,0,0,0}
 			stretch			= TRUE
 			orientation		= VERTICAL
@@ -1223,3 +1159,5 @@ include "apps/gnome-panelrc"
 include "apps/gnome-system-monitorrc"
 include "apps/gnome-terminalrc"
 include "apps/vterc"
+
+# vim:fenc=utf-8:ft=gtkrc:ci:pi:sts=0:sw=4:ts=4:
