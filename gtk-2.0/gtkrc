@@ -537,7 +537,7 @@ style "checkbutton"	= "default" {
 style "entry" = "default" {
 
 	GtkWidget::interior-focus	= 0
-	GtkEntry::inner-border		= {2,2,2,2}
+	GtkEntry::inner-border		= {1,1,1,1}
 	
 	xthickness = 2
 	ythickness = 2
