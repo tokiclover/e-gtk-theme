@@ -5,7 +5,6 @@
 
 .background {
 	background-color: @bg_color;
-	color: @fg_color;
 }
 
 .image,
@@ -18,14 +17,14 @@
     background-color: transparent;
 	background-image: url("img/button_clicked.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 }
 .button,
 .button:prelight {
     background-color: transparent;
 	background-image: url("img/button_normal.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 .check,
@@ -60,20 +59,20 @@
 .column.header:hover {
 	background-image: url("img/vgrad_dark.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 .column.header,
 .column.header:insensitive {
 	background-image: url("img/vgrad_med_curved.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 .combobox.button {
 	background-image: url("img/button_normal.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 
@@ -82,7 +81,7 @@
 .radio:inconsistent:insensitive {
 	background-image: url("img/inset_shadow_circle_tiny.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 .radio:insensitive,
@@ -90,7 +89,7 @@
 .radio:insensitive:hover {
 	background-image: url("img/inset_shadow_circle_tiny_ins.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 .radio:hover,
@@ -99,14 +98,14 @@
 .radio:active:insensitive {
 	background-image: url("img/inset_shadow_circle_tiny_in.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 }
 
 .scrollbar.button,
 .scrollbar.button:active,
-.scrollbar.button:active:hover,
+.scrollbar.button:hover,
 .scrollbar.button:insensitive {
-	background-color: @bg_color;
+	background-color: transparent;
 	border-style: solid;
 	border-image: none;
 	border-radius: 0px;
@@ -315,7 +314,7 @@
 	background-image: url("img/knob_sz_14.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 	background-origin: border-box;
 	padding: 0px 0px;
 }
@@ -410,12 +409,12 @@
 }
 
 .toolbar {
-	background-image: url("img/tasklist_button_normal.png");
+	background-image: url("img/button_normal.svg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: 108% 115%;
 	background-origin: padding-box;
-	padding: 1px 2px;
+	padding: 2px;
 	border-image: url("img/null.png") 1 1 1 1 / 1 1 1 1 stretch;
 }
 

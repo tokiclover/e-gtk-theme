@@ -43,6 +43,8 @@
 
 	-GtkScrollbar-has-backward-stepper: true;
 	-GtkScrollbar-has-forward-stepper: true;
+	-GtkScrollbar-has-secondary-backward-stepper: false;
+	-GtkScrollbar-has-secondary-forward-stepper: false;
 	-GtkRange-stepper-spacing: 0;
 	-GtkRange-trough-border: 0px;
 	-GtkRange-trough-under-steppers: false;
