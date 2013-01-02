@@ -182,7 +182,7 @@ column-header .button:hover {
 }
 
 .arrow.right:active
-.menuitem.arrow:active,
+.menu .arrow:active,
 .scrollbar.button.right:active {
 	background-image: url("img/sym_right_light_normal.png");
 	background-position: center;
@@ -190,7 +190,7 @@ column-header .button:hover {
 	background-size: auto;
 }
 .arrow.right,
-.menuitem.arrow,
+.menu .arrow,
 .scrollbar.button.right {
 	background-image: url("img/sym_right_light_normal.png");
 	background-position: center;
@@ -198,7 +198,7 @@ column-header .button:hover {
 	background-size: auto;
 }
 .arrow.right:hover,
-.menuitem.arrow:hover,
+.menu .arrow:hover,
 .scrollbar.button.right:hover {
 	background-image: url("img/sym_right_glow_normal.png");
 	background-position: center;
@@ -206,7 +206,7 @@ column-header .button:hover {
 	background-size: auto;
 }
 .arrow.right:insensitive,
-.menuitem.arrow:insensitive,
+.menu .arrow:insensitive,
 .scrollbar.button.right:insensitive {
 	background-image: url("img/sym_right_dark_normal.png");
 	background-position: center;
@@ -244,9 +244,20 @@ column-header .button:hover {
 }
 
 .entry {
-	padding: 2px;
+	background-color: shade(@bg_color,0.96);
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	box-shadow: inset 1px 1px 4px 4px shade(@bg_color,0.76);
 	border-width: 1px;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+	padding: 2px;
+}
+
+.entry:focus {
+	padding: 2px;
+	border-width: 2px;
+	border-image: url("img/outline_glow.png") 1 1 1 1 / 2px 2px 2px 2px stretch;
 	box-shadow: inset 0px 0px 2px 2px shade(@bg_color,0.76);
 }
 
@@ -308,6 +319,14 @@ column-header .button:hover {
 .menubar {
 	background-color: @bg_color;
 	color: @selected_fg_color;
+}
+
+.menubar > .menuitem {
+	background-image: url("img/shadow_angled_in_sides_bottom.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-origin: border-box;
 }
 
 .scale.slider {
@@ -433,6 +452,14 @@ GtkFrame.shadow.etched.out,
 	background-color: transparent;
 }
 
+.spinbutton .button {
+	background-image: url("img/button_spin_normal.png");
+	background-origin: padding-box;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding: 2px;
+}
+
 .notebook {
 	border-width: 0px;
 	background-color: alpha(@bg_color,0.6);
@@ -475,6 +502,7 @@ GtkFrame.shadow.etched.out,
 .notebook tab.right {
 	padding: 0px;
 	background-image: url("img/vgrad_med_curved_right.png");
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
@@ -483,6 +511,7 @@ GtkFrame.shadow.etched.out,
 	padding: 0px;
 	background-image: url("img/shadow_angled_in_sides_right.png"),
 		url("img/vgrad_dark_right.png");
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
@@ -491,6 +520,7 @@ GtkFrame.shadow.etched.out,
 .notebook tab.top {
 	padding: 0px;
 	background-image: url("img/vgrad_med_curved_top.png");
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
@@ -505,17 +535,17 @@ GtkFrame.shadow.etched.out,
 }
 
 .toolbar {
-	background-image: url("img/button_normal.svg");
-	background-position: -6px -2px;
+	background-image: url("img/vgrad_med_curved.png");
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	background-origin: padding-box;
 	padding: 0px;
-	border-image: url("img/null.png") 1 1 1 1 / 1 1 1 1 stretch;
+	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 }
 
 .tooltip {
-	border-image: url("img/bevel_dark_out.png") 1 1 1 1 / 1 1 1 1 stretch;
+	border-image: url("img/bevel_dark_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	border-style: solid;
 	border-width: 1px 1px 1px 1px;
 	color: @tooltip_fg_color;
