@@ -1,4 +1,4 @@
-`$Id: README.md, 2012/12/30 03:57:40 -tclover Exp $`
+`$Id: README.md, 2013/01/01 18:43:17 -tclover Exp $`
 
 ---
 
@@ -34,7 +34,6 @@ dependent engine theme. They should just respect the user choice!
 * improve metacity heme (I had enough of it despite metacity drawigs capabilities);
 * improve openbox menu (gradient);
 * improve notebook frame (it's not that easy to get something better);
-* get outlined slider when pressed? (tried already but nothing different is rendered);
 
 # Issues:
 
@@ -45,17 +44,24 @@ dependent engine theme. They should just respect the user choice!
 use two images for th trough and then... the rendered object is ugly;
 * fix for/background and text color in icon view (text has the same color as the background),
 pcmanfm has this issue but nothing found to fix it;
-* more padding for toolbar entry?;
+* get outlined slider when pressed? (tried already but nothing different is rendered);
 
 ## gtk+-3 specific:
 
 * first of, gt+-3 require background multilayers, so >=gtk+-3.6 is required;
 * did not found a simple way to crop background-image, so button_*image.[pn,sv]g
-have too much shadow (using tasklist_button_*) for now;
+have too much shadow (using tasklist_button_*) for now, CSS background multilayers
+should be fully supported for that (especialy *background-position: bottom -8p
+top -6px left -1px right -2px*);
+* how to remove the extra stock insensitiv arrow?;
+* insensitive check and radio images get lost somewhere...;
+* have no idea how to define GtkShadowType (shadow_{,etched_}{in,out});
+* have no idea how to define GtkArrow globally, do not wanna fucking define every single arrow;
 
 ## both major versions specific:
 
 * scalling slider_[horiz,vert].png is no good, too much shadow with big sliders;
+* cannot user runner glow into trough details;
 
 PS: an ebuild is available in my overlay (on github) for gentoo users.
 

@@ -10,20 +10,16 @@
  * License: BSD-2
  */
 
-@define-color fg_color #fafafa;
-@define-color unfocused_fg_color darker(#fafafa);
-@define-color bg_color #383838;
-@define-color bg_color #383838;
 @define-color base_color #484848;
+@define-color bg_color #383838;
+@define-color fg_color #fafafa;
 @define-color text_color #fafafa;
 @define-color selected_bg_color #245f99;
-@define-color unfocused_selected_bg_color shade(#245f99,0.76);
 @define-color selected_fg_color #181818;
-@define-color unfocused_selected_fg_color shade(#181818,0.76);
+@define-color insensitive_bg_color shade(@selected_bg_color,1.24);
+@define-color insensitive_fg_color shade(@selected_fg_color,1.24);
 @define-color tooltip_bg_color #101010;
 @define-color tooltip_fg_color #aaaaaa;
-@define-color insensitive_fg_color #282828;
-@define-color insensitive_fg_color #686868;
 @define-color link_color shade(@selected_bg_color,1.1);
 
 @define-color info_fg_color @fg_color;
@@ -36,9 +32,11 @@
 @define-color error_bg_color @base_color;
 
 * {
+	border-width: 2px;
 	padding: 2px;
 	background-clip: padding-box;
 	background-color: @base_color;
+	background-clip: padding-box;
 	color: @fg_color;
 
 	-GtkScrollbar-has-backward-stepper: true;
@@ -56,6 +54,9 @@
 	-GtkScale-trough-border: 0;
 	-GtkScale-value-spacing: 0;
 
+	-GtkNotebook-tab-overlap: -1;
+	-GtkNotebook-tab-curvature: 0;
+
 	-GtkArrow-arrow-scaling: 1.0;
 	-GtkCheckButton-indicator-size: 11;
 	-GtkCheckMenuItem-indicator-size: 11;
@@ -65,7 +66,7 @@
 	-GtkProgressBar-min-horizontal-bar-height: 22;
 	-GtkProgressBar-min-vertical-bar-width: 22;
 	-GtkScrolledWindow-scrollbar-spacing: 0;
-	-GtkScrolledWindow-scrollbars-within-bevel: 0;
+	-GtkScrolledWindow-scrollbars-within-bevel: false;
 	-GtkToolItemGroup-expander-size: 15;
 	-GtkExpander-expander-size: 15;
 	-GtkMenu-horizontal-padding: 0;
@@ -83,6 +84,57 @@
 	-GtkWidget-cursor-color: @text_color;
 	-GtkWidget-cursor-aspect-ratio: 0.1; 
 	-GtkWidget-secondary-cursor-color: darker(@text_color);  
+}
+
+* { color: inherit }
+
+*:active,
+*:selected,
+*:selected:focus {
+	background-color: @selected_fg_color;
+	color: @selected_bg_color;
+}
+
+*:insensitive {
+	background-color: transparent;
+	color: @insensitive_fg_color;
+	border-color: transparent;
+}
+
+GtkImage,
+GtkLabel {
+	background-color: transparent;
+}
+
+GtkImage {
+	color: @selected_fg_color;
+}
+
+GtkImage:active,
+GtkImage:hover,
+GtkImage:selected,
+GtkLabel:active,
+GtkLabel:hover,
+GtkLabel:selected {
+	color: @selected_bg_color;
+}
+
+GtkImage:insensitive,
+GtkLabel:insensitive {
+	color: @insensitive_fg_color;
+}
+
+.seprator,
+.menuitem.separator {
+	color: alpha(@insensitive_fg_color,0.6);
+}
+
+GtkTreeView row:nth-child(even) {
+	background-color: @base_color;
+}
+
+GtkTreeView row:nth-child(odd) {
+	background-color: @bg_color;
 }
 
 @import url("common.css");

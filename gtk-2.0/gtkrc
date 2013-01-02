@@ -1,5 +1,5 @@
 #############################
-# e-gtk-theme-0.16.2        #
+# e-gtk-theme-0.16.3        #
 # e/gtk-2.0/gtkrc           #
 #############################
 
@@ -101,13 +101,13 @@ style "default" {
 
 		image {
 			function		= HANDLE
-			overlay_file	= "/img/holes_horiz.png"
+			overlay_file	= "/img/holes_tiny_horiz.png"
 			overlay_stretch	= FALSE
 			orientation		= HORIZONTAL
 		}
 		image {
 			function		= HANDLE
-			overlay_file	= "/img/holes_vert.png"
+			overlay_file	= "/img/holes_tiny_vert.png"
 			overlay_stretch	= FALSE
 			orientation		= VERTICAL
 		}
@@ -538,9 +538,6 @@ style "entry" = "default" {
 
 	GtkWidget::interior-focus	= 0
 	GtkEntry::inner-border		= {1,1,1,1}
-	
-	xthickness = 2
-	ythickness = 2
 
 	base[NORMAL] = shade (0.76,@base_color)
 
@@ -933,7 +930,7 @@ style "notebook" = "default" {
 		image {
 			function			= EXTENSION
 			detail				= "tab"
-			file				= "img/vgrad_med_curved_top.png"
+			file				= "img/vgrad_dark_top.png"
 			border				= {0,0,0,0}
 			stretch				= TRUE
 			overlay_file		= "img/shadow_angled_in_sides_top.png"
@@ -944,7 +941,7 @@ style "notebook" = "default" {
 		image {
 			function			= EXTENSION
 			detail				= "tab"
-			file				= "img/vgrad_med_curved_right.png"
+			file				= "img/vgrad_dark_right.png"
 			border				= {0,0,0,0}
 			stretch				= TRUE
 			overlay_file		= "img/shadow_angled_in_sides_right.png"
@@ -955,7 +952,7 @@ style "notebook" = "default" {
 		image {
 			function			= EXTENSION
 			detail				= "tab"
-			file				= "img/vgrad_med_curved_left.png"
+			file				= "img/vgrad_dark_left.png"
 			border				= {0,0,0,0}
 			stretch				= TRUE
 			overlay_file		= "img/shadow_angled_in_sides_left.png"
