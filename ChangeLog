@@ -1,0 +1,17 @@
+#$Id: e-gtk-theme/ChangeLog, 2013/01/01 18:43:17 -tclover Exp $
+
+0.16.3:
+
+* gtk+-2: fixed notebook tab images; minor fixes/edits/update;
+* gtk+-3: major updates/edits/fixes; remain: GtkComboBox, GtkSpinButton, GtkEntry to name the major widgets and how to globally define GtkShadowType and GtkArrow globaly.
+
+0.16.2:
+
+* gtk+-2: minor fixes/edits/updates;
+* gtk+-3: initial gtk-3.0 files/commit;
+
+0.16.0:
+
+* see commits;
+
+#vim:fenc=utf-8:ft=txt:
