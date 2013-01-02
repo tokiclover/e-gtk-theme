@@ -16,8 +16,8 @@
 @define-color text_color #fafafa;
 @define-color selected_bg_color #245f99;
 @define-color selected_fg_color #181818;
-@define-color insensitive_bg_color shade(@selected_bg_color,1.24);
-@define-color insensitive_fg_color shade(@selected_fg_color,1.24);
+@define-color insensitive_bg_color shade(@selected_bg_color,1.06);
+@define-color insensitive_fg_color shade(@selected_fg_color,1.06);
 @define-color tooltip_bg_color #101010;
 @define-color tooltip_fg_color #aaaaaa;
 @define-color link_color shade(@selected_bg_color,1.1);
