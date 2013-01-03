@@ -1,5 +1,5 @@
 #############################
-# e-gtk-theme-0.16.3        #
+# e-gtk-theme-0.16.4        #
 # e/gtk-2.0/gtkrc           #
 #############################
 
@@ -350,7 +350,7 @@ style "button" = "default" {
 
 style "optionmenu" = "default" {
 
-	base[NORMAL] = shade (0.76,@base_color)
+	base[NORMAL] = shade(0.76,@base_color)
 
 	engine "pixmap" {
 		image {
@@ -539,7 +539,7 @@ style "entry" = "default" {
 	GtkWidget::interior-focus	= 0
 	GtkEntry::inner-border		= {1,1,1,1}
 
-	base[NORMAL] = shade (0.76,@base_color)
+	base[NORMAL] = shade(0.86,@bg_color)
 
 	engine "pixmap" {
 		image {
@@ -556,7 +556,7 @@ style "spinbutton" = "entry" {
 	xthickness = 1
 	ythickness = 1
 
-	base[NORMAL] = shade (0.76,@base_color)
+	base[NORMAL] = shade(0.76,@base_color)
 
 	engine "pixmap" {
 		image {
