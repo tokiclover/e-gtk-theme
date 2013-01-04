@@ -65,17 +65,17 @@ style "default" {
 	fg[PRELIGHT]		= @selected_bg_color
 	fg[ACTIVE]			= @fg_color
 	fg[SELECTED]		= @selected_fg_color
-	fg[INSENSITIVE]		= darker (@fg_color)
+	fg[INSENSITIVE]		= shade(0.76,@fg_color)
 
 	bg[NORMAL]			= @bg_color
 	bg[PRELIGHT]		= @selected_fg_color
 	bg[ACTIVE]			= @bg_color
 	bg[SELECTED]		= @selected_bg_color
-	bg[INSENSITIVE] 	= darker (@bg_color)
+	bg[INSENSITIVE] 	= shade(0.76,@bg_color)
 
 	base[NORMAL]		= @base_color
 	base[PRELIGHT]		= @selected_fg_color
-	base[ACTIVE]		= darker (@selected_bg_color)
+	base[ACTIVE]		= shade(0.76,@selected_bg_color)
 	base[SELECTED]		= @selected_fg_color
 	base[INSENSITIVE]	= @base_color
 
@@ -83,7 +83,7 @@ style "default" {
 	text[PRELIGHT]		= @selected_bg_color
 	text[ACTIVE]		= @text_color
 	text[SELECTED]		= @selected_bg_color
-	text[INSENSITIVE]	= darker (@insens_fg_color)
+	text[INSENSITIVE]	= shade(0.76,@insens_fg_color)
 
 	engine "pixmap" {
 		image {
@@ -101,13 +101,13 @@ style "default" {
 
 		image {
 			function		= HANDLE
-			overlay_file	= "/img/holes_tiny_horiz.png"
+			overlay_file	= "/img/holes_horiz.png"
 			overlay_stretch	= FALSE
 			orientation		= HORIZONTAL
 		}
 		image {
 			function		= HANDLE
-			overlay_file	= "/img/holes_tiny_vert.png"
+			overlay_file	= "/img/holes_vert.png"
 			overlay_stretch	= FALSE
 			orientation		= VERTICAL
 		}
@@ -833,9 +833,9 @@ style "menubar" {
 	ythickness	= 2
 
 	fg[PRELIGHT]	= @selected_bg_color
-	fg[NORMAL]		= darker (@selected_fg_color)
+	fg[NORMAL]		= shade(0.76,@selected_fg_color)
 	fg[ACTIVE]		= @selected_bg_color
-	fg[INSENSITIVE]	= darker (@insens_fg_color)
+	fg[INSENSITIVE]	= shade(0.76,@insens_fg_color)
 
 	engine "pixmap" {
 		image {
@@ -999,9 +999,9 @@ style "ruler" = "default" {
 
 style "handlebox" = "default" {
 
-	base[NORMAL]	= darker (@base_color)
-	bg[NORMAL]		= darker (@bg_color)
-	fg[NORMAL]		= darker (@fg_color)
+	base[NORMAL]	= shade(0.76,@base_color)
+	bg[NORMAL]		= shade(0.76,@bg_color)
+	fg[NORMAL]		= shade(0.76,@fg_color)
 
 	engine "pixmap" {
 		image {
@@ -1106,7 +1106,7 @@ style "SPbutton" {
 }
 
 style "treecol" {
-	bg[NORMAL] = darker (@bg_color)
+	bg[NORMAL] = shade(0.76,@bg_color)
 }
 
 class "GtkButton" 			style "button"
@@ -1141,13 +1141,13 @@ widget_class "*Combo*" 		style "optionmenu"
 
 # colorize ugly white line at the top of the vertical scrollbar in Nautilus
 style "searchbar" {
-	bg[NORMAL] = darker (@bg_color)
+	bg[NORMAL] = shade(0.76,@bg_color)
 }
 widget "*.nautilus-extra-view-widget" style:highest "searchbar"
 
 # separator in Nautilus sidebar
 style "separator" {
-	bg[NORMAL] = darker (@bg_color)
+	bg[NORMAL] = shade(0.76,@bg_color)
 }
 widget "*nautilus*side*" 		style:highest "separator"
 
