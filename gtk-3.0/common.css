@@ -13,7 +13,7 @@
 	background-image: url("img/button_normal.png");
 	background-origin: padding-box;
 	background-size: 100% 100%;
-	background-position: cover;
+	background-position: center;
 	background-repeat: no-repeat;
 }
 .button:active,
@@ -263,6 +263,7 @@ column-header .button:hover {
 }
 
 .frame {
+	background-color: @bg_color;
 	border-width: 2px;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	box-shadow: inset 1px 1px 2px 2px shade(@bg_color,0.66);
@@ -273,7 +274,7 @@ column-header .button:hover {
 .pane-separator.horizontal,
 .handle.horizontal {
 	background-color: @bg_color;
-	background-image: url("img/holes_tiny_vert.png");
+	background-image: url("img/holes_vert.png");
 	background-origin: border-box;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -282,7 +283,7 @@ column-header .button:hover {
 .pane-separator.vertical,
 .handle.vertical {
 	background-color: @bg_color;
-	background-image: url("img/holes_tiny_horiz.png");
+	background-image: url("img/holes_horiz.png");
 	background-origin: border-box;
 	background-repeat: no-repeat;
 	background-size: auto;
