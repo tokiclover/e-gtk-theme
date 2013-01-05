@@ -1,5 +1,5 @@
 /* 
- * e-gtk-theme-0.16.4
+ * e-gtk-theme-0.16.5
  * e/gtk-3.0/common.css
  */
 
@@ -9,22 +9,22 @@
 
 .button,
 .button:prelight {
-    background-color: transparent;
+	background-color: transparent;
 	background-image: url("img/button_normal.png");
-	background-origin: padding-box;
-	background-size: 100% 100%;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: 110% 105%;
+	background-origin: padding-box;
 }
 .button:active,
 .button:hover,
 .button:insensitive {
-    background-color: transparent;
+	background-color: transparent;
 	background-image: url("img/button_clicked.png");
-	background-origin: padding-box;
-	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: 115% 105%;
+	background-origin: padding-box;
 }
 
 column-header .button,
@@ -33,7 +33,7 @@ column-header .button:insensitive {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	border-image: url("img/bevel_out.png") 1 1 1 1 / 1 1 1 1 stretch;
+	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	border-width: 0px;
 	padding: 0px;
 }
@@ -45,7 +45,7 @@ column-header .button:hover {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 100% 100%;
-	border-image: url("img/bevel_out.png") 1 1 1 1 / 1 1 1 1 stretch;
+	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	border-width: 0px;
 	color: @selected_bg_color;
 	padding: 0px;
@@ -129,28 +129,28 @@ column-header .button:hover {
 	background-image: url("img/sym_up_light_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: 15px 15px;
 }
 .arrow.up:hover,
 .scrollbar.button.top:hover {
 	background-image: url("img/sym_up_glow_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: 15px 15px;
 }
 .arrow.up:active,
 .scrollbar.button.top:active {
 	background-image: url("img/sym_up_dark_selected.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: 15px 15px;
 }
 .arrow.up:insensitive,
 .scrollbar.button.top:insensitive {
 	background-image: url("img/sym_up_dark_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: 15px 15px;
 }
 
 .arrow.down,
@@ -158,61 +158,61 @@ column-header .button:hover {
 	background-image: url("img/sym_down_light_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: 15px 15px;
 }
 .arrow.down:hover,
 .scrollbar.button.bottom:hover {
 	background-image: url("img/sym_down_glow_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: 15px 15px;
 }
 .arrow.down:active,
 .scrollbar.button.bottom:active {
 	background-image: url("img/sym_down_dark_selected.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: 15px 15px;
 }
 .arrow.down:insensitive,
 .scrollbar.button.bottom:insensitive {
 	background-image: url("img/sym_down_dark_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: 15px 15px;
 }
 
-.arrow.right:active
-.menuitem > .arrow.right:active,
+.arrow.right:active,
+.menuitem.arrow:active,
 .scrollbar.button.right:active {
 	background-image: url("img/sym_right_light_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: 15px 15px;
 }
 .arrow.right,
-.menuitem > .arrow.right,
+.menuitem.arrow,
 .scrollbar.button.right {
 	background-image: url("img/sym_right_light_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: 15px 15px;
 }
 .arrow.right:hover,
-.menu .arrow:hover,
+.menuitem.arrow:hover,
 .scrollbar.button.right:hover {
 	background-image: url("img/sym_right_glow_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: 15px 15px;
 }
 .arrow.right:insensitive,
-.menu .arrow:insensitive,
+.menuitem.arrow:insensitive,
 .scrollbar.button.right:insensitive {
 	background-image: url("img/sym_right_dark_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: 15px 15px;
 }
 
 .arrow.left,
@@ -220,28 +220,28 @@ column-header .button:hover {
 	background-image: url("img/sym_left_light_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: 15px 15px;
 }
 .arrow.left:active
 .scrollbar.button.left:active {
 	background-image: url("img/sym_left_dark_selected.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: 15px 15px;
 }
 .arrow.left:hover,
 .scrollbar.button.left:hover {
 	background-image: url("img/sym_left_glow_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: 15px 15px;
 }
 .arrow.left:insensitive,
 .scrollbar.button.left:insensitive {
 	background-image: url("img/sym_left_dark_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: auto;
+	background-size: 15px 15px;
 }
 
 .entry {
@@ -263,10 +263,10 @@ column-header .button:hover {
 }
 
 .frame {
-	background-color: @bg_color;
-	border-width: 2px;
+	background-color: shade(@bg_color,0.66);
+	border-width: 1px;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
-	box-shadow: inset 1px 1px 2px 2px shade(@bg_color,0.66);
+	box-shadow: inset 0px 0px 2px 2px shade(@bg_color,0.66);
 	padding: 2px;
 }
 
@@ -280,6 +280,7 @@ column-header .button:hover {
 	background-repeat: no-repeat;
 	background-size: auto;
 }
+GtkComboBox .separator,
 .pane-separator.vertical,
 .handle.vertical {
 	background-color: @bg_color;
@@ -333,9 +334,9 @@ column-header .button:hover {
 	background-image: url("img/knob_sz_14.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
 	background-origin: border-box;
-	padding: 0px 0px;
+	padding: 0px;
 }
 
 .scale.trough.horizontal {
@@ -471,9 +472,16 @@ GtkFrame.shadow.etched.out,
 }
 
 .notebook {
-	border-width: 0px;
+	border-width: 1px;
 	background-color: alpha(@bg_color,0.6);
 	padding: 0px;
+}
+
+.notebook gap* {
+	background-color: alpha(@bg_color,0.6);
+	background-image: url("img/frame_gap.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .tab.bottom,
@@ -545,19 +553,19 @@ GtkFrame.shadow.etched.out,
 }
 
 .toolbar {
-	background-image: url("img/vgrad_med_curved.png");
+	background-color: transparent;
+	background-image: url("img/button_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: 115% 105%;
 	background-origin: padding-box;
-	padding: 0px;
-	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+	border-image: url("img/null.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 }
 
 .tooltip {
 	border-image: url("img/bevel_dark_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	border-style: solid;
-	border-width: 1px 1px 1px 1px;
+	border-width: 1px;
 	color: @tooltip_fg_color;
 }
 

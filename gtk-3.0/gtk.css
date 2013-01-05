@@ -1,5 +1,5 @@
 /* 
- * e-gtk-theme-0.16.4
+ * e-gtk-theme-0.16.5
  * e/gtk-3.0/gtk.css
  */
 
@@ -34,7 +34,6 @@
 * {
 	border-width: 2px;
 	padding: 2px;
-	background-clip: padding-box;
 	background-color: @base_color;
 	background-clip: padding-box;
 	color: @fg_color;
@@ -124,6 +123,7 @@ GtkLabel:insensitive {
 	color: @insensitive_fg_color;
 }
 
+GtkComboBox .separator,
 .seprator,
 .menuitem.separator {
 	color: alpha(@insensitive_fg_color,0.6);
@@ -135,6 +135,11 @@ GtkTreeView row:nth-child(even) {
 
 GtkTreeView row:nth-child(odd) {
 	background-color: @bg_color;
+}
+
+TerminalScreen {
+    background-color: @selected_fg_color;
+    color: @fg_color;
 }
 
 @import url("common.css");
