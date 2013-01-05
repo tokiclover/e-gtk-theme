@@ -4,6 +4,9 @@ Encoding=UTF-8
 Name=e-gtk-theme
 Type=X-GNOME-Metatheme
 Comment=a gtk theme to match enlightenment DR17 default theme
-
+Encoding=UTF-8
 [X-GNOME-Metatheme]
 GtkTheme=e
+MetacityTheme=e
+IconTheme=Faenza
+
