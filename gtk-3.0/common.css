@@ -183,7 +183,7 @@ column-header .button:hover {
 }
 
 .arrow.right:active
-.menu .arrow:active,
+.menuitem > .arrow.right:active,
 .scrollbar.button.right:active {
 	background-image: url("img/sym_right_light_normal.png");
 	background-position: center;
@@ -191,7 +191,7 @@ column-header .button:hover {
 	background-size: auto;
 }
 .arrow.right,
-.menu.button,
+.menuitem > .arrow.right,
 .scrollbar.button.right {
 	background-image: url("img/sym_right_light_normal.png");
 	background-position: center;
@@ -317,7 +317,7 @@ column-header .button:hover {
 
 .menubar {
 	background-color: @bg_color;
-	color: shade(@selected_fg_color,0.96);
+	color: shade(@selected_fg_color,0.76);
 }
 
 .menubar > .menuitem {
@@ -398,18 +398,20 @@ GtkFrame.shadow.etched.out,
 .scrollbar.slider.vertical {
 	background-color: transparent;
 	background-image: url("img/holes_tiny_vert.png"),
-		url("img/slider_vert.png");
-	background-position: center, 0px 1px;
-	background-repeat: no-repeat, no-repeat;
-	background-size: auto, 15px 100%;
+		url("img/slider_vert.png"),
+		url("img/shadow_square_tiny.png");
+	background-position: center, 0px 1px, center;
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-size: auto, 15px 100%, 13px 100%;
 }
 .scrollbar.slider.vertical:hover {
 	background-color: transparent;
 	background-image: url("img/holes_tiny_glow_vert.png"),
-		url("img/slider_vert.png");
-	background-position: center, 0px 1px;
+		url("img/slider_vert.png"),
+		url("img/shadow_square_tiny.png");
+	background-position: center, 0px 1px, center;
 	background-repeat: no-repeat, no-repeat, no-repeat;
-	background-size: auto, 15px 100%;
+	background-size: auto, 15px 100%, 13px 100%;
 }
 .scrollbar.slider.vertical:active {
 	background-color: transparent;
@@ -424,18 +426,20 @@ GtkFrame.shadow.etched.out,
 .scrollbar.slider.horizontal {
 	background-color: transparent;
 	background-image: url("img/holes_tiny_horiz.png"),
-		url("img/slider_horiz.png");
-	background-position: center, 1px 0px;
-	background-repeat: no-repeat, no-repeat;
-	background-size: auto, 100% 15px;
+		url("img/slider_horiz.png"),
+		url("img/shadow_square_tiny.png");
+	background-position: center, 1px 0px, center;
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-size: auto, 100% 15px, 13px 100%;
 }
 .scrollbar.slider.horizontal:hover {
 	background-color: transparent;
 	background-image: url("img/holes_tiny_glow_horiz.png"),
-		url("img/slider_horiz.png");
-	background-position: center, 1px 0px;
-	background-repeat: no-repeat, no-repeat;
-	background-size: auto, 100% 15px;
+		url("img/slider_horiz.png"),
+		url("img/shadow_square_tiny.png");
+	background-position: center, 1px 0px, center;
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-size: auto, 100% 15px, 13px 100%;
 }
 .scrollbar.slider.horizontal:active {
 	background-color: transparent;
