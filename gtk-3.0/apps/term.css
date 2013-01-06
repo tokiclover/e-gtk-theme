@@ -1,0 +1,12 @@
+/*
+ * e/gtk-3.0/apps/term.css
+ */
+
+TerminalScreen {
+    background-color: @selected_fg_color;
+    color: @fg_color;
+}
+
+/*
+ * vim:fenc=utf-8:ft=css:ci:pi:sts=0:sw=4:ts=4:
+ */
