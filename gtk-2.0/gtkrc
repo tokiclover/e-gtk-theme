@@ -1,5 +1,5 @@
 #############################
-# e-gtk-theme-0.16.4        #
+# e-gtk-theme-0.16.5        #
 # e/gtk-2.0/gtkrc           #
 #############################
 
@@ -888,6 +888,9 @@ style "notebook" = "default" {
 			file		= "img/vgrad_med_curved_top.png"
 			border		= {0,0,0,0}
 			stretch		= TRUE
+			overlay_file		= "img/bevel_out.png"
+			overlay_border		= {1,1,1,1}
+			overlay_stretch		= TRUE
 			gap_side	= TOP
 		}
 		image {
@@ -896,25 +899,9 @@ style "notebook" = "default" {
 			file		= "img/vgrad_med_curved.png"
 			border		= {0,0,0,0}
 			stretch		= TRUE
-			gap_side	= BOTTOM
-		}
-		image {
-			function	= EXTENSION
-			detail		= "tab"
-			state		= ACTIVE
-			file		= "img/vgrad_med_curved_right.png"
-			border		= {0,0,0,0}
-			stretch		= TRUE
-			gap_side	= RIGHT
-		}
-		image {
-			function	= EXTENSION
-			detail		= "tab"
-			state		= ACTIVE
-			file		= "img/vgrad_med_curved_left.png"
-			border		= {0,0,0,0}
-			stretch		= TRUE
-			gap_side	= LEFT
+			overlay_file		= "img/bevel_out.png"
+			overlay_border		= {1,1,1,1}
+			overlay_stretch		= TRUE
 		}
 		image {
 			function			= EXTENSION
@@ -922,43 +909,9 @@ style "notebook" = "default" {
 			file				= "img/vgrad_dark.png"
 			border				= {0,0,0,0}
 			stretch				= TRUE
-			overlay_file		= "img/shadow_angled_in_sides_bottom.png"
+			overlay_file		= "img/shadow_angled_in_sides_glow.png"
 			overlay_border		= {0,0,0,4}
 			overlay_stretch		= TRUE
-			gap_side			= BOTTOM
-		}
-		image {
-			function			= EXTENSION
-			detail				= "tab"
-			file				= "img/vgrad_dark_top.png"
-			border				= {0,0,0,0}
-			stretch				= TRUE
-			overlay_file		= "img/shadow_angled_in_sides_top.png"
-			overlay_border		= {0,0,0,8}
-			overlay_stretch		= TRUE
-			gap_side			= TOP
-		}
-		image {
-			function			= EXTENSION
-			detail				= "tab"
-			file				= "img/vgrad_dark_right.png"
-			border				= {0,0,0,0}
-			stretch				= TRUE
-			overlay_file		= "img/shadow_angled_in_sides_right.png"
-			overlay_border		= {0,0,0,8}
-			overlay_stretch		= TRUE
-			gap_side			= RIGHT
-		}
-		image {
-			function			= EXTENSION
-			detail				= "tab"
-			file				= "img/vgrad_dark_left.png"
-			border				= {0,0,0,0}
-			stretch				= TRUE
-			overlay_file		= "img/shadow_angled_in_sides_left.png"
-			overlay_border		= {0,0,0,8}
-			overlay_stretch		= TRUE
-			gap_side			= LEFT
 		}
 	}
 }
