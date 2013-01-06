@@ -490,68 +490,18 @@ GtkFrame.shadow.etched.out,
 	background-size: cover;
 }
 
-.tab.bottom,
-.notebook tab.bottom {
-	padding: 0px;
-	background-image: url("img/vgrad_med_curved_top.png");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-.tab.bottom:active,
-.notebook tab.bottom:active {
-	padding: 0px;
-	background-image: url("img/shadow_angled_in_sides_top.png"),
-		url("img/vgrad_dark_top.png");
-	background-position: center, center;
-	background-repeat: no-repeat, no-repeat;
-	background-size: 100% 100%, 100% 100%;
-}
-
-.tab.left,
-.notebook tab.left {
-	padding: 0px;
-	background-image: url("img/vgrad_med_curved_right.png");
-	background-size: 100% 100%;
-}
-.notebook tab.left:active {
-	padding: 0px;
-	background-image: url("img/shadow_angled_in_sides_right.png"),
-		url("img/vgrad_dark_right.png");
-	background-position: center, center;
-	background-repeat: no-repeat, no-repeat;
-	background-size: 100% 100%, 100% 100%;
-}
-
-.tab.right,
-.notebook tab.right {
-	padding: 0px;
-	background-image: url("img/vgrad_med_curved_left.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-.tab.right:active,
-.notebook tab.right:active {
-	padding: 0px;
-	background-image: url("img/shadow_angled_in_sides_left.png"),
-		url("img/vgrad_dark_left.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-
-.tab.top,
-.notebook tab.top {
+.tab,
+.notebook tab {
 	padding: 0px;
 	background-image: url("img/vgrad_med_curved.png");
-	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
+	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 }
-.tab.top:active,
-.notebook tab.top:active {
+.tab:active,
+.notebook tab:active {
 	padding: 0px;
-	background-image: url("img/shadow_angled_in_sides_bottom.png"),
+	background-image: url("img/shadow_angled_in_sides_glow.png"),
 		url("img/vgrad_dark.png");
 	background-position: center, center;
 	background-repeat: no-repeat, no-repeat;
