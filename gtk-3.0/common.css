@@ -14,7 +14,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 110% 105%;
-	background-origin: padding-box;
+	background-origin: content-box;
 }
 .button:active,
 .button:hover,
@@ -24,7 +24,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 115% 105%;
-	background-origin: padding-box;
+	background-origin: content-box;
 }
 
 column-header .button,
@@ -328,7 +328,7 @@ GtkComboBox .separator,
 }
 
 .menubar > .menuitem {
-	background-image: url("img/shadow_angled_in_sides_bottom.png");
+	background-image: url("img/shadow_angled_in_sides_glow.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
