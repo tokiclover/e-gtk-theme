@@ -1,6 +1,11 @@
-#$Id: e-gtk-theme/ChangeLog, 2013/01/06 01:06:17 -tclover Exp $
+#$Id: e-gtk-theme/ChangeLog, 2013/01/06 09:56:39 -tclover Exp $
+
+0.16.6:
+
+* fixed gtk-2.0/tabs following 0.16.5 version bump;
 
 0.16.5:
+
 * unified tabs;
 * added gtk-3.0/img symlink;
 * fixes and fixes.

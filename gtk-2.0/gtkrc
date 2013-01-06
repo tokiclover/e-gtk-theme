@@ -1,5 +1,5 @@
 #############################
-# e-gtk-theme-0.16.5        #
+# e-gtk-theme-0.16.6        #
 # e/gtk-2.0/gtkrc           #
 #############################
 
@@ -841,14 +841,14 @@ style "menubar" {
 		image {
 			function		= BOX
 			state 			= ACTIVE
-			file			= "img/shadow_angled_in_sides_bottom.png"
+			file			= "img/shadow_angled_in_sides_glow.png"
 			border			= {0,0,4,4}
 			stretch			= TRUE
 		}
 		image {
 			function		= BOX
 			state 			= PRELIGHT
-			file			= "img/shadow_angled_in_sides_bottom.png"
+			file			= "img/shadow_angled_in_sides_glow.png"
 			border			= {0,0,4,4}
 			stretch			= TRUE
 		}
@@ -885,13 +885,13 @@ style "notebook" = "default" {
 		image {
 			function	= EXTENSION
 			state		= ACTIVE
-			file		= "img/vgrad_med_curved_top.png"
+			file		= "img/vgrad_med_curved.png"
 			border		= {0,0,0,0}
 			stretch		= TRUE
-			overlay_file		= "img/bevel_out.png"
-			overlay_border		= {1,1,1,1}
-			overlay_stretch		= TRUE
 			gap_side	= TOP
+			overlay_file	= "img/bevel_out.png"
+			overlay_border	= {1,1,1,1}
+			overlay_stretch	= TRUE
 		}
 		image {
 			function	= EXTENSION
