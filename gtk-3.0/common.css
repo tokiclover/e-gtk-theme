@@ -56,7 +56,7 @@ column-header .button:hover {
 	background-image: url("img/inset_shadow_square_tiny.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 11px 11px;
 }
 
 .check:active,
@@ -64,7 +64,7 @@ column-header .button:hover {
 	background-image: url("img/inset_shadow_square_tiny_in.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 11px 11px;
 }
 
 .combobox.button {
@@ -75,12 +75,18 @@ column-header .button:hover {
 }
 
 
-.radio,
-.radio:insensitive {
+.radio {
 	background-image: url("img/inset_shadow_circle_tiny.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: 13px 13px;
+}
+
+.radio:insensitive {
+	background-image: url("img/inset_shadow_circle_tiny_ins.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 13px 13px;
 }
 
 .radio:hover,
@@ -88,7 +94,7 @@ column-header .button:hover {
 	background-image: url("img/inset_shadow_circle_tiny_in.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: 13px 13px;
 }
 
 .scrollbar.button,
