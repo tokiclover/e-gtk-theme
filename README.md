@@ -1,4 +1,4 @@
-`$Id: e-gtk-theme/README.md, 2013/01/10 13:02:33 -tclover Exp $`
+`$Id: e-gtk-theme/README.md, 2013/01/10 17:50:50 -tclover Exp $`
 
 ---
 
@@ -45,6 +45,8 @@ use two images for th trough and then... the rendered object is ugly;
 * fix for/background and text color in icon view (text has the same color as the background),
 pcmanfm has this issue but nothing found to fix it;
 * get outlined slider when pressed? (tried already but nothing different is rendered);
+* get GtkNotebook background in @base_color? but how? bg[ACTIVE|SELECTES|NORMAL] does
+not work at all;
 
 ## gtk+-3 specific:
 
