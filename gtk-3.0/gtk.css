@@ -1,5 +1,5 @@
 /* 
- * e-gtk-theme-0.16.5
+ * e-gtk-theme-0.16.7
  * e/gtk-3.0/gtk.css
  */
 
@@ -101,41 +101,29 @@
 }
 
 GtkImage,
-GtkLabel {
-	background-color: transparent;
-}
-
-GtkImage {
-	color: @selected_fg_color;
-}
+GtkLabel { background-color: transparent }
+GtkImage { color: @selected_fg_color }
 
 GtkImage:active,
 GtkImage:hover,
 GtkImage:selected,
 GtkLabel:active,
 GtkLabel:hover,
-GtkLabel:selected {
-	color: @selected_bg_color;
-}
+GtkLabel:selected { color: @selected_bg_color }
 
 GtkImage:insensitive,
-GtkLabel:insensitive {
-	color: @insensitive_fg_color;
-}
+GtkLabel:insensitive { color: @insensitive_fg_color }
 
 GtkComboBox .separator,
 .seprator,
-.menuitem.separator {
-	color: alpha(@insensitive_fg_color,0.6);
-}
+.menuitem.separator { color: alpha(@bg_color,0.65) }
 
-GtkTreeView row:nth-child(even) {
-	background-color: @base_color;
-}
+GtkTreeView row:nth-child(even) { background-color: @base_color }
+GtkTreeView row:nth-child(odd) { background-color: @bg_color }
 
-GtkTreeView row:nth-child(odd) {
-	background-color: @bg_color;
-}
+GtkDialog { background-color: @base_color }
+
+GtkPaned { background-color: transparent }
 
 @import url("common.css");
 @import url("apps/term.css");

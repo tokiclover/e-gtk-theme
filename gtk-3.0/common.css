@@ -1,11 +1,9 @@
 /* 
- * e-gtk-theme-0.16.5
+ * e-gtk-theme-0.16.7
  * e/gtk-3.0/common.css
  */
 
-.background {
-	background-color: @bg_color;
-}
+.background { background-color: @bg_color }
 
 .button,
 .button:prelight {
@@ -254,7 +252,7 @@ column-header .button:hover {
 	background-color: shade(@bg_color,0.86);
 	border-width: 1px;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
-	box-shadow: inset 1px 1px 2px 2px shade(@bg_color,0.66);
+	box-shadow: inset 0px 0px 2px 2px shade(@bg_color,0.76);
 	padding: 2px;
 }
 
@@ -276,11 +274,10 @@ column-header .button:hover {
 	padding: 2px;
 }
 
-
 .pane-separator.horizontal,
 .handle.horizontal {
-	background-color: @bg_color;
-	background-image: url("img/holes_vert.png");
+	background-color: transparent;
+	background-image: url("img/holes_tiny_vert.png");
 	background-origin: border-box;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -289,8 +286,8 @@ column-header .button:hover {
 GtkComboBox .separator,
 .pane-separator.vertical,
 .handle.vertical {
-	background-color: @bg_color;
-	background-image: url("img/holes_horiz.png");
+	background-color: transparent;
+	background-image: url("img/holes_tiny_horiz.png");
 	background-origin: border-box;
 	background-repeat: no-repeat;
 	background-size: auto;
@@ -478,16 +475,83 @@ GtkFrame.shadow.etched.out,
 }
 
 .notebook {
-	border-width: 1px;
-	background-color: alpha(@bg_color,0.6);
-	padding: 0px;
+	background-image: url("img/runner_glow_horiz.png"), url("img/runner_glow_horiz.png"),
+		url("img/runner_glow_vert.png"), url("img/runner_glow_vert.png");
+	background-position: center top, center bottom, left center, right center;
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+	background-size: 100% 1px, 100% 1px, 1px 100%, 1px 100%;
 }
 
-.notebook gap* {
-	background-color: alpha(@bg_color,0.6);
-	background-image: url("img/frame_gap.png");
+.tab.top,
+.notebook tab.top {
+	padding: 0px;
+	background-image: url("img/vgrad_med_curved.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
+	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+}
+.tab.top:active,
+.notebook tab.top:active {
+	padding: 0px;
+	background-image: url("img/shadow_angled_in_sides_glow.png"),
+		url("img/vgrad_dark.png");
+	background-position: center, center;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 100% 100%, 100% 100%;
+}
+
+tab.right,
+.notebook tab.right {
+	padding: 0px;
+	background-image: url("img/vgrad_med_curved_left.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+}
+.tab.right:active,
+.notebook tab.right:active {
+	padding: 0px;
+	background-image: url("img/shadow_angled_in_sides_left.png"),
+		url("img/vgrad_dark_left.png");
+	background-position: center, center;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 110% 100%, 100% 100%;
+}
+
+.tab.left,
+.notebook tab.left {
+	padding: 0px;
+	background-image: url("img/vgrad_med_curved_right.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+}
+.tab.left:active,
+.notebook tab.left:active {
+	padding: 0px;
+	background-image: url("img/shadow_angled_in_sides_right.png"),
+		url("img/vgrad_dark_right.png");
+	background-position: center, center;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 100% 100%, 100% 100%;
+}
+
+.tab.bottom,
+.notebook tab.bottom {
+	padding: 0px;
+	background-image: url("img/vgrad_med_curved_top.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+}
+.tab.bottom:active,
+.notebook tab.bottom:active {
+	padding: 0px;
+	background-image: url("img/shadow_angled_in_sides_top.png"),
+		url("img/vgrad_dark_top.png");
+	background-position: center, center;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 100% 100%, 100% 100%;
 }
 
 .tab,
@@ -506,6 +570,15 @@ GtkFrame.shadow.etched.out,
 	background-position: center, center;
 	background-repeat: no-repeat, no-repeat;
 	background-size: 100% 100%, 100% 100%;
+}
+
+.switch > .button {
+	background-color: transparent;
+	background-image: url("img/tasklist_button_normal.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-origin: content-box;
 }
 
 .toolbar {
