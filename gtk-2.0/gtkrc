@@ -867,7 +867,7 @@ style "notebook" = "default" {
 	xthickness = 1
 	ythickness = 1
 
-	text[NORMAL] = @selected_bg_color
+	text[ACTIVE] = @selected_bg_color
 
 	engine "pixmap" {
 		image {
@@ -1048,10 +1048,6 @@ style "ruler" = "default" {
 }
 
 style "handlebox" = "default" {
-
-	base[NORMAL]	= shade(0.76,@base_color)
-	bg[NORMAL]		= shade(0.76,@bg_color)
-	fg[NORMAL]		= shade(0.76,@fg_color)
 
 	engine "pixmap" {
 		image {
