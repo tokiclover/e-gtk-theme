@@ -1,4 +1,10 @@
-#$Id: e-gtk-theme/ChangeLog, 2013/01/06 09:56:39 -tclover Exp $
+#$Id: e-gtk-theme/ChangeLog, 2013/01/10 12:57:41 -tclover Exp $
+
+0.16.7:
+
+* reverted unified tabs (left/right/top tabs were more than awfull);
+* GtkNotebook update (gtk+-3 notebook page focus is nice(?), cannot do the
+same for gtk+-2), now bottom tabs (for upper notebook pages) aren't that nice.
 
 0.16.6:
 
@@ -13,7 +19,9 @@
 0.16.3:
 
 * gtk+-2: fixed notebook tab images; minor fixes/edits/update;
-* gtk+-3: major updates/edits/fixes; remain: GtkComboBox, GtkSpinButton, GtkEntry to name the major widgets and how to globally define GtkShadowType and GtkArrow globaly.
+* gtk+-3: major updates/edits/fixes; remain: GtkComboBox, GtkSpinButton,
+GtkEntry to name the major widgets and how to globally define GtkShadowType
+and GtkArrow globaly.
 
 0.16.2:
 
