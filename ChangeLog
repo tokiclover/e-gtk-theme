@@ -1,11 +1,13 @@
-#$Id: e-gtk-theme/ChangeLog, 2013/01/10 17:52:47 -tclover Exp $
+#$Id: e-gtk-theme/ChangeLog, 2013/01/10 18:52:54 -tclover Exp $
 
 0.16.7:
 
 * reverted unified tabs (left/right/top tabs were more than awfull);
 * GtkNotebook update (gtk+-3 notebook page focus is nice(?), cannot do the
-same for gtk+-2), now bottom tabs (for upper notebook pages) aren't that nice.
+same for gtk+-2), now bottom tabs (for upper notebook pages) aren't that nice;
 * added metacity and start-here.pngg forgetted image files;
+* fixed base color definitions (thanks to a. özkan for reporting),
+normaly >=gtk+-2.12 (iirc) shoud support `; ' instead of `\n';
 
 0.16.6:
 
