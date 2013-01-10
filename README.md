@@ -1,4 +1,4 @@
-`$Id: e-gtk-theme/README.md, 2013/01/01 18:43:17 -tclover Exp $`
+`$Id: e-gtk-theme/README.md, 2013/01/10 13:02:33 -tclover Exp $`
 
 ---
 
@@ -53,15 +53,19 @@ pcmanfm has this issue but nothing found to fix it;
 have too much shadow (using tasklist_button_*) for now, CSS background multilayers
 should be fully supported for that (especialy *background-position: bottom -8p
 top -6px left -1px right -2px*);
-* how to remove the extra stock insensitiv arrow?;
+* how to remove the extra stock insensitive arrow?;
 * insensitive check and radio images get lost somewhere...;
-* have no idea how to define GtkShadowType (shadow_{,etched_}{in,out});
-* have no idea how to define GtkArrow globally, do not wanna fucking define every single arrow;
+* have no idea how to define GtkShadowType (shadow_{,etched_}{in,out}),
+well it seems to not work at all (have to define every fucking frame);
+* have no idea how to define GtkArrow globally, it seems to not work at all
+(do not wanna fucking define every single arrow);
 
 ## both major versions specific:
 
 * scalling slider_[horiz,vert].png is no good, too much shadow with big sliders;
 * cannot user runner glow into trough details;
+* i'd like the idea to add a menu like (beve[|shadow]_out) frame for GtkPaned
+childs: gtk+-2 is undoable and gtk+-3 is not that easy (spent dosen of minutes on it);
 
 PS: an ebuild is available in my overlay (on github) for gentoo users.
 
