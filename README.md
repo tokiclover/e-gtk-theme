@@ -1,4 +1,4 @@
-`$Id: e-gtk-theme/README.md, 2013/01/10 17:50:50 -tclover Exp $`
+`$Id: e-gtk-theme/README.md, 2013/01/11 14:55:35 -tclover Exp $`
 
 ---
 
@@ -29,7 +29,12 @@ dependent engine theme. They should just respect the user choice!
 * better tabs (notebook) image?;
 * better media buttons;
 * improve panel buttons?;
-* finish gtk+-3 theme (need documentation), coming...;
+* finish gtk+-3 theme (need documentation), coming... (gtk+-3 grows to be much more
+better than gtk+-2 counterpart);
+
+`Note`: i will try to migrate pixmap engine, as an exercise to improve my c capabilities,
+to be able to theme almost everything with images. help needed...
+
 * convert close, maximize... image to 6x6px X bitmap images for openbox;
 * improve metacity heme (I had enough of it despite metacity drawigs capabilities);
 * improve openbox menu (gradient);
@@ -61,6 +66,7 @@ top -6px left -1px right -2px*);
 well it seems to not work at all (have to define every fucking frame);
 * have no idea how to define GtkArrow globally, it seems to not work at all
 (do not wanna fucking define every single arrow);
+* how to make background transparent for check,radio label?
 
 ## both major versions specific:
 
