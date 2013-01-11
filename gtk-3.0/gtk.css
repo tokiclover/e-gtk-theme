@@ -1,5 +1,5 @@
 /* 
- * e-gtk-theme-0.16.7
+ * e-gtk-theme-0.16.8
  * e/gtk-3.0/gtk.css
  */
 
@@ -118,11 +118,33 @@ GtkComboBox .separator,
 .seprator,
 .menuitem.separator { color: alpha(@bg_color,0.65) }
 
-GtkTreeView row:nth-child(even) { background-color: @base_color }
-GtkTreeView row:nth-child(odd) { background-color: @bg_color }
+GtkTreeView row:nth-child(even) {
+	background-color: shade(@base_color,0.96);
+	background-image: url("img/separator_horiz.png");
+	background-origin: border-box;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100% 2px;
+}
+GtkTreeView row:nth-child(odd) {
+	background-color: shade(@bg_color,1.04);
+	background-image: url("img/separator_horiz.png");
+	background-origin: border-box;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100% 2px;
+}
+GtkTreeView row:selected {
+	background-image: url("img/vgrad_dark.png");
+	background-origin: border-box;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+	color: @selected_bg_color;
+}
 
 GtkDialog { background-color: @base_color }
-
 GtkPaned { background-color: transparent }
 
 @import url("common.css");

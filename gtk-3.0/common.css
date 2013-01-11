@@ -1,5 +1,5 @@
 /* 
- * e-gtk-theme-0.16.7
+ * e-gtk-theme-0.16.8
  * e/gtk-3.0/common.css
  */
 
@@ -12,7 +12,8 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 110% 105%;
-	background-origin: content-box;
+	background-origin: padding-box;
+	border-image: url("img/null.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 }
 .button:active,
 .button:hover,
@@ -22,35 +23,35 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 115% 110%;
-	background-origin: content-box;
+	background-origin: padding-box;
+	border-image: url("img/null.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 }
 
 column-header .button,
 column-header .button:insensitive {
-	background-image: url("img/vgrad_med_curved.png");
-	background-position: center;
+	background-image: url("img/holes_tiny_vert.png"), url("img/holes_tiny_vert.png"),
+		url("img/vgrad_med_curved.png");
+	background-origin: content-box, content-box, border-box;
+	background-position: left center, right center, center;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: auto, auto, 100% 100%;
 	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
-	border-width: 0px;
-	padding: 0px;
 }
-
-GtkTreeView row:selected,
 column-header .button:active,
 column-header .button:hover {
-	background-image: url("img/vgrad_dark.png");
+	background-image: url("img/holes_tiny_vert.png"), url("img/holes_tiny_vert.png"),
+		url("img/vgrad_dark.png");
+	background-origin: content-box, content-box, border-box;
+	background-position: left center, right center, center;
 	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100% 100%;
+	background-size: auto, auto, 100% 100%;
 	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
-	border-width: 0px;
 	color: @selected_bg_color;
-	padding: 0px;
 }
 
 .check,
 .check:insensitive {
+	background-color: transparent;
 	background-image: url("img/inset_shadow_square_tiny.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -59,6 +60,7 @@ column-header .button:hover {
 
 .check:active,
 .check:hover {
+	background-color: transparent;
 	background-image: url("img/inset_shadow_square_tiny_in.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -74,6 +76,7 @@ column-header .button:hover {
 
 
 .radio {
+	background-color: transparent;
 	background-image: url("img/inset_shadow_circle_tiny.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -81,6 +84,7 @@ column-header .button:hover {
 }
 
 .radio:insensitive {
+	background-color: transparent;
 	background-image: url("img/inset_shadow_circle_tiny_ins.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -89,6 +93,7 @@ column-header .button:hover {
 
 .radio:hover,
 .radio:active {
+	background-color: transparent;
 	background-image: url("img/inset_shadow_circle_tiny_in.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -130,6 +135,7 @@ column-header .button:hover {
 
 .arrow.up,
 .scrollbar.button.top {
+	background-color: transparent;
 	background-image: url("img/sym_up_light_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -137,6 +143,7 @@ column-header .button:hover {
 }
 .arrow.up:hover,
 .scrollbar.button.top:hover {
+	background-color: transparent;
 	background-image: url("img/sym_up_glow_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -144,6 +151,7 @@ column-header .button:hover {
 }
 .arrow.up:active,
 .scrollbar.button.top:active {
+	background-color: transparent;
 	background-image: url("img/sym_up_dark_selected.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -151,6 +159,7 @@ column-header .button:hover {
 }
 .arrow.up:insensitive,
 .scrollbar.button.top:insensitive {
+	background-color: transparent;
 	background-image: url("img/sym_up_dark_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -159,6 +168,7 @@ column-header .button:hover {
 
 .arrow.down,
 .scrollbar.button.bottom {
+	background-color: transparent;
 	background-image: url("img/sym_down_light_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -166,6 +176,7 @@ column-header .button:hover {
 }
 .arrow.down:hover,
 .scrollbar.button.bottom:hover {
+	background-color: transparent;
 	background-image: url("img/sym_down_glow_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -173,6 +184,7 @@ column-header .button:hover {
 }
 .arrow.down:active,
 .scrollbar.button.bottom:active {
+	background-color: transparent;
 	background-image: url("img/sym_down_dark_selected.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -180,6 +192,7 @@ column-header .button:hover {
 }
 .arrow.down:insensitive,
 .scrollbar.button.bottom:insensitive {
+	background-color: transparent;
 	background-image: url("img/sym_down_dark_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -189,6 +202,7 @@ column-header .button:hover {
 .arrow.right:active,
 .menuitem.arrow:active,
 .scrollbar.button.right:active {
+	background-color: transparent;
 	background-image: url("img/sym_right_light_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -197,6 +211,7 @@ column-header .button:hover {
 .arrow.right,
 .menuitem.arrow,
 .scrollbar.button.right {
+	background-color: transparent;
 	background-image: url("img/sym_right_light_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -205,6 +220,7 @@ column-header .button:hover {
 .arrow.right:hover,
 .menuitem.arrow:hover,
 .scrollbar.button.right:hover {
+	background-color: transparent;
 	background-image: url("img/sym_right_glow_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -213,6 +229,7 @@ column-header .button:hover {
 .arrow.right:insensitive,
 .menuitem.arrow:insensitive,
 .scrollbar.button.right:insensitive {
+	background-color: transparent;
 	background-image: url("img/sym_right_dark_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -221,6 +238,7 @@ column-header .button:hover {
 
 .arrow.left,
 .scrollbar.button.left {
+	background-color: transparent;
 	background-image: url("img/sym_left_light_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -228,6 +246,7 @@ column-header .button:hover {
 }
 .arrow.left:active
 .scrollbar.button.left:active {
+	background-color: transparent;
 	background-image: url("img/sym_left_dark_selected.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -235,6 +254,7 @@ column-header .button:hover {
 }
 .arrow.left:hover,
 .scrollbar.button.left:hover {
+	background-color: transparent;
 	background-image: url("img/sym_left_glow_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -242,6 +262,7 @@ column-header .button:hover {
 }
 .arrow.left:insensitive,
 .scrollbar.button.left:insensitive {
+	background-color: transparent;
 	background-image: url("img/sym_left_dark_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -475,11 +496,24 @@ GtkFrame.shadow.etched.out,
 }
 
 .notebook {
+	background-color: shade(@base_color,0.88);
+	background-image: url("img/vgrad_med_curved.png");
+	background-origin: border-box;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100% 15px;
+	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+}
+.notebook:active,
+.notebook:focus {
 	background-image: url("img/runner_glow_horiz.png"), url("img/runner_glow_horiz.png"),
-		url("img/runner_glow_vert.png"), url("img/runner_glow_vert.png");
-	background-position: center top, center bottom, left center, right center;
-	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-	background-size: 100% 1px, 100% 1px, 1px 100%, 1px 100%;
+		url("img/runner_glow_vert.png"), url("img/runner_glow_vert.png"),
+		url("img/vgrad_med_curved.png");
+	background-origin: padding-box; padding-box, padding-box, padding-box, border-box;
+	background-position: center top, center bottom, left center, right center, center top;
+	background-repeat: no-repeat;
+	background-size: 100% 1px, 100% 1px, 1px 100%, 1px 100%, 100% 15px;
+	border-width: 1px;
 }
 
 .tab.top,
