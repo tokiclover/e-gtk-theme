@@ -1,5 +1,4 @@
-/* 
- * e-gtk-theme-0.16.8
+/* e-gtk-theme-0.16.8
  * e/gtk-3.0/common.css
  */
 
@@ -135,6 +134,7 @@ column-header .button:hover {
 
 .arrow.up,
 .scrollbar.button.top {
+	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_up_light_normal.png");
 	background-position: center;
@@ -143,6 +143,7 @@ column-header .button:hover {
 }
 .arrow.up:hover,
 .scrollbar.button.top:hover {
+	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_up_glow_normal.png");
 	background-position: center;
@@ -151,6 +152,7 @@ column-header .button:hover {
 }
 .arrow.up:active,
 .scrollbar.button.top:active {
+	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_up_dark_selected.png");
 	background-position: center;
@@ -159,6 +161,7 @@ column-header .button:hover {
 }
 .arrow.up:insensitive,
 .scrollbar.button.top:insensitive {
+	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_up_dark_normal.png");
 	background-position: center;
@@ -168,6 +171,7 @@ column-header .button:hover {
 
 .arrow.down,
 .scrollbar.button.bottom {
+	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_down_light_normal.png");
 	background-position: center;
@@ -176,6 +180,7 @@ column-header .button:hover {
 }
 .arrow.down:hover,
 .scrollbar.button.bottom:hover {
+	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_down_glow_normal.png");
 	background-position: center;
@@ -184,6 +189,7 @@ column-header .button:hover {
 }
 .arrow.down:active,
 .scrollbar.button.bottom:active {
+	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_down_dark_selected.png");
 	background-position: center;
@@ -192,6 +198,7 @@ column-header .button:hover {
 }
 .arrow.down:insensitive,
 .scrollbar.button.bottom:insensitive {
+	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_down_dark_normal.png");
 	background-position: center;
@@ -202,6 +209,7 @@ column-header .button:hover {
 .arrow.right:active,
 .menuitem.arrow:active,
 .scrollbar.button.right:active {
+	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_right_light_normal.png");
 	background-position: center;
@@ -211,6 +219,7 @@ column-header .button:hover {
 .arrow.right,
 .menuitem.arrow,
 .scrollbar.button.right {
+	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_right_light_normal.png");
 	background-position: center;
@@ -220,6 +229,7 @@ column-header .button:hover {
 .arrow.right:hover,
 .menuitem.arrow:hover,
 .scrollbar.button.right:hover {
+	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_right_glow_normal.png");
 	background-position: center;
@@ -229,6 +239,7 @@ column-header .button:hover {
 .arrow.right:insensitive,
 .menuitem.arrow:insensitive,
 .scrollbar.button.right:insensitive {
+	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_right_dark_normal.png");
 	background-position: center;
@@ -238,6 +249,7 @@ column-header .button:hover {
 
 .arrow.left,
 .scrollbar.button.left {
+	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_left_light_normal.png");
 	background-position: center;
@@ -246,6 +258,7 @@ column-header .button:hover {
 }
 .arrow.left:active
 .scrollbar.button.left:active {
+	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_left_dark_selected.png");
 	background-position: center;
@@ -254,6 +267,7 @@ column-header .button:hover {
 }
 .arrow.left:hover,
 .scrollbar.button.left:hover {
+	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_left_glow_normal.png");
 	background-position: center;
@@ -262,6 +276,7 @@ column-header .button:hover {
 }
 .arrow.left:insensitive,
 .scrollbar.button.left:insensitive {
+	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_left_dark_normal.png");
 	background-position: center;
@@ -353,6 +368,10 @@ GtkComboBox .separator,
 	background-origin: border-box;
 }
 
+.progessbar {
+	background-color: @selected_fg_color;
+}
+
 .scale.slider {
 	background-color: transparent;
 	background-image: url("img/knob_sz_14.png");
@@ -384,7 +403,6 @@ GtkComboBox .separator,
 	background-origin: content-box, content-box;
 	padding: 0px 0px;
 }
-
 
 GtkFrame.shadow.in,
 GtkFrame.shadow.etched.in,
@@ -496,9 +514,9 @@ GtkFrame.shadow.etched.out,
 }
 
 .notebook {
-	background-color: shade(@base_color,0.88);
+	background-color: shade(@base_color,0.90);
 	background-image: url("img/vgrad_med_curved.png");
-	background-origin: border-box;
+	background-origin: padding-box;
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: 100% 15px;
@@ -509,7 +527,7 @@ GtkFrame.shadow.etched.out,
 	background-image: url("img/runner_glow_horiz.png"), url("img/runner_glow_horiz.png"),
 		url("img/runner_glow_vert.png"), url("img/runner_glow_vert.png"),
 		url("img/vgrad_med_curved.png");
-	background-origin: padding-box; padding-box, padding-box, padding-box, border-box;
+	background-origin: padding-box;
 	background-position: center top, center bottom, left center, right center, center top;
 	background-repeat: no-repeat;
 	background-size: 100% 1px, 100% 1px, 1px 100%, 1px 100%, 100% 15px;

@@ -116,7 +116,7 @@ GtkLabel:insensitive { color: @insensitive_fg_color }
 
 GtkComboBox .separator,
 .seprator,
-.menuitem.separator { color: alpha(@bg_color,0.65) }
+.menuitem.separator { color: alpha(@bg_color,0.55) }
 
 GtkTreeView row:nth-child(even) {
 	background-color: shade(@base_color,0.96);
