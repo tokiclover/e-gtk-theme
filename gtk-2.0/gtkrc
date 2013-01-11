@@ -1,5 +1,5 @@
 #############################
-# e-gtk-theme-0.16.7        #
+# e-gtk-theme-0.16.8        #
 # e/gtk-2.0/gtkrc           #
 #############################
 
@@ -101,13 +101,13 @@ style "default" {
 
 		image {
 			function		= HANDLE
-			overlay_file	= "/img/holes_horiz.png"
+			overlay_file	= "img/holes_horiz.png"
 			overlay_stretch	= FALSE
 			orientation		= HORIZONTAL
 		}
 		image {
 			function		= HANDLE
-			overlay_file	= "/img/holes_vert.png"
+			overlay_file	= "img/holes_vert.png"
 			overlay_stretch	= FALSE
 			orientation		= VERTICAL
 		}
@@ -245,17 +245,17 @@ style "default" {
 			function		= RESIZE_GRIP
 			recolorable		= TRUE
 			detail			= "statusbar"
-			overlay_file	= "img/hole_tiny.png"
+			overlay_file	= "img/hole_pixel.png"
 			overlay_border	= {0,0,0,0}
 			overlay_stretch	= FALSE
 		}
 
 		image {
-			function	= SHADOW
-			shadow		= IN
-			file		= "img/bevel_in.png"
-			border		= {1,1,1,1}
-			stretch		= TRUE
+			function		= SHADOW
+			shadow			= IN
+			file			= "img/bevel_in.png"
+			border			= {1,1,1,1}
+			stretch			= TRUE
 			overlay_file	= "img/inset_shadow.png"
 			overlay_border	= {2,2,2,2}
 			overlay_stretch	= TRUE
@@ -293,11 +293,14 @@ style "default" {
 		}
 
 		image {
-			function	= FLAT_BOX
-			state		= SELECTED
-			file		= "img/vgrad_dark.png"
-			border		= {0,0,0,0}
-			stretch		= TRUE
+			function		= FLAT_BOX
+			state			= SELECTED
+			file			= "img/vgrad_dark.png"
+			border			= {0,0,0,0}
+			stretch			= TRUE
+			overlay_file	= "img/bevel_out.png"
+			overlay_border	= {1,2,1,1}
+			overlay_stretch	= TRUE
 		}
 	}
 }
@@ -1088,10 +1091,10 @@ style "layout" = "default" {
 
 style "list-header" {
 
-	GtkTreeView::expander_size	= 13
-	GtkExpander::expander_size	= 13
-	GtkTreeView::odd_row_color 	= @base_color
-	GtkTreeView::even_row_color = @bg_color
+	GtkTreeView::expander-size	= 13
+	GtkExpander::expander-size	= 13
+	GtkTreeView::odd-row-color	= @base_color
+	GtkTreeView::even-row-color	= @bg_color
 
 	engine "pixmap" {
 		image {
