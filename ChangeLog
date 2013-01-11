@@ -1,9 +1,10 @@
-#$Id: e-gtk-theme/ChangeLog, 2013/01/11 14:55:31 -tclover Exp $
+#$Id: e-gtk-theme/ChangeLog, 2013/01/11 15:01:15 -tclover Exp $
 
 0.16.8:
 
 * fix: added tab images (forgoten from previous bug fix release);
 * improved gtk+-3 GtkNotebook and GtkTreeView;
+* added adwaita engine dependency to fix insensitive arrows for now;
 
 0.16.7:
 
