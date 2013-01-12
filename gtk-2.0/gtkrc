@@ -1,5 +1,5 @@
 #############################
-# e-gtk-theme-0.16.8        #
+# e-gtk-theme-0.16.9        #
 # e/gtk-2.0/gtkrc           #
 #############################
 
@@ -696,7 +696,7 @@ style "scrollbar" = "default" {
 
 style "progressbar" {
 
-	bg[NORMAL] 	= @base_color
+	bg[NORMAL] 	= @bg_color
 	bg[SELECTED]= @selected_bg_color
 
 	xthickness 	= 1
@@ -706,19 +706,34 @@ style "progressbar" {
 		image {
 			function	= BOX
 			detail		= "trough"
-			file		= "img/vgrad_med_dark.png"
-			border		= {0,0,0,0}
+			file		= "img/progressbar_run_horiz.png"
+			border		= {0,0,1,1}
 			stretch		= TRUE
-			overlay_file	= "img/bevel_out.png"
-			overlay_border	= {1,2,1,1}
-			overlay_stretch	= TRUE
+			orientation	= HORIZONTAL
 		}
 		image {
 			function	= BOX
 			detail		= "bar"
-			file		= "img/progress_bar.png"
-			border		= {2,2,0,0}
-			stretch		= FALSE
+			file		= "img/progressbar_runner_horiz.png"
+			border		= {0,0,1,1}
+			stretch		= TRUE
+			orientation	= HORIZONTAL
+		}
+		image {
+			function	= BOX
+			detail		= "trough"
+			file		= "img/progressbar_run_vert.png"
+			border		= {0,0,1,1}
+			stretch		= TRUE
+			orientation	= VERTICAL
+		}
+		image {
+			function	= BOX
+			detail		= "bar"
+			file		= "img/progressbar_runner_vert.png"
+			border		= {0,0,1,1}
+			stretch		= TRUE
+			orientation	= VERTICAL
 		}
 	}
 }
