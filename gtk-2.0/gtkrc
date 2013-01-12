@@ -1,5 +1,5 @@
 #############################
-# e-gtk-theme-0.16.9        #
+# e-gtk-theme-0.16.10       #
 # e/gtk-2.0/gtkrc           #
 #############################
 
@@ -268,7 +268,7 @@ style "default" {
 			function		= EXPANDER
 			expander_style	= EXPANDED
 			state			= ACTIVE
-			file			= "img/sym_down_dark_selcted.png"
+			file			= "img/sym_down_dark_selected.png"
 			border			= {2,2,2,2}
 			stretch			= TRUE
 		}
@@ -950,7 +950,7 @@ style "menubar" {
 style "notebook" = "default" {
 
 	xthickness = 1
-	ythickness = 1
+	ythickness = 0
 
 	text[ACTIVE] = @selected_bg_color
 
@@ -959,9 +959,12 @@ style "notebook" = "default" {
 			function		= BOX_GAP
 			detail			= "notebook"
 			shadow			= OUT
-			file			= "img/null.png"
-			border			= {0,0,0,0}
+			file			= "img/menu.png"
+			border			= {2,2,2,2}
 			stretch			= TRUE
+			overlay_file	= "img/bevel_out.png"
+			overlay_border	= {0,0,0,0}
+			overlay_stretch	= TRUE
 			gap_side		= BOTTOM
 			gap_start_file	= "img/frame_horiz_start.png"
 			gap_start_border= {0,0,0,0}
@@ -972,9 +975,12 @@ style "notebook" = "default" {
 			function		= BOX_GAP
 			detail			= "notebook"
 			shadow			= OUT
-			file			= "img/null.png"
-			border			= {0,0,0,0}
+			file			= "img/menu.png"
+			border			= {2,2,2,2}
 			stretch			= TRUE
+			overlay_file	= "img/bevel_out.png"
+			overlay_border	= {0,0,0,0}
+			overlay_stretch	= TRUE
 			gap_side		= TOP
 			gap_start_file	= "img/frame_horiz_start.png"
 			gap_start_border= {0,0,0,0}
@@ -985,9 +991,12 @@ style "notebook" = "default" {
 			function		= BOX_GAP
 			detail			= "notebook"
 			shadow			= OUT
-			file			= "img/null.png"
-			border			= {0,0,0,0}
+			file			= "img/menu.png"
+			border			= {2,2,2,2}
 			stretch			= TRUE
+			overlay_file	= "img/bevel_out.png"
+			overlay_border	= {0,0,0,0}
+			overlay_stretch	= TRUE
 			gap_side		= RIGHT
 			gap_start_file	= "img/frame_vert_end.png"
 			gap_start_border= {0,0,0,0}
@@ -998,9 +1007,12 @@ style "notebook" = "default" {
 			function		= BOX_GAP
 			detail			= "notebook"
 			shadow			= OUT
-			file			= "img/null.png"
-			border			= {0,0,0,0}
+			file			= "img/menu.png"
+			border			= {2,2,2,2}
 			stretch			= TRUE
+			overlay_file	= "img/bevel_out.png"
+			overlay_border	= {0,0,0,0}
+			overlay_stretch	= TRUE
 			gap_side		= LEFT
 			gap_start_file	= "img/frame_vert_end.png"
 			gap_start_border= {0,0,0,0}
@@ -1093,6 +1105,15 @@ style "notebook" = "default" {
 			gap_side		= TOP
 			overlay_file	= "img/shadow_angled_in_sides_top.png"
 			overlay_border	= {0,0,0,4}
+			overlay_stretch	= TRUE
+		}
+		image {
+			function		= BOX
+			file			= "img/menu.png"
+			border			= {2,2,2,2}
+			stretch			= TRUE
+			overlay_file	= "img/bevel_out.png"
+			overlay_border	= {1,1,1,1}
 			overlay_stretch	= TRUE
 		}
 	}
@@ -1201,15 +1222,16 @@ style "list-header" {
 			stretch 	= TRUE
 			overlay_file ="img/bevel_out.png"
 			overlay_stretch = TRUE
-			overlay_border = {1,2,1,1}
+			overlay_border = {1,1,1,1}
 		}
 	}
 }
 
-widget_class "*List" style "list-header"
-widget_class "*GtkTree*" style "list-header"
-widget_class "*GtkCList*" style "list-header"
+widget_class "GtkList" style "list-header"
+widget_class "GtkTree" style "list-header"
+widget_class "GtkCList" style "list-header"
 widget_class "*Tree*" style "list-header"
+class "GtkItem" style "list-header"
 
 # Sodipodi bug
 style "unstyle" {
