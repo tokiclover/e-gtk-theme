@@ -22,6 +22,13 @@ style "default" {
 	GtkButton::default-border			= {0,0,0,0}
 	GtkButton::default-outside-border	= {0,0,0,0}
 
+	GtkTreeView::odd-row-color			= @base_color
+	GtkTreeView::even-row-color			= @bg_color
+	GtkTreeView::indent-expanders		= 1
+	GtkTreeView::expander-size			= 15
+	GtkExpander::expander-size			= 15
+	GtkExpander::expander-spacing		= 0
+
 	GtkRange::trough-border				= 0
 	GtkRange::slider-width				= 15
 	GtkRange::stepper-size				= 15
@@ -239,6 +246,66 @@ style "default" {
 			overlay_border	= {0,0,0,0}
 			overlay_stretch	= FALSE
 			arrow_direction	= RIGHT
+		}
+
+		image {
+			function		= EXPANDER
+			expander_style	= EXPANDED
+			state			= NORMAL
+			file			= "img/sym_down_dark_normal.png"
+			border			= {2,2,2,2}
+			stretch			= TRUE
+		}
+		image {
+			function		= EXPANDER
+			expander_style	= EXPANDED
+			state			= PRELIGHT
+			file			= "img/sym_down_glow_normal.png"
+			border			= {2,2,2,2}
+			stretch			= TRUE
+		}
+		image {
+			function		= EXPANDER
+			expander_style	= EXPANDED
+			state			= ACTIVE
+			file			= "img/sym_down_dark_selcted.png"
+			border			= {2,2,2,2}
+			stretch			= TRUE
+		}
+
+		image {
+			function		= EXPANDER
+			expander_style	= SEMI_EXPANDED
+		}
+
+		image {
+			function		= EXPANDER
+			expander_style	= COLLAPSED
+			state			= NORMAL
+			file			= "img/sym_right_light_normal.png"
+			border			= {2,2,2,2}
+			stretch			= TRUE
+		}
+		image {
+			function		= EXPANDER
+			expander_style	= COLLAPSED
+			state			= PRELIGHT
+			file			= "img/sym_right_glow_normal.png"
+			border			= {2,2,2,2}
+			stretch			= TRUE
+		}
+		image {
+			function		= EXPANDER
+			expander_style	= COLLAPSED
+			state			= ACTIVE
+			file			= "img/sym_right_dark_selected.png"
+			border			= {2,2,2,2}
+			stretch			= TRUE
+		}
+
+		image {
+			function		= EXPANDER
+			expander_style	= SEMI_COLLAPSED
 		}
 
 		image {
@@ -707,7 +774,7 @@ style "progressbar" {
 			function	= BOX
 			detail		= "trough"
 			file		= "img/progressbar_run_horiz.png"
-			border		= {0,0,1,1}
+			border		= {0,0,1,0}
 			stretch		= TRUE
 			orientation	= HORIZONTAL
 		}
@@ -715,7 +782,7 @@ style "progressbar" {
 			function	= BOX
 			detail		= "bar"
 			file		= "img/progressbar_runner_horiz.png"
-			border		= {0,0,1,1}
+			border		= {0,0,1,0}
 			stretch		= TRUE
 			orientation	= HORIZONTAL
 		}
@@ -723,7 +790,7 @@ style "progressbar" {
 			function	= BOX
 			detail		= "trough"
 			file		= "img/progressbar_run_vert.png"
-			border		= {0,0,1,1}
+			border		= {1,0,0,0}
 			stretch		= TRUE
 			orientation	= VERTICAL
 		}
@@ -731,7 +798,7 @@ style "progressbar" {
 			function	= BOX
 			detail		= "bar"
 			file		= "img/progressbar_runner_vert.png"
-			border		= {0,0,1,1}
+			border		= {1,0,0,0}
 			stretch		= TRUE
 			orientation	= VERTICAL
 		}
@@ -1105,12 +1172,6 @@ style "layout" = "default" {
 }
 
 style "list-header" {
-
-	GtkTreeView::expander-size	= 13
-	GtkExpander::expander-size	= 13
-	GtkTreeView::odd-row-color	= @base_color
-	GtkTreeView::even-row-color	= @bg_color
-
 	engine "pixmap" {
 		image {
 			function 	= BOX
