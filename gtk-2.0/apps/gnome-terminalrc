@@ -1,6 +1,6 @@
 style "terminal" {
-	text[NORMAL] = "#aaaaaa"
-	base[NORMAL] = "#080808"
+	text[NORMAL] = @tooltip_fg_color
+	base[NORMAL] = @tooltip_bg_color
 
 	TerminalScreen::background-darkness = 0.9
 }

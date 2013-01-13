@@ -312,7 +312,7 @@ style "default" {
 			function		= RESIZE_GRIP
 			recolorable		= TRUE
 			detail			= "statusbar"
-			overlay_file	= "img/hole_pixel.png"
+			overlay_file	= "img/hole_tiny.png"
 			overlay_border	= {0,0,0,0}
 			overlay_stretch	= FALSE
 		}
@@ -412,9 +412,6 @@ style "button" = "default" {
 		image {
 			function	= BOX
 			detail		= "buttondefault"
-			file		= "img/null.png"
-			border		= {0,0,0,0}
-			stretch		= TRUE
 		}
 	}
 }
@@ -598,9 +595,6 @@ style "checkbutton"	= "default" {
 	
 		image {
 			function 	= FLAT_BOX
-			stretch		= TRUE
-			file 		= "img/null.png"
-			border 		= {2,2,2,2}
 		}
 	}
 }
@@ -755,9 +749,6 @@ style "scrollbar" = "default" {
 
 		image {
 			function		= BOX
-			file			= "img/null.png"
-			border			= {0,0,0,0}
-			stretch			= TRUE
 		}
 	}
 }
@@ -826,9 +817,6 @@ style "range" = "default" {
 		}
 		image {
 			function		= SLIDER
-			file			= "img/null.png"
-			border			= {0,0,0,0}
-			stretch			= FALSE
 			overlay_file	= "img/knob_sz_12.png"
 			overlay_border	= {1,1,0,0}
 			overlay_stretch	= FALSE
@@ -941,9 +929,6 @@ style "menubar" {
 		image {
 			function		= BOX
 			state 			= NORMAL
-			file			= "img/null.png"
-			border			= {0,0,4,4}
-			stretch			= TRUE
 		}
 	}
 }
@@ -1140,34 +1125,10 @@ style "ruler" = "default" {
 		image {
 			function	= BOX
 			detail		= "vruler"
-			file		= "img/null.png"
-			border		= {0,0,0,0}
-			stretch		= TRUE
 		}
 		image {
 			function	= BOX
 			detail		= "hruler"
-			file		= "img/null.png"
-			border		= {0,0,0,0}
-			stretch		= TRUE
-		}
-	}
-}
-
-style "handlebox" = "default" {
-
-	engine "pixmap" {
-		image {
-			function		= HANDLE
-			overlay_file	= "img/holes_tiny_vert.png"
-			overlay_stretch	= FALSE
-			orientation		= VERTICAL
-		}
-		image {
-			function		= HANDLE
-			overlay_file	= "img/holes_tiny_horiz.png"
-			overlay_stretch = FALSE
-			orientation		= HORIZONTAL
 		}
 	}
 }
@@ -1279,9 +1240,7 @@ class "GtkMenuItem"			style "menuitem"
 class "GtkTearoffMenuItem"	style "menuitem"
 class "GtkNotebook"	 		style "notebook"
 class "GtkToolbar" 			style "toolbar"
-class "GtkHandleBox" 		style "handlebox"
 class "GtkEventBox" 		style "flat"
-class "GtkPaned" 			style "handlebox"
 class "GtkLayout" 			style "layout"
 class "SPButton" 			style "SPbutton"
 widget "GtkTooltip" 		style "tooltips"
@@ -1306,12 +1265,12 @@ style "icon-view-fix" {
         base[SELECTED] = @selected_fg_color
 }
 widget_class "*.EelEditableLabel" style:highest "icon-view-fix"
+widget_class "GtkViewPort" style:highest "icon-view-fix"
 
 include "panelrc"
 include "apps/firefoxrc"
 include "apps/gnome-panelrc"
 include "apps/gnome-system-monitorrc"
 include "apps/gnome-terminalrc"
-include "apps/vterc"
 
 # vim:fenc=utf-8:ft=gtkrc:ci:pi:sts=0:sw=4:ts=4:
