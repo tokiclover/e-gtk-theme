@@ -403,7 +403,8 @@ style "button" = "default" {
 		}
 		image {
 			function	= BOX
-			file		= "img/button_clicked.png"
+			state		= NORMAL
+			file		= "img/button_normal.png"
 			border		= {5,5,4,6}
 			stretch		= TRUE
 		}
