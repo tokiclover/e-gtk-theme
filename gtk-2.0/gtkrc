@@ -16,7 +16,7 @@ gtk-icon-sizes = "gtk-menu=16,16:gtk-button=20,20:gtk-small-toolbar=16,16:gtk-la
 
 style "default" {
 	GtkWidget::interior-focus			= 7
-	GtkWidget::focus-line-width 		= 1
+	GtkWidget::focus-line-width 		= 0
 	GtkWidget::focus-padding			= 1
 	GtkWidget::new-tooltip-style 		= 1
 	GtkButton::default-border			= {0,0,0,0}
@@ -71,13 +71,13 @@ style "default" {
 	fg[NORMAL]			= @fg_color
 	fg[PRELIGHT]		= @selected_bg_color
 	fg[ACTIVE]			= @fg_color
-	fg[SELECTED]		= @selected_fg_color
+	fg[SELECTED]		= @selected_bg_color
 	fg[INSENSITIVE]		= shade(0.76,@fg_color)
 
 	bg[NORMAL]			= @bg_color
 	bg[PRELIGHT]		= @selected_fg_color
 	bg[ACTIVE]			= @bg_color
-	bg[SELECTED]		= @selected_bg_color
+	bg[SELECTED]		= @selected_fg_color
 	bg[INSENSITIVE] 	= shade(0.76,@bg_color)
 
 	base[NORMAL]		= @base_color
