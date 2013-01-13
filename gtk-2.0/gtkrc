@@ -1214,6 +1214,21 @@ style "SPbutton" {
 	}
 }
 
+style "spinner" = "default" {
+	engine "pixmap" {
+		image {
+			function 	= BOX
+			state		= PRELIGHT
+			file 		= "img/knob_round_busy.png"
+			border 		= {0,0,0,0}
+			stretch 	= TRUE
+			overlay_file ="img/glow_round_corners.png"
+			overlay_stretch = TRUE
+			overlay_border = {0,0,0,0}
+		}
+	}
+}
+
 style "treecol" {
 	bg[NORMAL] = shade(0.76,@bg_color)
 }
@@ -1229,6 +1244,7 @@ class "*Font*" 				style "optionmenu"
 class "GtkEntry" 			style "entry"
 class "GtkOldEditable" 		style "entry"
 class "GtkSpinButton" 	 	style "spinbutton"
+class "GtkSpinner"			style "spinner"
 class "GtkRuler" 			style "ruler"
 class "GtkScrollbar" 		style "scrollbar"
 class "GtkProgressBar" 		style "progressbar"
