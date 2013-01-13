@@ -1,5 +1,5 @@
 /* 
- * e-gtk-theme-0.16.8
+ * e-gtk-theme-0.16.9
  * e/gtk-3.0/gtk.css
  */
 
@@ -62,8 +62,10 @@
 	-GtkToolButton-icon-spacing: 0;
 	-GtkTextView-error-underline-color: @text_color;
 	-GtkPaned-handle-size: 6;
-	-GtkProgressBar-min-horizontal-bar-height: 22;
-	-GtkProgressBar-min-vertical-bar-width: 22;
+	-GtkProgressBar-min-horizontal-bar-height: 13;
+	-GtkProgressBar-min-horizontal-bar-width: 80;
+	-GtkProgressBar-min-vertical-bar-height: 80;
+	-GtkProgressBar-min-vertical-bar-width: 13;
 	-GtkScrolledWindow-scrollbar-spacing: 0;
 	-GtkScrolledWindow-scrollbars-within-bevel: false;
 	-GtkToolItemGroup-expander-size: 15;
@@ -116,7 +118,7 @@ GtkLabel:insensitive { color: @insensitive_fg_color }
 
 GtkComboBox .separator,
 .seprator,
-.menuitem.separator { color: alpha(@bg_color,0.55) }
+.menuitem.separator { color: alpha(@insensitive_fg_color,0.55) }
 
 GtkTreeView row:nth-child(even) {
 	background-color: shade(@base_color,0.96);
