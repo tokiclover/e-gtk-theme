@@ -1,4 +1,13 @@
-#$Id: e-gtk-theme/ChangeLog, 2013/01/11 15:01:15 -tclover Exp $
+#$Id: e-gtk-theme/ChangeLog, 2013/01/13 13:07:31 -tclover Exp $
+
+0.16.9/10:
+
+* clean up gtk+-2;
+* added spinner animation (not tested);
+* updated GtkNotebook (gtk+-2) to the new menu like tabs;
+* fixed button state (look much better);
+* added expander arrows (gtk+-2 only, how to make gtk+3 counterpart?);
+* update progressbar to GtkScale like look;
 
 0.16.8:
 
