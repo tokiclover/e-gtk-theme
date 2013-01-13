@@ -40,7 +40,7 @@ style "default" {
 	GtkHScale::slider-length 			= 42
 	GtkHScale::slider-width 			= 15
 
-	GtkPaned::handle-size				= 5
+	GtkPaned::handle-size				= 6
 	GtkScrolledWindow::scrollbar-spacing= 0
 	GtkScrolledWindow::scrollbars-within-bevel	= 0
 	GtkScrollbar::min-slider-length		= 42
@@ -909,7 +909,7 @@ style "menubar" {
 	fg[PRELIGHT]	= @selected_bg_color
 	fg[NORMAL]		= shade(0.76,@selected_fg_color)
 	fg[ACTIVE]		= @selected_bg_color
-	fg[INSENSITIVE]	= shade(0.76,@insens_fg_color)
+	fg[INSENSITIVE]	= @fg_color
 
 	engine "pixmap" {
 		image {
@@ -1218,7 +1218,6 @@ style "spinner" = "default" {
 	engine "pixmap" {
 		image {
 			function 	= BOX
-			state		= PRELIGHT
 			file 		= "img/knob_round_busy.png"
 			border 		= {0,0,0,0}
 			stretch 	= TRUE
