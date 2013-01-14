@@ -397,8 +397,8 @@ GtkComboBox .separator,
 	padding: 0px;
 }
 
-GtkLevelBar,
 GtkSwitch.trough,
+.level-bar.trough.horizontal,
 .progressbar.horizontal trough,
 .scale.trough.horizontal {
 	background-color: transparent;
@@ -409,6 +409,7 @@ GtkSwitch.trough,
 	background-size: 100% 5px, 100% 5px;
 	background-origin: content-box, content-box;
 }
+.level-bar.trough.vertical,
 .progressbar.vertical trough,
 .scale.trough.vertical {
 	background-color: transparent;
@@ -420,6 +421,10 @@ GtkSwitch.trough,
 	background-origin: content-box, content-box;
 }
 
+.level-bar.fill-block.horizontal,
+.level-bar.fill-block.empty-fill-block.horizontal,
+.level-bar.fill-block.level-low.horizontal,
+.level-bar.fill-block.level-high.horizontal,
 .progressbar.horizontal bar {
 	background-color: transparent;
 	background-image: url("img/horiz_glow_run.png");
@@ -429,6 +434,10 @@ GtkSwitch.trough,
 	background-origin: content-box;
 	padding: 0px;
 }
+.level-bar.fill-block.vertical,
+.level-bar.fill-block.empty-fill-block.vertical,
+.level-bar.fill-block.level-low.vertical,
+.level-bar.fill-block.level-high.vertical,
 .progressbar.vertical bar {
 	background-color: transparent;
 	background-image: url("img/vert_glow_run.png");
@@ -438,6 +447,9 @@ GtkSwitch.trough,
 	background-origin: content-box;
 	padding: 0px;
 }
+
+.level-bar.fill-block.level-low { background-color: alpha(red,0.5) }
+.level-bar.fill-block.level-high { background-color: alpha(blue,0.5) }
 
 GtkFrame.shadow.in,
 GtkFrame.shadow.etched.in,
@@ -567,6 +579,9 @@ GtkFrame.shadow.etched.out,
 	background-repeat: no-repeat;
 	background-size: 100% 1px, 100% 1px, 1px 100%, 1px 100%, 100% 15px;
 	border-width: 1px;
+}
+.notebook gap* {
+	background-color: shade(@base_color,0.90);
 }
 
 .spinner {
