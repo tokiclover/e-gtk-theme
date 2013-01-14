@@ -1,29 +1,28 @@
-/* e-gtk-theme-0.16.9
+/* e-gtk-theme-0.16.10
  * e/gtk-3.0/common.css
  */
 
 .background { background-color: @bg_color }
 
 .button,
-.button:prelight {
+.button:hover {
 	background-color: transparent;
 	background-image: url("img/button_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 110% 105%;
-	background-origin: padding-box;
-	border-image: url("img/null.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+	background-size: 110% 115%;
+	background-origin: content-box;
+	padding: 1px;
 }
 .button:active,
-.button:hover,
 .button:insensitive {
 	background-color: transparent;
 	background-image: url("img/button_clicked.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 115% 110%;
-	background-origin: padding-box;
-	border-image: url("img/null.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+	background-size: 105% 115%;
+	background-origin: content-box;
+	padding: 1px;
 }
 
 column-header .button,
@@ -65,14 +64,6 @@ column-header .button:hover {
 	background-repeat: no-repeat;
 	background-size: 11px 11px;
 }
-
-.combobox.button {
-	background-image: url("img/button_normal.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 110% 115%;
-}
-
 
 .radio {
 	background-color: transparent;
@@ -170,7 +161,6 @@ column-header .button:hover {
 }
 
 .arrow.down,
-.expander.expanded,
 .scrollbar.button.bottom {
 	engine: adwaita;
 	background-color: transparent;
@@ -200,6 +190,7 @@ column-header .button:hover {
 	background-size: 15px 15px;
 }
 .arrow.down:insensitive,
+.expander.expanded,
 .scrollbar.button.bottom:insensitive {
 	engine: adwaita;
 	background-color: transparent;
@@ -308,6 +299,11 @@ column-header .button:hover {
 	color: shade(@insensitive_fg_color,0.86);
 }
 
+.entry.progressbar {
+	background-color: @selected_fg_color;
+	color: @selected_bg_color;
+}
+
 .frame {
 	background-color: shade(@bg_color,0.66);
 	border-width: 1px;
@@ -319,7 +315,7 @@ column-header .button:hover {
 .pane-separator.horizontal,
 .handle.horizontal {
 	background-color: transparent;
-	background-image: url("img/holes_tiny_vert.png");
+	background-image: url("img/holes_vert.png");
 	background-origin: border-box;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -329,7 +325,7 @@ GtkComboBox .separator,
 .pane-separator.vertical,
 .handle.vertical {
 	background-color: transparent;
-	background-image: url("img/holes_tiny_horiz.png");
+	background-image: url("img/holes_horiz.png");
 	background-origin: border-box;
 	background-repeat: no-repeat;
 	background-size: auto;
@@ -374,6 +370,23 @@ GtkComboBox .separator,
 	background-origin: border-box;
 }
 
+.progressbar.horizontal pattern {
+	background-color: transparent;
+	background-image: url("img/horiz_glow_run.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-origin: content-box;
+}
+.progressbar.vertical pattern {
+	background-color: transparent;
+	background-image: url("img/vert_glow_run.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-origin: content-box;
+}
+
 .scale.slider {
 	background-color: transparent;
 	background-image: url("img/knob_sz_14.png");
@@ -384,6 +397,8 @@ GtkComboBox .separator,
 	padding: 0px;
 }
 
+GtkLevelBar,
+GtkSwitch.trough,
 .progressbar.horizontal trough,
 .scale.trough.horizontal {
 	background-color: transparent;
@@ -393,7 +408,6 @@ GtkComboBox .separator,
 	background-repeat: no-repeat, no-repeat;
 	background-size: 100% 5px, 100% 5px;
 	background-origin: content-box, content-box;
-	padding: 0px;
 }
 .progressbar.vertical trough,
 .scale.trough.vertical {
@@ -404,7 +418,6 @@ GtkComboBox .separator,
 	background-repeat: no-repeat, no-repeat;
 	background-size: 5px 100%, 5px 100%;
 	background-origin: content-box, content-box;
-	padding: 0px;
 }
 
 .progressbar.horizontal bar {
@@ -556,6 +569,14 @@ GtkFrame.shadow.etched.out,
 	border-width: 1px;
 }
 
+.spinner {
+	background-color: transparent;
+	background-image: url("img/knob_round_busy.png"), url("img/glow_round_corners.png");
+	background-position: center, center;
+	background-repeat: no-repeat, no-repeat;
+	background-size: 100% 100%, 100% 100%;
+}
+
 .tab.top,
 .notebook tab.top {
 	padding: 0px;
@@ -646,12 +667,21 @@ tab.right,
 	background-size: 100% 100%, 100% 100%;
 }
 
-.switch > .button {
+GtkSwitch.slider {
 	background-color: transparent;
-	background-image: url("img/tasklist_button_normal.png");
+	background-image: url("img/led_dark.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: cover;
+	background-origin: content-box;
+}
+GtkSwitch.slider:active,
+GtkSwitch.slider:hover {
+	background-color: transparent;
+	background-image: url("img/led_light.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-origin: content-box;
 }
 
@@ -660,19 +690,20 @@ tab.right,
 	background-image: url("img/button_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 115% 105%;
-	background-origin: padding-box;
+	background-size: 115% 115%;
+	background-origin: content-box;
 	border-image: url("img/null.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 }
 
 .tooltip {
+	background-color: @tooltip_bg_color;
 	border-image: url("img/bevel_dark_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	border-style: solid;
 	border-width: 1px;
 	color: @tooltip_fg_color;
 }
 
-GtkTollItemGroup {
+GtkToolItemGroup {
 	background-color: @bg_color;
 	color: shade(@selected_fg_color,0.76);
 	background-image: url("img/holes_tiny_vert.png"), url("img/bg_radgrad.png");

@@ -1,5 +1,5 @@
 /* 
- * e-gtk-theme-0.16.9
+ * e-gtk-theme-0.16.10
  * e/gtk-3.0/gtk.css
  */
 
@@ -16,8 +16,8 @@
 @define-color text_color #fafafa;
 @define-color selected_bg_color #245f99;
 @define-color selected_fg_color #181818;
-@define-color insensitive_bg_color shade(@selected_bg_color,1.06);
-@define-color insensitive_fg_color shade(@selected_fg_color,1.06);
+@define-color insensitive_bg_color shade(@selected_bg_color,0.76);
+@define-color insensitive_fg_color shade(@selected_fg_color,0.76);
 @define-color tooltip_bg_color #101010;
 @define-color tooltip_fg_color #aaaaaa;
 @define-color link_color shade(@selected_bg_color,1.1);
@@ -69,6 +69,7 @@
 	-GtkScrolledWindow-scrollbar-spacing: 0;
 	-GtkScrolledWindow-scrollbars-within-bevel: false;
 	-GtkToolItemGroup-expander-size: 15;
+	-GtkTreeView-indent-expanders: true;
 	-GtkExpander-expander-size: 15;
 	-GtkMenu-horizontal-padding: 0;
 	-GtkMenu-vertical-padding: 0;
@@ -79,7 +80,7 @@
 	-GtkWidget-link-color: @link_color;
 	-GtkWidget-visited-link-color: darker(@link_color);
 	-GtkWidget-focus-padding: 2;
-	-GtkWidget-focus-line-width: 2;
+	-GtkWidget-focus-line-width: 0;
 	-GtkWindow-resize-grip-width: 5;
 	-GtkWindow-resize-grip-height: 5; 
 	-GtkWidget-cursor-color: @text_color;
@@ -88,22 +89,17 @@
 }
 
 * { color: inherit }
+* { background-color: transparent }
 
 *:active,
 *:selected,
-*:selected:focus {
-	background-color: @selected_fg_color;
-	color: @selected_bg_color;
-}
+*:selected:focus { color: @selected_bg_color }
 
 *:insensitive {
-	background-color: transparent;
 	color: @insensitive_fg_color;
 	border-color: transparent;
 }
 
-GtkImage,
-GtkLabel { background-color: transparent }
 GtkImage { color: @selected_fg_color }
 
 GtkImage:active,
@@ -147,7 +143,6 @@ GtkTreeView row:selected {
 }
 
 GtkDialog { background-color: @base_color }
-GtkPaned { background-color: transparent }
 
 @import url("common.css");
 @import url("apps/term.css");
