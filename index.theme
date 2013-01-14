@@ -1,12 +1,11 @@
 [Desktop Entry]
-Version=0.16.0
+Version=0.16.10
 Encoding=UTF-8
 Name=e-gtk-theme
 Type=X-GNOME-Metatheme
-Comment=a gtk theme to match enlightenment DR17 default theme
-Encoding=UTF-8
+Comment=a gtk+ theme to match the new enlightenment DR17 default theme
+
 [X-GNOME-Metatheme]
 GtkTheme=e
 MetacityTheme=e
 IconTheme=Faenza
-
