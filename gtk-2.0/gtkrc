@@ -1,5 +1,5 @@
 #############################
-# e-gtk-theme-0.16.10       #
+# e-gtk-theme-0.17.0        #
 # e/gtk-2.0/gtkrc           #
 #############################
 
@@ -384,7 +384,7 @@ style "button" = "default" {
 			function 	= BOX
 			state		= PRELIGHT
 			file		= "img/button_normal.png"
-			border		= {4,4,3,5}
+			border		= {4,4,3,6}
 			stretch		= TRUE
 		}
 		image {
@@ -755,9 +755,6 @@ style "scrollbar" = "default" {
 
 style "progressbar" {
 
-	bg[NORMAL] 	= @bg_color
-	bg[SELECTED]= @selected_bg_color
-
 	xthickness 	= 1
 	ythickness 	= 1
 
@@ -766,15 +763,17 @@ style "progressbar" {
 			function	= BOX
 			detail		= "trough"
 			file		= "img/progressbar_run_horiz.png"
-			border		= {0,0,1,0}
+			border		= {0,0,1,2}
 			stretch		= TRUE
 			orientation	= HORIZONTAL
+			overlay_file	= "img/bevel_curved_horiz_out.png"
+			overlay_border	= {1,1,1,1}
 		}
 		image {
 			function	= BOX
 			detail		= "bar"
 			file		= "img/progressbar_runner_horiz.png"
-			border		= {0,0,1,0}
+			border		= {0,0,0,0}
 			stretch		= TRUE
 			orientation	= HORIZONTAL
 		}
@@ -782,15 +781,17 @@ style "progressbar" {
 			function	= BOX
 			detail		= "trough"
 			file		= "img/progressbar_run_vert.png"
-			border		= {1,0,0,0}
+			border		= {1,2,0,0}
 			stretch		= TRUE
 			orientation	= VERTICAL
+			overlay_file	= "img/bevel_curved_horiz_out.png"
+			overlay_border	= {1,1,1,1}
 		}
 		image {
 			function	= BOX
 			detail		= "bar"
 			file		= "img/progressbar_runner_vert.png"
-			border		= {1,0,0,0}
+			border		= {0,0,0,0}
 			stretch		= TRUE
 			orientation	= VERTICAL
 		}
