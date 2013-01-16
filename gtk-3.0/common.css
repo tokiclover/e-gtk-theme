@@ -1,4 +1,4 @@
-/* e-gtk-theme-0.16.10
+/* e-gtk-theme-0.17.0
  * e/gtk-3.0/common.css
  */
 
@@ -20,7 +20,7 @@
 	background-image: url("img/button_clicked.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 105% 115%;
+	background-size: 110% 115%;
 	background-origin: content-box;
 	padding: 1px;
 }
@@ -283,10 +283,11 @@ column-header .button:hover {
 
 .entry {
 	background-color: shade(@bg_color,0.86);
-	border-width: 1px;
+	background-image: url("img/inset_shadow.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 120% 100%;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
-	box-shadow: inset 0px 0px 2px 2px shade(@bg_color,0.76);
-	padding: 2px;
 }
 
 .entry:focus {
@@ -305,11 +306,29 @@ column-header .button:hover {
 }
 
 .frame {
-	background-color: shade(@bg_color,0.66);
-	border-width: 1px;
+	background-color: @bg_color;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
-	box-shadow: inset 0px 0px 2px 2px shade(@bg_color,0.66);
-	padding: 2px;
+}
+.frame shadow-gap,
+.notebook > shadow-gap {
+	background-color: @bg_color;
+	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+}
+.frame gap-end,
+.notebook > gap-end {
+	background-color: @bg_color;
+	background-image: url("img/frame_gap.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.frame gap-start,
+.notebook > gap-start {
+	background-color: @bg_color;
+	background-image: url("img/frame_gap.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 
 .pane-separator.horizontal,
@@ -321,7 +340,6 @@ column-header .button:hover {
 	background-repeat: no-repeat;
 	background-size: auto;
 }
-GtkComboBox .separator,
 .pane-separator.vertical,
 .handle.vertical {
 	background-color: transparent;

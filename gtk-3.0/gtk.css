@@ -1,5 +1,5 @@
 /* 
- * e-gtk-theme-0.16.10
+ * e-gtk-theme-0.17.0
  * e/gtk-3.0/gtk.css
  */
 
@@ -100,6 +100,8 @@
 	border-color: transparent;
 }
 
+GtkDialog { background-color: @base_color }
+
 GtkImage { color: @selected_fg_color }
 
 GtkImage:active,
@@ -115,6 +117,8 @@ GtkLabel:insensitive { color: @insensitive_fg_color }
 GtkComboBox .separator,
 .seprator,
 .menuitem.separator { color: alpha(@insensitive_fg_color,0.55) }
+
+GtkSwitch { text-shadow: 2px 2px 2px @selected_fg_color }
 
 GtkTreeView row:nth-child(even) {
 	background-color: shade(@base_color,0.96);
@@ -141,8 +145,6 @@ GtkTreeView row:selected {
 	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	color: @selected_bg_color;
 }
-
-GtkDialog { background-color: @base_color }
 
 @import url("common.css");
 @import url("apps/term.css");
