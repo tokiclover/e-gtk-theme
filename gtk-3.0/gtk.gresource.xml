@@ -176,6 +176,7 @@
 	<file preprocess=to-pixdata>img/vgrad_shadow_bi.png</file>
 	<file preprocess=to-pixdata>img/vgrad_tall.png</file>
 	<file preprocess=to-pixdata>img/white_bar_vert_glow.png</file>
+    <file>apps/term.css</file>
     <file>common.css</file>
     <file>gtk.css</file>
   </gresource>
