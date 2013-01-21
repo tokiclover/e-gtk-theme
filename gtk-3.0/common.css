@@ -377,14 +377,18 @@ column-header .button:hover {
 
 .menubar {
 	background-color: @bg_color;
-	color: shade(@selected_fg_color,0.76);
+	background-image: url("img/separator_horiz.png");
+	background-origin: border-box;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 100% 2px;
 }
 
 .menubar > .menuitem {
 	background-image: url("img/shadow_angled_in_sides_glow.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% 100%;
 	background-origin: border-box;
 }
 
@@ -565,24 +569,24 @@ GtkFrame.shadow.etched.out,
 .grid,
 .table,
 .notebook {
-	background-color: shade(@base_color,0.90);
-	background-image: url("img/vgrad_med_curved.png");
+	background-color: #404040;
+	background-image: url("img/bg_notebook.png");
 	background-origin: padding-box;
 	background-position: center top;
 	background-repeat: no-repeat;
-	background-size: 100% 15px;
-	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+	background-size: 100% 163px;
+	border-image: url("img/bevel_out.png") 2 1 1 1 / 1px 1px 1px 1px stretch;
 }
 .notebook:active,
 .notebook:focus {
 	background-image: url("img/runner_glow_horiz.png"), url("img/runner_glow_horiz.png"),
 		url("img/runner_glow_vert.png"), url("img/runner_glow_vert.png"),
-		url("img/vgrad_med_curved.png");
+		url("img/bg_notebook.png");
 	background-origin: padding-box;
 	background-position: center top, center bottom, left center, right center, center top;
 	background-repeat: no-repeat;
-	background-size: 100% 1px, 100% 1px, 1px 100%, 1px 100%, 100% 15px;
-	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+	background-size: 100% 1px, 100% 1px, 1px 100%, 1px 100%, 100% 163px;
+	border-image: url("img/bevel_out.png") 2 1 1 1 / 1px 1px 1px 1px stretch;
 }
 
 .spinner {
@@ -703,11 +707,10 @@ GtkSwitch.slider:hover {
 
 .toolbar {
 	background-color: transparent;
-	background-image: url("img/button_normal.png");
+	background-image: url("img/button_normal.svg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 110% 115%;
-	background-origin: content-box;
+	background-size: 115% 115%;
 	border-image: url("img/null.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 }
 
