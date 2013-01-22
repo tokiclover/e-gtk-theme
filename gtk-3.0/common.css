@@ -10,7 +10,7 @@
 	background-image: url("img/button_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 110% 115%;
+	background-size: 108% 104%;
 	background-origin: content-box;
 	padding: 1px;
 }
@@ -20,7 +20,7 @@
 	background-image: url("img/button_clicked.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 110% 115%;
+	background-size: 108% 104%;
 	background-origin: content-box;
 	padding: 1px;
 }
@@ -409,10 +409,9 @@ GtkSwitch.trough,
 	background-color: transparent;
 	background-image: url("img/slider_run_bevel_horiz.png"),
 		url("img/slider_run_base_horiz.png");
-	background-position: center, center;
+	background-position: center;
 	background-repeat: no-repeat, no-repeat;
 	background-size: 100% 5px, 100% 5px;
-	background-origin: content-box, content-box;
 }
 .level-bar.trough.vertical,
 .progressbar.trough.vertical,
@@ -420,10 +419,9 @@ GtkSwitch.trough,
 	background-color: transparent;
 	background-image: url("img/slider_run_bevel_vert.png"),
 		url("img/slider_run_base_vert.png");
-	background-position: center, center;
+	background-position: center;
 	background-repeat: no-repeat, no-repeat;
 	background-size: 5px 100%, 5px 100%;
-	background-origin: content-box, content-box;
 }
 
 .level-bar.fill-block.horizontal,
@@ -710,7 +708,7 @@ GtkSwitch.slider:hover {
 	background-image: url("img/button_normal.svg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 115% 115%;
+	background-size: 108% 104%;
 	border-image: url("img/null.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 }
 
