@@ -62,6 +62,7 @@ style "default" {
 	ythickness	= 2
 
 	GtkEntry::cursor-color				= @text_color
+	GtkEntry::inner-border				= {1,1,1,1}
 	GtkTextView::cursor-color			= @text_color
 	GtkTextView::secondary-cursor-color	= @text_color
 	GtkWidget::cursor-color				= @text_color
@@ -601,8 +602,10 @@ style "checkbutton"	= "default" {
 
 style "entry" = "default" {
 
-	GtkWidget::interior-focus	= 0
-	GtkEntry::inner-border		= {1,1,1,1}
+	GtkWidget::interior-focus			= 0
+
+	xthickness = 3
+	ythickness = 3
 
 	base[NORMAL] = shade(0.86,@bg_color)
 
@@ -618,8 +621,8 @@ style "entry" = "default" {
 
 style "spinbutton" = "entry" {
 
-	xthickness = 1
-	ythickness = 1
+	xthickness = 2
+	ythickness = 2
 
 	base[NORMAL] = shade(0.76,@base_color)
 
