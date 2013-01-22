@@ -1,4 +1,12 @@
-#$Id: e-gtk-theme/ChangeLog, 2013/01/13 13:07:31 -tclover Exp $
+#$Id: e-gtk-theme/ChangeLog, 2013/01/22 18:58:34 -tclover Exp $
+
+* 0.17.0:
+
+* updated notebook bg;
+* added a menubar separator;
+* cropped button image to get fewer shadow;
+* minor fixes;
+* gtk+-3 cannot be finished because of... lack of documentation.
 
 0.16.9/10:
 
