@@ -86,6 +86,9 @@
 	-GtkWidget-cursor-color: @text_color;
 	-GtkWidget-cursor-aspect-ratio: 0.1; 
 	-GtkWidget-secondary-cursor-color: darker(@text_color);  
+
+	-GtkEntry-cursor-color: @text_color;
+	-GtkEntry-inner-border: 1px;
 }
 
 * { color: inherit }
