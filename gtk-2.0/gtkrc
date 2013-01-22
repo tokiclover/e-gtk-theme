@@ -385,28 +385,28 @@ style "button" = "default" {
 			function 	= BOX
 			state		= PRELIGHT
 			file		= "img/button_normal.png"
-			border		= {4,4,4,4}
+			border		= {4,4,2,2}
 			stretch		= TRUE
 		}
 		image {
 			function	= BOX
 			state		= ACTIVE
 			file		= "img/button_clicked.png"
-			border		= {4,4,4,4}
+			border		= {4,4,2,4}
 			stretch		= TRUE
 		}
 		image {
 			function	= BOX
 			state		= INSENSITIVE
 			file		= "img/button_clicked.png"
-			border		= {4,4,4,4}
+			border		= {4,4,2,4}
 			stretch		= TRUE
 		}
 		image {
 			function	= BOX
 			state		= NORMAL
 			file		= "img/button_normal.png"
-			border		= {4,4,4,4}
+			border		= {4,4,2,2}
 			stretch		= TRUE
 		}
 
@@ -837,7 +837,7 @@ style "toolbar" {
 		image {
 			function	= BOX
 			file		= "img/button_normal.svg"
-			border		= {4,4,4,4}
+			border		= {4,4,2,4}
 			stretch		= TRUE
 		}
 	}
