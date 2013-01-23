@@ -288,13 +288,14 @@ column-header .button:hover {
 	background-repeat: no-repeat;
 	background-size: 120% 100%;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+	padding: 3px;
 }
 
 .entry:focus {
 	border-width: 2px;
 	border-image: url("img/outline_glow.png") 1 1 1 1 / 2px 2px 2px 2px stretch;
 	box-shadow: inset 0px 0px 2px 2px shade(@bg_color,0.66);
-	padding: 2px;
+	padding: 3px;
 }
 .entry:insensitive {
 	color: shade(@insensitive_fg_color,0.86);
@@ -548,19 +549,18 @@ GtkFrame.shadow.etched.out,
 	background-color: transparent;
 }
 
+.spinbutton .button.down { padding: 1px 2px }
 .spinbutton .button.down {
 	background-image: url("img/button_spin_down_normal.png");
 	background-origin: padding-box;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	padding: 2px;
 }
 .spinbutton .button.up {
 	background-image: url("img/button_spin_up_normal.png");
 	background-origin: padding-box;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-	padding: 2px;
 }
 
 .box,
@@ -690,8 +690,7 @@ GtkSwitch.slider {
 	background-image: url("img/led_dark.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-origin: content-box;
+	background-size: auto 100%;
 }
 GtkSwitch.slider:active,
 GtkSwitch.slider:hover {
@@ -699,8 +698,7 @@ GtkSwitch.slider:hover {
 	background-image: url("img/led_light.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-origin: content-box;
+	background-size: auto 100%;
 }
 
 .toolbar {
@@ -713,10 +711,12 @@ GtkSwitch.slider:hover {
 }
 
 .tooltip {
-	background-color: @tooltip_bg_color;
+	color: @tooltip_bg_color;
+	background-image: url("img/bg_notebook.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	border-image: url("img/bevel_dark_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
-	border-style: solid;
-	border-width: 1px;
 	color: @tooltip_fg_color;
 }
 

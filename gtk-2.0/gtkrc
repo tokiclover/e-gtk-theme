@@ -941,7 +941,7 @@ style "menubar" {
 style "notebook" = "default" {
 
 	xthickness = 1
-	ythickness = 0
+	ythickness = 1
 	
 	bg[NORMAL] = "#404040"
 	text[ACTIVE] = @selected_bg_color
@@ -1247,7 +1247,7 @@ style "spinner" = "default" {
 	}
 }
 
-style "treecol" {
+style "text" {
 	bg[NORMAL] = shade(0.76,@bg_color)
 }
 
@@ -1278,6 +1278,7 @@ class "GtkEventBox" 		style "flat"
 class "GtkLayout" 			style "layout"
 class "SPButton" 			style "SPbutton"
 widget "GtkTooltip" 		style "tooltips"
+widget "GtkEditable"		style "text"
 widget_class "*Combo*" 		style "optionmenu"
 
 # colorize ugly white line at the top of the vertical scrollbar in Nautilus
