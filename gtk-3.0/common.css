@@ -10,7 +10,7 @@
 	background-image: url("img/button_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 108% 104%;
+	background-size: 110% 105%;
 	background-origin: content-box;
 	padding: 1px;
 }
@@ -20,7 +20,7 @@
 	background-image: url("img/button_clicked.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 108% 104%;
+	background-size: 110% 105%;
 	background-origin: content-box;
 	padding: 1px;
 }
@@ -429,7 +429,8 @@ GtkSwitch.trough,
 .level-bar.fill-block.empty-fill-block.horizontal,
 .level-bar.fill-block.level-low.horizontal,
 .level-bar.fill-block.level-high.horizontal,
-.progressbar.fill-block.horizontal {
+.progressbar.fill-block.horizontal,
+.scale.progressbar.horizontal {
 	background-color: transparent;
 	background-image: url("img/horiz_glow_run.png");
 	background-position: center;
@@ -442,7 +443,8 @@ GtkSwitch.trough,
 .level-bar.fill-block.empty-fill-block.vertical,
 .level-bar.fill-block.level-low.vertical,
 .level-bar.fill-block.level-high.vertical,
-.progressbar.fill-block.vertical {
+.progressbar.fill-block.vertical,
+.scale.progressbar.vertical {
 	background-color: transparent;
 	background-image: url("img/vert_glow_run.png");
 	background-position: center;
@@ -706,7 +708,7 @@ GtkSwitch.slider:hover {
 	background-image: url("img/button_normal.svg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 108% 104%;
+	background-size: 110% 105%;
 	border-image: url("img/null.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 }
 
