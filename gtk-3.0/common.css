@@ -475,20 +475,17 @@ GtkFrame.shadow.etched.out,
 
 .scrollbar.trough.vertical {
 	background-color: transparent;
-	background-image: url("img/slider_run_bevel_vert.png"),
-		url("img/slider_run_base_vert.png");
-	background-position: center, center;
-	background-repeat: no-repeat, no-repeat;
-	background-size: 3px 100%, 3px 100%;
+	background-image: url("img/trough_vert.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 15px 100%;
 }
 
 .scrollbar.trough.horizontal {
 	background-color: transparent;
-	background-image: url("img/slider_run_bevel_horiz.png"),
-		url("img/slider_run_base_horiz.png");
-	background-position: center, center;
-	background-repeat: no-repeat, no-repeat;
-	background-size: 100% 3px, 100% 3px;
+	background-image: url("img/trough_horiz.png");
+	background-repeat: no-repeat;
+	background-size: 100% 15px;
 }
 
 .scrollbar.slider.vertical {
