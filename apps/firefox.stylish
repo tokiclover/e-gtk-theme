@@ -109,8 +109,8 @@
 
 #navigator-toolbox > toolbar:not(#toolbar-menubar):not(#TabsToolbar) {
 	padding: 2px;
-	min-height: 32px !important;
-	max-height: 32px !important;
+	min-height: 38px !important;
+	max-height: 38px !important;
 }
 
 #toolbar-menubar{
