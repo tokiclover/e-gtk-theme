@@ -1,13 +1,12 @@
-/* 
- * e-gtk-theme-0.17.0
- * e/gtk-3.0/gtk.css
- */
-
-/* 
- * This is a gtk+-3 theme to match the new enlightenment DR17
- * window manager default theme, by tclover. 
- * Check here: http://trac.enlightenment.org/e/wiki/Themes.
- * License: BSD-2
+/*
+ * $Name:    e-gtk-theme-0.17.0                     Exp $
+ * $Header:  e/gtk-3.0/gtk.css, 2014/08/08 -tclover Exp $
+ * $License: 2-clause BSD, see COPYRIGHT file       Exp $
+ *
+ * this is a gtk+-2 theme to match the new enlightenment DR17
+ * window manager dark default theme
+ * copyright/left: 2012-2014 tokiclover/tclover
+ * intertube: https://github.com/tokiclover/e-gtk-theme
  */
 
 @define-color base_color #484848;

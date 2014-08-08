@@ -1,5 +1,7 @@
-/* e-gtk-theme-0.17.0
- * e/gtk-3.0/common.css
+/*
+ * $Name:    e-gtk-theme-0.17.0                        Exp $
+ * $Header:  e/gtk-3.0/common.css, 2014/08/08 -tclover Exp $
+ * $License: 2-clause BSD, see COPYRIGHT file          Exp $
  */
 
 .background { background-color: @bg_color }
