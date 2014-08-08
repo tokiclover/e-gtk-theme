@@ -1,3 +1,6 @@
+# $Name:   e-gtk-theme-0.17.0                                   Exp $
+# $Header: e/gtk-2.0/apps/gnome-terminalrc, 2014/08/08 -tclover Exp $
+
 style "terminal" {
 	text[NORMAL] = @tooltip_fg_color
 	base[NORMAL] = @tooltip_bg_color

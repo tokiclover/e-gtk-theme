@@ -1,3 +1,6 @@
+# $Name:   e-gtk-theme-0.17.0                     Exp $
+# $Header: e/gtk-2.0/panelrc, 2014/08/08 -tclover Exp $
+
 style "tasklist-button" {
 
 	xthickness = 1

@@ -1,12 +1,11 @@
-#############################
-# e-gtk-theme-0.17.0        #
-# e/gtk-2.0/gtkrc           #
-#############################
+# $Name:   e-gtk-theme-0.17.0                   Exp $
+# $Header: e/gtk-2.0/gtkrc, 2014/08/08 -tclover Exp $
+# $Copyright: 2-clause BSD, see COPYRIGHT file  Exp $
 
-# This is a gtk+-2 theme to match the new enlightenment DR17
-# window manager default theme, by tclover. 
-# Check here: http://trac.enlightenment.org/e/wiki/Themes.
-# License: BSD-2
+# this is a gtk+-2 theme to match the new enlightenment DR17
+# window manager dark default theme
+# copyright/left: 2012-2014 tokiclover/tclover
+# intertube: https://github.com/tokiclover/e-gtk-theme
 
 gtk-menu-drop-shadow = 0
 gtk-menu-shadow-delay = 0

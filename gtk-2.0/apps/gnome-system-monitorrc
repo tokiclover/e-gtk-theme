@@ -1,3 +1,6 @@
+# $Name:   e-gtk-theme-0.17.0                                         Exp $
+# $Header: e/gtk-2.0/apps/gnome-system-monitorrc, 2014/08/08 -tclover Exp $
+
 style "gnome-system-monitor-menu" {
     bg[ACTIVE] = shade(0.76,@bg_color)
 }
