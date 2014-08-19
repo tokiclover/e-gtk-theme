@@ -116,9 +116,16 @@ GtkLabel:selected { color: @selected_bg_color }
 GtkImage:insensitive,
 GtkLabel:insensitive { color: @insensitive_fg_color }
 
+GtkSeparatorMenuItem,
+GtkSeparatorToolItem,
 GtkComboBox .separator,
+.button .seprator,
+.button.seprator,
 .seprator,
-.menuitem.separator { color: alpha(@insensitive_fg_color,0.55) }
+.menuitem.separator {
+	border: none;
+	color: shade(@bg_color,0.75)
+}
 
 GtkSwitch { text-shadow: 2px 2px 2px @selected_fg_color }
 

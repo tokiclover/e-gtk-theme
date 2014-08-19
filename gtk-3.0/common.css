@@ -405,6 +405,7 @@ column-header .button:hover {
 	padding: 0px;
 }
 
+GtkLevelBar,
 GtkSwitch.trough,
 .level-bar.trough.horizontal,
 .progressbar.trough.horizontal,
@@ -702,15 +703,18 @@ GtkSwitch.slider:hover {
 	background-size: auto 100%;
 }
 
+GtkHeaderBar,
+GtkActionBar,
 .toolbar {
-	background-color: transparent;
+	background-color: @bg_color;
 	background-image: url("img/button_normal.svg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 110% 105%;
-	border-image: url("img/null.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+	border-image: url("img/null.png") 0 0 0 0 / 1px 1px 1px 1px stretch;
 }
 
+GtkInfoBar,
 .tooltip {
 	color: @tooltip_bg_color;
 	background-image: url("img/bg_notebook.png");
