@@ -369,13 +369,15 @@ column-header .button:hover {
 	padding: 0px;
 }
 
+.menuitem,
 .menuitem:active,
 .menuitem:hover {
 	background-color: transparent;
 }
 
-.menuitem,
-.menuitem:insensitive {
+.menuitem:active,
+.menuitem:hover {
+    color: @selected_bg_color;
 	background-image: url("img/shine.png"), url("img/vgrad_dark.png");
 	background-position: center -2px, center;
 	background-repeat: no-repeat;
