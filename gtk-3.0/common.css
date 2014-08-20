@@ -13,9 +13,9 @@
 	background-image: url("img/button_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 110% 105%;
+	background-size: 110% 100%;
 	background-origin: content-box;
-	padding: 1px;
+	padding: 2px;
 }
 .button:active,
 .button:insensitive {
@@ -23,9 +23,9 @@
 	background-image: url("img/button_clicked.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 110% 105%;
+	background-size: 110% 100%;
 	background-origin: content-box;
-	padding: 1px;
+	padding: 2px;
 }
 
 column-header .button,
@@ -343,8 +343,11 @@ column-header .button:hover {
 }
 
 .grip {
-    background-color: transparent;
-    background-image: url("img/hole_tiny.png");
+	background-color: transparent;
+	background-image: url("img/hole_tiny.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	border: none;
 }
 
 .pane-separator.horizontal,
@@ -728,8 +731,9 @@ GtkSwitch.slider:hover {
 	background-image: url("img/button_normal.svg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 110% 105%;
-	border-image: url("img/null.png") 0 0 0 0 / 1px 1px 1px 1px stretch;
+	background-size: 110% 100%;
+	border: none;
+	padding: 2px;
 }
 
 .info-bar,

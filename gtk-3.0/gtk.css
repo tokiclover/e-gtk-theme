@@ -99,9 +99,7 @@
 
 *:insensitive { color: @insensitive_fg_color }
 
-GtkMenuButton,
-GtkBox { background-color: transparent }
-GtkBox { padding: 0px }
+GtkHeaderBar > GtkBox { background-color: transparent }
 
 .prompt,
 GtkDialog {
