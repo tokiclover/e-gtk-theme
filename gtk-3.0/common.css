@@ -125,6 +125,13 @@ column-header .button:hover {
 	background-origin: border-box;
 }
 
+.button.seprator,
+.menuitem.separator,
+*.separator { 
+	border: none;
+	color: shade(@bg_color,0.75);
+}
+
 .arrow.up,
 .scrollbar.button.top {
 	engine: adwaita;
