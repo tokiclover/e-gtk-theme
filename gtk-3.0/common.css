@@ -397,7 +397,9 @@ column-header .button:hover {
 	background-size: 100% 2px;
 }
 
-.menubar > .menuitem {
+.menubar > .menuitem:active,
+.menubar > .menuitem:hover {
+    background: transparent;
 	background-image: url("img/shadow_angled_in_sides_glow.png");
 	background-position: center;
 	background-repeat: no-repeat;
