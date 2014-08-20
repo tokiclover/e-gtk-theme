@@ -373,6 +373,7 @@ column-header .button:hover {
 .menuitem:active,
 .menuitem:hover {
 	background-color: transparent;
+	padding: 2px 2px;
 }
 
 .menuitem:active,
@@ -384,7 +385,7 @@ column-header .button:hover {
 	background-size: auto, 100% 100%;
 	background-origin: border-box;
 	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
-	padding: 0px;
+	padding: 2px 2px;
 }
 
 .menubar {
