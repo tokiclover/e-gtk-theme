@@ -5,6 +5,7 @@
  */
 
 .background { background-color: @bg_color }
+.color { background-color: @fg_color }
 
 .button,
 .button:hover {
@@ -341,6 +342,11 @@ column-header .button:hover {
 	background-size: 100% 100%;
 }
 
+.grip {
+    background-color: transparent;
+    background-image: url("img/hole_tiny.png");
+}
+
 .pane-separator.horizontal,
 .handle.horizontal {
 	background-color: transparent;
@@ -385,7 +391,6 @@ column-header .button:hover {
 	background-size: auto, 100% 100%;
 	background-origin: border-box;
 	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
-	padding: 2px 2px;
 }
 
 .menubar {
@@ -400,7 +405,7 @@ column-header .button:hover {
 .menubar > .menuitem:active,
 .menubar > .menuitem:hover {
     background: transparent;
-	background-image: url("img/shadow_angled_in_sides_glow.png");
+	background-image: url("img/bg_radgrad.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -472,16 +477,16 @@ GtkSwitch.trough,
 .level-bar.fill-block.level-low { background-color: alpha(red,0.5) }
 .level-bar.fill-block.level-high { background-color: alpha(blue,0.5) }
 
-GtkFrame.shadow.in,
-GtkFrame.shadow.etched.in,
+.frame.shadow.in,
+.frame.shadow.etched.in,
 .shadow.in,
 .shadow.etched.in {
 	border-width: 1px 1px 1px 1px;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 }
 
-GtkFrame.shadow.out,
-GtkFrame.shadow.etched.out,
+.frame.shadow.out,
+.frame.shadow.etched.out,
 .shadow.out,
 .shadow.etched.out {
 	border-width: 1px 1px 1px 1px;
@@ -627,7 +632,7 @@ GtkFrame.shadow.etched.out,
 	background-size: auto, 100% 100%, 100% 100%;
 }
 
-tab.right,
+.tab.right,
 .notebook tab.right {
 	padding: 0px;
 	background-image: url("img/vgrad_med_curved_left.png");
@@ -715,8 +720,9 @@ GtkSwitch.slider:hover {
 	background-size: auto 100%;
 }
 
-GtkHeaderBar,
-GtkActionBar,
+.action-bar,
+.header-bar,
+.search-bar,
 .toolbar {
 	background-color: @bg_color;
 	background-image: url("img/button_normal.svg");
@@ -726,7 +732,7 @@ GtkActionBar,
 	border-image: url("img/null.png") 0 0 0 0 / 1px 1px 1px 1px stretch;
 }
 
-GtkInfoBar,
+.info-bar,
 .tooltip {
 	color: @tooltip_bg_color;
 	background-image: url("img/bg_notebook.png");
@@ -736,6 +742,8 @@ GtkInfoBar,
 	border-image: url("img/bevel_dark_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	color: @tooltip_fg_color;
 }
+
+GtkToolButton { background: transparent }
 
 GtkToolItemGroup {
 	background-color: @bg_color;

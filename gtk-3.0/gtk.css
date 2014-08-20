@@ -99,8 +99,16 @@
 
 *:insensitive { color: @insensitive_fg_color }
 
+GtkMenuButton,
 GtkBox { background-color: transparent }
-GtkDialog { background-color: @base_color }
+GtkBox { padding: 0px }
+
+.prompt,
+GtkDialog {
+	background-color: @base_color;
+	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+	padding: 0px;
+}
 
 GtkImage { color: @selected_fg_color }
 
