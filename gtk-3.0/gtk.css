@@ -99,8 +99,6 @@
 
 *:insensitive { color: @insensitive_fg_color }
 
-GtkHeaderBar > GtkBox { background-color: transparent }
-
 .prompt,
 GtkDialog {
 	background-color: @base_color;

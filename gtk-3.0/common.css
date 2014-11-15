@@ -743,6 +743,7 @@ GtkSwitch.slider:hover {
 	color: @tooltip_fg_color;
 }
 
+GtkBox { background: transparent; }
 GtkToolButton { background: transparent }
 
 GtkToolItemGroup {
