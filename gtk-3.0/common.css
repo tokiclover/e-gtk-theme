@@ -135,7 +135,6 @@ column-header .button:hover {
 
 .arrow.up,
 .scrollbar.button.top {
-	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_up_light_normal.png");
 	background-position: center;
@@ -144,7 +143,6 @@ column-header .button:hover {
 }
 .arrow.up:hover,
 .scrollbar.button.top:hover {
-	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_up_glow_normal.png");
 	background-position: center;
@@ -153,7 +151,6 @@ column-header .button:hover {
 }
 .arrow.up:active,
 .scrollbar.button.top:active {
-	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_up_dark_selected.png");
 	background-position: center;
@@ -162,7 +159,6 @@ column-header .button:hover {
 }
 .arrow.up:insensitive,
 .scrollbar.button.top:insensitive {
-	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_up_dark_normal.png");
 	background-position: center;
@@ -172,7 +168,6 @@ column-header .button:hover {
 
 .arrow.down,
 .scrollbar.button.bottom {
-	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_down_light_normal.png");
 	background-position: center;
@@ -182,7 +177,6 @@ column-header .button:hover {
 .arrow.down:hover,
 .expander.expanded:hover,
 .scrollbar.button.bottom:hover {
-	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_down_glow_normal.png");
 	background-position: center;
@@ -202,7 +196,6 @@ column-header .button:hover {
 .arrow.down:insensitive,
 .expander.expanded,
 .scrollbar.button.bottom:insensitive {
-	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_down_dark_normal.png");
 	background-position: center;
@@ -214,7 +207,6 @@ column-header .button:hover {
 .expander.collapsed:active,
 .menuitem.arrow:active,
 .scrollbar.button.right:active {
-	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_right_dark_selected.png");
 	background-position: center;
@@ -225,7 +217,6 @@ column-header .button:hover {
 .expander.collapsed,
 .menuitem.arrow,
 .scrollbar.button.right {
-	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_right_light_normal.png");
 	background-position: center;
@@ -236,7 +227,6 @@ column-header .button:hover {
 .expander.collapsed:hover,
 .menuitem.arrow:hover,
 .scrollbar.button.right:hover {
-	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_right_glow_normal.png");
 	background-position: center;
@@ -246,7 +236,6 @@ column-header .button:hover {
 .arrow.right:insensitive,
 .menuitem.arrow:insensitive,
 .scrollbar.button.right:insensitive {
-	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_right_dark_normal.png");
 	background-position: center;
@@ -256,7 +245,6 @@ column-header .button:hover {
 
 .arrow.left,
 .scrollbar.button.left {
-	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_left_light_normal.png");
 	background-position: center;
@@ -265,7 +253,6 @@ column-header .button:hover {
 }
 .arrow.left:active
 .scrollbar.button.left:active {
-	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_left_dark_selected.png");
 	background-position: center;
@@ -274,7 +261,6 @@ column-header .button:hover {
 }
 .arrow.left:hover,
 .scrollbar.button.left:hover {
-	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_left_glow_normal.png");
 	background-position: center;
@@ -283,7 +269,6 @@ column-header .button:hover {
 }
 .arrow.left:insensitive,
 .scrollbar.button.left:insensitive {
-	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_left_dark_normal.png");
 	background-position: center;
