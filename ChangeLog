@@ -1,6 +1,14 @@
 #$Id: e-gtk-theme/ChangeLog, 2013/01/22 18:58:34 -tclover Exp $
 
-* 0.17.0:
+0.17.1:
+
+* fixed scroll button (removed unecessary adwaita engine),
+gtk+-3.0 support themable scroll button (arrows are not);
+* fix background color (set default) and GtkBox/ToolButton/Dialog;
+* fix grip, menuitem, {action,info,header,search}-bar;
+* and clean up headers (still check&radio buttons are too buggy).
+
+0.17.0:
 
 * updated notebook bg;
 * added a menubar separator;
