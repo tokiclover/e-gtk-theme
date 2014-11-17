@@ -51,6 +51,7 @@ column-header .button:hover {
 }
 
 .check,
+.check:inconsistent,
 .check:insensitive {
 	background-color: transparent;
 	background-image: url("img/inset_shadow_square_tiny.png");
@@ -63,6 +64,14 @@ column-header .button:hover {
 .check:hover {
 	background-color: transparent;
 	background-image: url("img/inset_shadow_square_tiny_in.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 11px 11px;
+}
+
+.check row:selected:hover {
+	background-color: transparent;
+	background-image: url("img/inset_shadow_square_tiny_glow_in.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 11px 11px;
