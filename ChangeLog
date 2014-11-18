@@ -1,4 +1,10 @@
-#$Id: e-gtk-theme/ChangeLog, 2013/01/22 18:58:34 -tclover Exp $
+Header: e-gtk-theme/ChangeLog, 2014/11/11 18:58:34 Exp
+
+0.17.2:
+
+* support larger toolbar (gtk-[23].0;
+* Re-fixed dialog; Fix separator; Fix check (almost functionnal);
+button update (nicer look).
 
 0.17.1:
 
@@ -66,4 +72,3 @@ and GtkArrow globaly.
 
 * see commits;
 
-#vim:fenc=utf-8:ft=txt:
