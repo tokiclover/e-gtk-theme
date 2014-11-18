@@ -80,6 +80,9 @@
 	-GtkWidget-visited-link-color: darker(@link_color);
 	-GtkWidget-focus-padding: 2;
 	-GtkWidget-focus-line-width: 0;
+	-GtkWidget-wide-separators: 1;
+	-GtkWidget-separator-height: 2px;
+	-GtkWidget-separator-width: 2px;
 	-GtkWindow-resize-grip-width: 5;
 	-GtkWindow-resize-grip-height: 5; 
 	-GtkWidget-cursor-color: @text_color;
@@ -103,7 +106,7 @@
 GtkDialog {
 	background-color: @base_color;
 	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
-	padding: 0px;
+	padding: 2px;
 }
 
 GtkImage { color: @selected_fg_color }
