@@ -1,7 +1,8 @@
 /*
- * $Name:    e-gtk-theme-0.17.0                        Exp $
- * $Header:  e/gtk-3.0/common.css, 2014/08/08 -tclover Exp $
- * $License: 2-clause BSD, see COPYRIGHT file          Exp $
+ * Name:    e-gtk-theme-0.17.3              Exp
+ * Header:  e/gtk-3.0/gtk-widgets.css       Exp
+ * Author:  -tclover <tokiclover@gmail.com> Exp
+ * License: 2-clause BSD (see COPYING file) Exp
  */
 
 .background { background-color: @bg_color }
@@ -201,7 +202,6 @@ column-header .button:hover {
 .arrow.down:active,
 .expander.expanded:active,
 .scrollbar.button.bottom:active {
-	engine: adwaita;
 	background-color: transparent;
 	background-image: url("img/sym_down_dark_selected.png");
 	background-position: center;
