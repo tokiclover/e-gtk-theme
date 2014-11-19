@@ -1,4 +1,4 @@
-`$Id: e-gtk-theme/README.md, 2013/01/14 13:41:26 -tclover Exp $`
+Header: e-gtk-theme/README.md, 2014/11/14 13:41:26 Exp
 
 ---
 
@@ -25,7 +25,7 @@ dependent engine theme. They should just respect the user choice!
 * finish gtk+-3 theme (need documentation), coming... (gtk+-3 grows to be much more
 better than gtk+-2 counterpart if themable);
 
-`Note`: i will try to migrate pixmap engine, as an exercise to improve my c capabilities,
+Note: i will try to migrate pixmap engine, as an exercise to improve my c capabilities,
 to be able to theme almost everything with images. help needed...
 
 * convert close, maximize... image to 6x6px X bitmap images for openbox;
@@ -45,18 +45,18 @@ to be able to theme almost everything with images. help needed...
 
 * first of, gt+-3 require background multilayers, so >=gtk+-3.6 is required;
 * there is no way to crop image like border={1,1,1,1} (pixmap engine);
-* how to remove the extra stock insensitive arrow?;
-* insensitive check and radio images get lost somewhere...;
-* nothing use global arrow(s), shadow(s) type (there is no fucking way that
-i will define every single arrow or frame at hand);
+* check/radio buttons are way too messy and inpredicable with nasty state;
+* nothing use global arrow(s);
 
 ## both major versions specific:
 
 * scalling slider_[horiz,vert].png is no good, too much shadow with big sliders;
 * cannot use runner glow into trough details;
 
-PS: an ebuild is available in my overlay (on github) for gentoo users.
+PS: an [ebuild][1] is available in my overlay (on github) for gentoo users.
 
 ---
 
-`vim:fenc=utf-8:`
+[1]: https://github.com/tokiclover/bar-overlay
+
+vim:fenc=utf-8:
