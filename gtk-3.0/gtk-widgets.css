@@ -14,7 +14,7 @@
 	background-image: url("img/button_normal.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 104% 100%;
+	background-size: 110% 100%;
 	border: none;
 	padding: 2px;
 }
@@ -24,7 +24,7 @@
 	background-image: url("img/button_clicked.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 104% 100%;
+	background-size: 110% 100%;
 	border: none;
 	padding: 2px;
 }
@@ -352,7 +352,7 @@ column-header .button:hover {
 
 .pane-separator.horizontal,
 .handle.horizontal {
-	background-color: transparent;
+	background-color: @bg_color;
 	background-image: url("img/holes_vert.png");
 	background-origin: border-box;
 	background-position: center;
@@ -361,9 +361,10 @@ column-header .button:hover {
 }
 .pane-separator.vertical,
 .handle.vertical {
-	background-color: transparent;
+	background-color: @bg_color;
 	background-image: url("img/holes_horiz.png");
 	background-origin: border-box;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: auto;
 }
@@ -408,7 +409,7 @@ column-header .button:hover {
 .menubar > .menuitem:active,
 .menubar > .menuitem:hover {
 	background: transparent;
-	background-image: url("img/bg_radgrad.png");
+	background-image: url("img/shadow_angled_in_sides_glow.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
