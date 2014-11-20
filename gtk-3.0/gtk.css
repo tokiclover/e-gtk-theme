@@ -107,7 +107,7 @@
 .prompt,
 GtkDialog {
 	background-color: @base_color;
-	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+	border-image: url("img/bevel_out.png") 1 1 1 1 / 0px 1px 1px 1px stretch;
 	padding: 2px;
 }
 

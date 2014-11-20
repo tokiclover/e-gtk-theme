@@ -758,6 +758,14 @@ GtkToolItemGroup {
 	padding: 2px;
 }
 
+GtkDialog .titlebar {
+	background-image: url("img/vgrad_med.png");
+	background-repeat: no-repeat;
+	background-origin: border-box;
+	background-size: 100% 100%;
+	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+}
+
 GtkTextView {
 	background-color: @base_color;
 	padding: 2px;
