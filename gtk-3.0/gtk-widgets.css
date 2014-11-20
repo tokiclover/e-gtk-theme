@@ -759,9 +759,6 @@ GtkToolItemGroup {
 
 GtkTextView {
 	background-color: @base_color;
-	background-origin: content-box;
-	border-image: url("img/bevel_dark_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
-	border-width: 1px;
 	padding: 2px;
 }
 
