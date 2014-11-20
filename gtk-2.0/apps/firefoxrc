@@ -1,5 +1,9 @@
-# $Name:   e-gtk-theme-0.17.0                            Exp $
-# $Header: e/gtk-2.0/apps/firefoxrc, 2014/08/08 -tclover Exp $
+#
+# Name:   e-gtk-theme-0.17.4               Exp
+# Header: e/gtk-2.0/apps/firefoxrc         Exp
+# Author: -tclover <tokiclover@gmail.com>  Exp
+# Licence: 2-clause BSD                    Exp
+#
 
 style "firefox-entry" {
 	GtkWidget::interior-focus	= 0

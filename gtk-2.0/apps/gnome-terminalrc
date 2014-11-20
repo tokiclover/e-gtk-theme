@@ -1,5 +1,9 @@
-# $Name:   e-gtk-theme-0.17.0                                   Exp $
-# $Header: e/gtk-2.0/apps/gnome-terminalrc, 2014/08/08 -tclover Exp $
+#
+# Name:   e-gtk-theme-0.17.4               Exp
+# Header: e/gtk-2.0/apps/gnome-terminalrc  Exp
+# Author: -tclover <tokiclover@gmail.com>  Exp
+# Licence: 2-clause BSD                    Exp
+#
 
 style "terminal" {
 	text[NORMAL] = @tooltip_fg_color
