@@ -151,7 +151,7 @@ GtkTreeView row:selected {
 	color: @selected_bg_color;
 }
 
-@import url("common.css");
+@import url("gtk-widgets.css");
 @import url("apps/term.css");
 
 /*
