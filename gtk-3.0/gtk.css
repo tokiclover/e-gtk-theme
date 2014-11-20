@@ -57,7 +57,7 @@
 	-GtkNotebook-tab-overlap: -1;
 	-GtkNotebook-tab-curvature: 0;
 
-	-GtkArrow-arrow-scaling: 1.0;
+	-GtkArrow-arrow-scaling: 0.5;
 	-GtkCheckButton-indicator-size: 11;
 	-GtkCheckMenuItem-indicator-size: 11;
 	-GtkToolButton-icon-spacing: 0;
