@@ -1,5 +1,9 @@
 Header: e-gtk-theme/ChangeLog, 2014/11/11 18:58:34 Exp
 
+0.17.3:
+
+* Fix arrow-size and GtkTexView (transparent background in GtkDialog);
+
 0.17.2:
 
 * support larger toolbar (gtk-[23].0;
