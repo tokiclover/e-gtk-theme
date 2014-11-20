@@ -757,6 +757,14 @@ GtkToolItemGroup {
 	padding: 2px;
 }
 
+GtkTextView {
+	background-color: @base_color;
+	background-origin: content-box;
+	border-image: url("img/bevel_dark_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+	border-width: 1px;
+	padding: 2px;
+}
+
 /*
  * vim:fenc=utf-8:ft=css:ci:pi:sts=0:sw=4:ts=4:
  */
