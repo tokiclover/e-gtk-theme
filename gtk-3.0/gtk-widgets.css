@@ -766,6 +766,8 @@ GtkDialog .titlebar {
 	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 }
 
+GtkIconView,
+GtkTreeView,
 GtkTextView {
 	background-color: @base_color;
 	padding: 2px;
