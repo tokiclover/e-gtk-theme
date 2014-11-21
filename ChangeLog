@@ -1,5 +1,10 @@
 Header: e-gtk-theme/ChangeLog, 2014/11/11 18:58:34 Exp
 
+0.18.0:
+
+* Added makefiles to avoid plain copying the whole directory;
+* (gtk-3:) entry update; insensitive sym_{lef,righ}t update;
+
 0.17.4:
 
 * Fix button, dialog, separator and menuitem widget;
