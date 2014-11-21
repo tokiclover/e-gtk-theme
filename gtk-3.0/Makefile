@@ -83,7 +83,7 @@ gtk3_IMAGES = \
 	vgrad_med_curved_right.png \
 	vgrad_med_curved_top.png
 DISTFILES  += $(gtk3_DATA) $(gtk3_IMAGES)
-DISTDIRS   += $(themedir)/gtk-2.0/img $(themedir)/gtk-3.0 $(themedir)/gtk-3.0/apps
+DISTDIRS   += $(themedir)/gtk-2.0/img $(themedir)/gtk-3.0/apps
 
 gtk.gresource:
 	-mv -f gtk-3.0/gtk.css gtk-3.0/gtk-main.css
