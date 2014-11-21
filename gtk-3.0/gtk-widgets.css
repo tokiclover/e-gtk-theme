@@ -300,7 +300,7 @@ column-header .button:hover {
 	background-size: 100% 100%;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	border-width: 1px;
-	padding: 4px;
+	padding: 2px;
 }
 
 .entry:insensitive {
@@ -311,7 +311,7 @@ column-header .button:hover {
 	background-size: 100% 100%;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	border-width: 1px;
-	padding: 4px;
+	padding: 2px;
 }
 
 .entry.progressbar {
