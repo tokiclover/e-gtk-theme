@@ -20,7 +20,6 @@ dependent engine theme. They should just respect the user choice!
 # TO DO:
 
 * better slider images (slider_{horiz,vert}.png);
-* better insensitive left and right arrows (sym_{left,right}_dark_{normal,selected}.png);
 * improve panel buttons?;
 * finish gtk+-3 theme (need documentation), coming... (gtk+-3 grows to be much more
 better than gtk+-2 counterpart if themable);
