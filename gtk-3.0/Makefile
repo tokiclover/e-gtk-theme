@@ -4,8 +4,7 @@ gtk3_DATA   = \
 	apps/term.css \
 	gtk-widgets.css \
 	gtk.css \
-	settings.ini \
-	img
+	settings.ini
 gtk3_IMAGES = \
 	bevel_dark_out.png \
 	bevel_in.png \

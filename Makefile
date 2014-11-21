@@ -32,7 +32,7 @@ FORCE:
 $(dist_EXTRA): FORCE
 	$(install_DATA) $@ $(DESTDIR)$(docdir)/$@
 $(theme_DATA): FORCE
-	$(CP_P) $@ $(DESTDIR)$(themedir)
+	$(install_DATA) $@ $(DESTDIR)$(themedir)
 $(DISTDIRS):
 	$(MKDIR_P) $(DESTDIR)$@
 
