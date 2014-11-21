@@ -18,3 +18,7 @@ style "firefox-entry" {
 	}
 }
 widget	"MozillaGtkWidget*GtkFixed*GtkEntry*" style:highest "firefox-entry"
+
+#
+# vim:fenc=utf-8:ft=gtkrc:ci:pi:sts=0:sw=4:ts=4:
+#

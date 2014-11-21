@@ -49,4 +49,6 @@ class "*Panel*" style "panel"
 widget "*.tasklist-button" style "button" 
 widget "GtkWindow.gnome-panel-main-menu*" style "menu"
 
+#
 # vim:fenc=utf-8:ft=gtkrc:ci:pi:sts=0:sw=4:ts=4:
+#

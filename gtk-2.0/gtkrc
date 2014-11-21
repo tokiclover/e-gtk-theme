@@ -1310,4 +1310,6 @@ include "apps/gnome-panelrc"
 include "apps/gnome-system-monitorrc"
 include "apps/gnome-terminalrc"
 
+#
 # vim:fenc=utf-8:ft=gtkrc:ci:pi:sts=0:sw=4:ts=4:
+#

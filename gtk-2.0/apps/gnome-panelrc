@@ -10,3 +10,7 @@ style "gnome-panel" {
 }
 
 widget_class "*PanelTopLevel*" style "gnome-panel"
+
+#
+# vim:fenc=utf-8:ft=gtkrc:ci:pi:sts=0:sw=4:ts=4:
+#
