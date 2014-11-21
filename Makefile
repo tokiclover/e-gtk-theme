@@ -15,13 +15,15 @@ themedir    = $(datadir)/themes/$(THEME_NAME)
 
 theme_DATA  = index.theme start-here.png
 
+apps_DATA   = \
+	firefox.stylish
 dist_EXTRA  = \
 	AUTHORS \
 	COPYING \
 	README.md \
 	ChangeLog
-DISTDIRS    = $(docdir) $(themedir)
-DISTFILES   = $(dist_EXTRA) $(theme_DATA)
+DISTDIRS    = $(datadir)/$(PACKAGE)/apps $(docdir) $(themedir)
+DISTFILES   = $(apps_DATA) $(dist_EXTRA) $(theme_DATA)
 
 FORCE:
 
@@ -29,6 +31,8 @@ FORCE:
 -include gtk-2.0/Makefile
 -include metacity-1/Makefile
 
+$(apps_DATA): FORCE
+	$(install_DATA) apps/$@ $(DESTDIR)$(datadir)/$(PACKAGE)/apps/$@
 $(dist_EXTRA): FORCE
 	$(install_DATA) $@ $(DESTDIR)$(docdir)/$@
 $(theme_DATA): FORCE
@@ -36,7 +40,10 @@ $(theme_DATA): FORCE
 $(DISTDIRS):
 	$(MKDIR_P) $(DESTDIR)$@
 
-.PHONY: FORCE install install-all
+.PHONY: FORCE install install-all install-apps install-doc
 
 install-all: $(DISTDIRS) $(DISTFILES)
 	$(install_DATA) -D openbox-3/themerc $(DESTDIR)$(themedir)/openbox-3/themerc
+install-apps: $(apps_DATA)
+install-doc: $(dist_EXTRA)
+
