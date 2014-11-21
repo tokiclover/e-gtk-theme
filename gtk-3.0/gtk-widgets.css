@@ -291,24 +291,27 @@ column-header .button:hover {
 	background-size: 15px 15px;
 }
 
+.entry:focus,
 .entry {
-	background-color: shade(@bg_color,0.86);
+	background-color: shade(@bg_color,0.95);
 	background-image: url("img/inset_shadow.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 120% 100%;
+	background-size: 100% 100%;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
-	padding: 3px;
+	border-width: 1px;
+	padding: 4px;
 }
 
-.entry:focus {
-	border-width: 2px;
-	border-image: url("img/outline_glow.png") 1 1 1 1 / 2px 2px 2px 2px stretch;
-	box-shadow: inset 0px 0px 2px 2px shade(@bg_color,0.66);
-	padding: 3px;
-}
 .entry:insensitive {
-	color: shade(@insensitive_fg_color,0.86);
+	background-color: @bg_color;
+	background-image: url("img/inset_shadow.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+	border-width: 1px;
+	padding: 4px;
 }
 
 .entry.progressbar {
