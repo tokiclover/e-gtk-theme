@@ -606,8 +606,8 @@ style "entry" = "default" {
 
 	GtkWidget::interior-focus			= 0
 
-	xthickness = 3
-	ythickness = 3
+	xthickness = 2
+	ythickness = 2
 
 	base[NORMAL] = shade(0.86,@bg_color)
 
