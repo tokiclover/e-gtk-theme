@@ -111,6 +111,7 @@ GtkDialog {
 	padding: 2px;
 }
 
+GtkImage, GtkLabel { background-color: transparent }
 GtkImage { color: @selected_fg_color }
 
 GtkImage:active,
