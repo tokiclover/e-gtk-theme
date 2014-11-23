@@ -763,7 +763,7 @@ GtkToolItemGroup {
 }
 
 GtkDialog .titlebar {
-	background-image: url("img/vgrad_med.png");
+	background-image: url("img/vgrad_med_curved.png");
 	background-repeat: no-repeat;
 	background-origin: border-box;
 	background-size: 100% 100%;
