@@ -17,6 +17,12 @@ theme. No hardcoded style is need. Plus glitches fixes. That's all. It should
 be normaly the opposite, don't you think? Why te hell Mozzilla is hardcoding
 dependent engine theme. They should just respect the user choice!
 
+# Instation:
+
+`make prefix=/usr install-all` will suffice to have a lean copy of the theme to
+the usual place (/usr/share/theme/e). gtk-3.0 has a glib compilable counterpart
+but there are buggy widgets so use `make install` with care.
+
 # TO DO:
 
 * better slider images (slider_{horiz,vert}.png);
