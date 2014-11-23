@@ -107,7 +107,7 @@ $(theme_DATA): FORCE
 	$(install_DATA) $@ $(DESTDIR)$(themedir)
 $(openbox_DATA): FORCE
 	$(install_DATA) openbox-3/$@ $(DESTDIR)$(themedir)/openbox-3/$@
-$(DISTDIRS):
+$(DISTDIRS): FORCE
 	$(MKDIR_P) $(DESTDIR)$@
 
 .PHONY: FORCE install install-all install-apps install-doc install-theme
