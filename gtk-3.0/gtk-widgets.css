@@ -374,11 +374,12 @@ column-header .button:hover {
 
 .menu {
 	color: @fg_color;
-	background-image: url("img/shine.png"), url("img/menu.png");
-	background-position: center -2px, center;
+	background-color: shade(@base_color,0.90);
+	background-image: url("img/vgrad_med_curved.png");
+	background-position: top;
 	background-repeat: no-repeat;
-	background-size: auto, 100% 100%;
-	background-origin: padding-box;
+	background-size: 100% 40px;
+	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	padding: 0px;
 }
 
