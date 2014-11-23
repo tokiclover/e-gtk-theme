@@ -30,3 +30,4 @@ $(metacity_DATA): FORCE
 .PHONY: install-metacity
 
 install-metacity: $(metacity_DATA)
+

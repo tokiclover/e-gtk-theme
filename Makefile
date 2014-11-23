@@ -22,8 +22,74 @@ dist_EXTRA  = \
 	COPYING \
 	README.md \
 	ChangeLog
-DISTDIRS    = $(datadir)/$(PACKAGE)/apps $(docdir) $(themedir)
-DISTFILES   = $(apps_DATA) $(dist_EXTRA) $(theme_DATA)
+dist_IMAGES = \
+	bevel_dark_out.png \
+	bevel_in.png \
+	bevel_out.png \
+	bg_notebook.png \
+	button_clicked.png \
+	button_normal.png \
+	button_normal.svg \
+	button_spin_down_normal.png \
+	button_spin_up_normal.png \
+	frame_gap.png \
+	glow_round_corners.png \
+	hole_tiny.png \
+	holes_horiz.png \
+	holes_tiny_glow_horiz.png \
+	holes_tiny_glow_vert.png \
+	holes_tiny_horiz.png \
+	holes_tiny_vert.png \
+	holes_vert.png \
+	inset_shadow.png \
+	inset_shadow_circle_tiny.png \
+	inset_shadow_circle_tiny_in.png \
+	inset_shadow_circle_tiny_ins.png \
+	inset_shadow_square_tiny.png \
+	inset_shadow_square_tiny_glow_in.png \
+	inset_shadow_square_tiny_in.png \
+	menu.png \
+	outline_glow.png \
+	separator_horiz.png \
+	separator_vert.png \
+	shadow_angled_in_sides_glow.png \
+	shadow_angled_in_sides_left.png \
+	shadow_angled_in_sides_right.png \
+	shadow_angled_in_sides_top.png \
+	slider_horiz.png \
+	slider_run_base_horiz.png \
+	slider_run_base_vert.png \
+	slider_vert.png \
+	sym_down_dark_normal.png \
+	sym_down_dark_selected.png \
+	sym_down_glow_normal.png \
+	sym_down_light_normal.png \
+	sym_left_dark_normal.png \
+	sym_left_glow_normal.png \
+	sym_left_light_normal.png \
+	sym_right_dark_normal.png \
+	sym_right_dark_selected.png \
+	sym_right_glow_normal.png \
+	sym_right_light_normal.png \
+	sym_up_dark_normal.png \
+	sym_up_glow_normal.png \
+	sym_up_light_normal.png \
+	trough_horiz.png \
+	trough_vert.png \
+	vgrad_dark.png \
+	vgrad_dark_left.png \
+	vgrad_dark_right.png \
+	vgrad_dark_top.png \
+	vgrad_med_curved.png \
+	vgrad_med_curved_left.png \
+	vgrad_med_curved_right.png
+openbox_DATA= \
+	themerc
+DISTDIRS    = \
+	$(datadir)/$(PACKAGE)/apps $(docdir) \
+	$(themedir)/gtk-2.0/img \
+	$(themedir)/openbox-3
+DISTFILES   = $(apps_DATA) $(dist_EXTRA) $(theme_DATA) $(openbox_DATA)
 
 FORCE:
 
@@ -35,15 +101,21 @@ $(apps_DATA): FORCE
 	$(install_DATA) apps/$@ $(DESTDIR)$(datadir)/$(PACKAGE)/apps/$@
 $(dist_EXTRA): FORCE
 	$(install_DATA) $@ $(DESTDIR)$(docdir)/$@
+$(dist_IMAGES): FORCE
+	$(install_DATA) gtk-2.0/img/$@ $(DESTDIR)$(themedir)/gtk-2.0/img/$@
 $(theme_DATA): FORCE
 	$(install_DATA) $@ $(DESTDIR)$(themedir)
+$(openbox_DATA): FORCE
+	$(install_DATA) openbox-3/$@ $(DESTDIR)$(themedir)/openbox-3/$@
 $(DISTDIRS):
 	$(MKDIR_P) $(DESTDIR)$@
 
-.PHONY: FORCE install install-all install-apps install-doc
+.PHONY: FORCE install install-all install-apps install-doc install-theme
 
 install-all: $(DISTDIRS) $(DISTFILES)
-	$(install_DATA) -D openbox-3/themerc $(DESTDIR)$(themedir)/openbox-3/themerc
+	ln -fs ../gtk-2.0/img $(DESTDIR)$(themedir)/gtk-3.0/img
 install-apps: $(apps_DATA)
 install-doc: $(dist_EXTRA)
+install: $(DISTDIRS) install-apps install-doc install-theme
+install-theme: $(openbox_DATA) install-metacity install-gtk2 install-resources $(theme_DATA)
 
