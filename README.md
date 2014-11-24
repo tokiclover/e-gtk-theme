@@ -3,6 +3,13 @@ Header: e-gtk-theme/README.md, 2014/11/14 13:41:26 Exp
 ---
 
 e-gtk-theme is a gtk theme to match the new enlightenment DR17 default theme
+The name imply that *this is not a GNOME/SystemD OS* theme. There is no way
+I am going to extend this theme to support that OS.
+
+# Requirements:
+
+* first of, gt+-3.0 require background multilayers, so >=gtk+-3.6 is required;
+* only pixmap engine (gtk-engines package) is required for gtk-2.0 theme;
 
 # Using this theme
 
@@ -48,10 +55,11 @@ to be able to theme almost everything with images. help needed...
 
 ## gtk+-3 specific:
 
-* first of, gt+-3 require background multilayers, so >=gtk+-3.6 is required;
 * there is no way to crop image like border={1,1,1,1} (pixmap engine);
 * check/radio buttons are way too messy and inpredicable with nasty state;
 * nothing use global arrow(s);
+* inset shadow can only be included in entry; otherwise, impossible because
+  every single child widget should choose a shadow type (e.g. GtkPane...;
 
 ## both major versions specific:
 
