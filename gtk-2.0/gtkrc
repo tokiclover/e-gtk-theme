@@ -1,5 +1,5 @@
 #
-# Name:   e-gtk-theme-0.17.4                  Exp
+# Name:   e-gtk-theme-0.18.0                  Exp
 # Header: e/gtk-2.0/gtkrc                     Exp
 # Author: -tclover <tokiclover@gmail.com>     Exp
 # License: 2-clause BSD (see COPYING file)    Exp
@@ -13,364 +13,364 @@
 gtk-menu-drop-shadow = 0
 gtk-menu-shadow-delay = 0
 
-gtk_color_scheme = "fg_color:#fafafa\nbg_color:#383838\nbase_color:#484848\ntext_color:#fafafa\nselected_bg_color:#245f99\nselected_fg_color:#181818\ntooltip_bg_color:#101010\ntooltip_fg_color:#aaaaaa\ninsens_fg_color:#282828"
+gtk_color_scheme = "fg_color:#fafafa\nbg_color:#424242\nbase_color:#484848\ntext_color:#fafafa\nselected_bg_color:#245f99\nselected_fg_color:#181818\ntooltip_bg_color:#101010\ntooltip_fg_color:#aaaaaa\ninsens_fg_color:#282828"
 gtk-icon-sizes = "gtk-menu=16,16:gtk-button=22,22:gtk-small-toolbar=16,16:gtk-large-toolbar=28,28:gtk-dnd=24,24:gtk-dialog=28,28"
 
 style "default" {
-	GtkWidget::interior-focus			= 7
-	GtkWidget::focus-line-width 		= 0
-	GtkWidget::focus-padding			= 1
-	GtkWidget::new-tooltip-style 		= 1
-	GtkButton::default-border			= {0,0,0,0}
-	GtkButton::default-outside-border	= {0,0,0,0}
+	GtkWidget::interior-focus           = 7
+	GtkWidget::focus-line-width         = 0
+	GtkWidget::focus-padding            = 1
+	GtkWidget::new-tooltip-style        = 1
+	GtkButton::default-border           = {0,0,0,0}
+	GtkButton::default-outside-border   = {0,0,0,0}
 
-	GtkTreeView::odd-row-color			= @base_color
-	GtkTreeView::even-row-color			= @bg_color
-	GtkTreeView::indent-expanders		= 1
-	GtkTreeView::expander-size			= 15
-	GtkExpander::expander-size			= 15
-	GtkExpander::expander-spacing		= 0
+	GtkTreeView::odd-row-color          = @base_color
+	GtkTreeView::even-row-color         = shade(0.90,@bg_color)
+	GtkTreeView::indent-expanders       = 1
+	GtkTreeView::expander-size          = 15
+	GtkExpander::expander-size          = 15
+	GtkExpander::expander-spacing       = 0
 
-	GtkRange::trough-border				= 0
-	GtkRange::slider-width				= 15
-	GtkRange::stepper-size				= 15
-	GtkRange::trough-under-steppers		= 0
-	GtkRange::stepper-spacing 			= 0
+	GtkRange::trough-border             = 0
+	GtkRange::slider-width              = 15
+	GtkRange::stepper-size              = 15
+	GtkRange::trough-under-steppers     = 0
+	GtkRange::stepper-spacing           = 0
 
-	GtkVScale::slider-length 			= 42
-	GtkVScale::slider-width 			= 15
-	GtkHScale::slider-length 			= 42
-	GtkHScale::slider-width 			= 15
+	GtkVScale::slider-length            = 42
+	GtkVScale::slider-width             = 15
+	GtkHScale::slider-length            = 42
+	GtkHScale::slider-width             = 15
 
-	GtkPaned::handle-size				= 6
+	GtkPaned::handle-size               = 6
 	GtkScrolledWindow::scrollbar-spacing= 0
-	GtkScrolledWindow::scrollbars-within-bevel	= 0
-	GtkScrollbar::min-slider-length		= 42
-	GtkCheckButton::indicator-size		= 14
-	GtkScrollbar::has-forward-stepper	= 1
-	GtkScrollbar::has-backward-stepper	= 1
-	GtkCheckButton::indicator-spacing	= 3
-	GtkMenuBar::internal-padding		= 1
-	GtkOptionMenu::indicator-size		= {15,8}
-	GtkOptionMenu::indicator-spacing	= {8,2,0,0}
-	GtkStatusbar::shadow-type 			= GTK_SHADOW_NONE
-	GtkStatusbar::has-resize-grip  		= 1
-	GtkSpinButton::shadow-type 			= GTK_SHADOW_IN
+	GtkScrolledWindow::scrollbars-within-bevel = 0
+	GtkScrollbar::min-slider-length     = 42
+	GtkCheckButton::indicator-size      = 14
+	GtkScrollbar::has-forward-stepper   = 1
+	GtkScrollbar::has-backward-stepper  = 1
+	GtkCheckButton::indicator-spacing   = 3
+	GtkMenuBar::internal-padding        = 1
+	GtkOptionMenu::indicator-size       = {15,8}
+	GtkOptionMenu::indicator-spacing    = {8,2,0,0}
+	GtkStatusbar::shadow-type           = GTK_SHADOW_NONE
+	GtkStatusbar::has-resize-grip       = 1
+	GtkSpinButton::shadow-type          = GTK_SHADOW_IN
 
-	GtkNotebook::tab-curvature			= 0
-	GtkNotebook::tab-overlap			= -1
+	GtkNotebook::tab-curvature          = 0
+	GtkNotebook::tab-overlap            = -1
 
-	xthickness	= 2
-	ythickness	= 2
+	xthickness = 2
+	ythickness = 2
 
-	GtkEntry::cursor-color				= @text_color
-	GtkEntry::inner-border				= {1,1,1,1}
-	GtkTextView::cursor-color			= @text_color
-	GtkTextView::secondary-cursor-color	= @text_color
-	GtkWidget::cursor-color				= @text_color
-	GtkWidget::secondary-cursor-color	= @text_color
-	GtkWidget::link-color				= @selected_bg_color
+	GtkEntry::cursor-color              = @text_color
+	GtkEntry::inner-border              = {1,1,1,1}
+	GtkTextView::cursor-color           = @text_color
+	GtkTextView::secondary-cursor-color = @text_color
+	GtkWidget::cursor-color             = @text_color
+	GtkWidget::secondary-cursor-color   = @text_color
+	GtkWidget::link-color               = @selected_bg_color
 
-	fg[NORMAL]			= @fg_color
-	fg[PRELIGHT]		= @selected_bg_color
-	fg[ACTIVE]			= @fg_color
-	fg[SELECTED]		= @selected_bg_color
-	fg[INSENSITIVE]		= shade(0.76,@fg_color)
+	fg[NORMAL]        = @fg_color
+	fg[PRELIGHT]      = @selected_bg_color
+	fg[ACTIVE]        = @fg_color
+	fg[SELECTED]      = @selected_bg_color
+	fg[INSENSITIVE]   = shade(0.76,@fg_color)
 
-	bg[NORMAL]			= @bg_color
-	bg[PRELIGHT]		= @selected_fg_color
-	bg[ACTIVE]			= @bg_color
-	bg[SELECTED]		= @selected_fg_color
-	bg[INSENSITIVE] 	= shade(0.76,@bg_color)
+	bg[NORMAL]        = @bg_color
+	bg[PRELIGHT]      = @selected_fg_color
+	bg[ACTIVE]        = @bg_color
+	bg[SELECTED]      = @selected_fg_color
+	bg[INSENSITIVE]   = shade(0.76,@bg_color)
 
-	base[NORMAL]		= @base_color
-	base[PRELIGHT]		= @selected_fg_color
-	base[ACTIVE]		= shade(0.76,@selected_bg_color)
-	base[SELECTED]		= @selected_fg_color
-	base[INSENSITIVE]	= @base_color
+	base[NORMAL]      = @base_color
+	base[PRELIGHT]    = @selected_fg_color
+	base[ACTIVE]      = shade(0.76,@selected_bg_color)
+	base[SELECTED]    = @selected_fg_color
+	base[INSENSITIVE] = @base_color
 
-	text[NORMAL]		= @text_color
-	text[PRELIGHT]		= @selected_bg_color
-	text[ACTIVE]		= @text_color
-	text[SELECTED]		= @selected_bg_color
-	text[INSENSITIVE]	= shade(0.76,@insens_fg_color)
+	text[NORMAL]      = @text_color
+	text[PRELIGHT]    = @selected_bg_color
+	text[ACTIVE]      = @text_color
+	text[SELECTED]    = @selected_bg_color
+	text[INSENSITIVE] = shade(0.76,@insens_fg_color)
 
 	engine "pixmap" {
 		image {
-			function	= VLINE
-			file		= "img/separator_vert.png"
-			border		= {0,0,0,0}
-			stretch		= TRUE
+			function = VLINE
+			file     = "img/separator_vert.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
 		}
 		image {
-			function	= HLINE
-			file		= "img/separator_horiz.png"
-			border		= {0,0,0,0}
-			stretch		= TRUE
-		}
-
-		image {
-			function		= HANDLE
-			overlay_file	= "img/holes_horiz.png"
-			overlay_stretch	= FALSE
-			orientation		= HORIZONTAL
-		}
-		image {
-			function		= HANDLE
-			overlay_file	= "img/holes_vert.png"
-			overlay_stretch	= FALSE
-			orientation		= VERTICAL
+			function = HLINE
+			file     = "img/separator_horiz.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
 		}
 
 		image {
-			function		= ARROW
-			state			= NORMAL
-			overlay_file	= "img/sym_up_light_normal.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
-			arrow_direction	= UP
+			function        = HANDLE
+			overlay_file    = "img/holes_horiz.png"
+			overlay_stretch = FALSE
+			orientation     = HORIZONTAL
 		}
 		image {
-			function		= ARROW
-			state			= NORMAL
-			overlay_file	= "img/sym_down_light_normal.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
-			arrow_direction	= DOWN
-		}
-		image {
-			function		= ARROW
-			state			= NORMAL
-			overlay_file	= "img/sym_left_light_normal.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
-			arrow_direction	= LEFT
-		}
-		image {
-			function		= ARROW
-			state			= NORMAL
-			overlay_file	= "img/sym_right_light_normal.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
-			arrow_direction	= RIGHT
-		}
-		image {
-			function		= ARROW
-			state			= ACTIVE
-			overlay_file	= "img/sym_up_glow_normal.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
-			arrow_direction	= UP
-		}
-		image {
-			function		= ARROW
-			state			= ACTIVE
-			overlay_file	= "img/sym_down_glow_normal.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
-			arrow_direction	= DOWN
-		}
-		image {
-			function		= ARROW
-			state			= ACTIVE
-			overlay_file	= "img/sym_left_glow_normal.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
-			arrow_direction	= LEFT
-		}
-		image {
-			function		= ARROW
-			state			= PRELIGHT
-			overlay_file	= "img/sym_up_glow_normal.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
-			arrow_direction	= UP
-		}
-		image {
-			function		= ARROW
-			state			= PRELIGHT
-			overlay_file	= "img/sym_down_glow_normal.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
-			arrow_direction	= DOWN
-		}
-		image {
-			function		= ARROW
-			state			= PRELIGHT
-			overlay_file	= "img/sym_left_glow_normal.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
-			arrow_direction	= LEFT
-		}
-		image {
-			function		= ARROW
-			state			= PRELIGHT
-			overlay_file	= "img/sym_right_glow_normal.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
-			arrow_direction	= RIGHT
-		}
-		image {
-			function		= ARROW
-			state			= PRELIGHT
-			overlay_file	= "img/sym_right_glow_normal.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
-			arrow_direction	= RIGHT
-		}
-		image {
-			function		= ARROW
-			state			= INSENSITIVE
-			overlay_file	= "img/sym_up_dark_normal.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
-			arrow_direction	= UP
-		}
-		image {
-			function		= ARROW
-			state			= INSENSITIVE
-			overlay_file	= "img/sym_down_dark_normal.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
-			arrow_direction	= DOWN
-		}
-		image {
-			function		= ARROW
-			state			= INSENSITIVE
-			overlay_file	= "img/sym_left_dark_normal.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
-			arrow_direction	= LEFT
-		}
-		image {
-			function		= ARROW
-			state			= INSENSITIVE
-			overlay_file	= "img/sym_right_dark_normal.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
-			arrow_direction	= RIGHT
+			function        = HANDLE
+			overlay_file    = "img/holes_vert.png"
+			overlay_stretch = FALSE
+			orientation     = VERTICAL
 		}
 
 		image {
-			function		= EXPANDER
-			expander_style	= EXPANDED
-			state			= NORMAL
-			file			= "img/sym_down_dark_normal.png"
-			border			= {2,2,2,2}
-			stretch			= TRUE
+			function        = ARROW
+			state           = NORMAL
+			overlay_file    = "img/sym_up_light_normal.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
+			arrow_direction = UP
 		}
 		image {
-			function		= EXPANDER
-			expander_style	= EXPANDED
-			state			= PRELIGHT
-			file			= "img/sym_down_glow_normal.png"
-			border			= {2,2,2,2}
-			stretch			= TRUE
+			function        = ARROW
+			state           = NORMAL
+			overlay_file    = "img/sym_down_light_normal.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
+			arrow_direction = DOWN
 		}
 		image {
-			function		= EXPANDER
-			expander_style	= EXPANDED
-			state			= ACTIVE
-			file			= "img/sym_down_dark_selected.png"
-			border			= {2,2,2,2}
-			stretch			= TRUE
+			function        = ARROW
+			state           = NORMAL
+			overlay_file    = "img/sym_left_light_normal.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
+			arrow_direction = LEFT
+		}
+		image {
+			function        = ARROW
+			state           = NORMAL
+			overlay_file    = "img/sym_right_light_normal.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
+			arrow_direction = RIGHT
+		}
+		image {
+			function        = ARROW
+			state           = ACTIVE
+			overlay_file    = "img/sym_up_glow_normal.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
+			arrow_direction = UP
+		}
+		image {
+			function        = ARROW
+			state           = ACTIVE
+			overlay_file    = "img/sym_down_glow_normal.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
+			arrow_direction = DOWN
+		}
+		image {
+			function        = ARROW
+			state           = ACTIVE
+			overlay_file    = "img/sym_left_glow_normal.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
+			arrow_direction = LEFT
+		}
+		image {
+			function        = ARROW
+			state           = PRELIGHT
+			overlay_file    = "img/sym_up_glow_normal.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
+			arrow_direction = UP
+		}
+		image {
+			function        = ARROW
+			state           = PRELIGHT
+			overlay_file    = "img/sym_down_glow_normal.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
+			arrow_direction = DOWN
+		}
+		image {
+			function        = ARROW
+			state           = PRELIGHT
+			overlay_file    = "img/sym_left_glow_normal.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
+			arrow_direction = LEFT
+		}
+		image {
+			function        = ARROW
+			state           = PRELIGHT
+			overlay_file    = "img/sym_right_glow_normal.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
+			arrow_direction = RIGHT
+		}
+		image {
+			function        = ARROW
+			state           = PRELIGHT
+			overlay_file    = "img/sym_right_glow_normal.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
+			arrow_direction = RIGHT
+		}
+		image {
+			function        = ARROW
+			state           = INSENSITIVE
+			overlay_file    = "img/sym_up_dark_normal.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
+			arrow_direction = UP
+		}
+		image {
+			function        = ARROW
+			state           = INSENSITIVE
+			overlay_file    = "img/sym_down_dark_normal.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
+			arrow_direction = DOWN
+		}
+		image {
+			function        = ARROW
+			state           = INSENSITIVE
+			overlay_file    = "img/sym_left_dark_normal.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
+			arrow_direction = LEFT
+		}
+		image {
+			function        = ARROW
+			state           = INSENSITIVE
+			overlay_file    = "img/sym_right_dark_normal.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
+			arrow_direction = RIGHT
 		}
 
 		image {
-			function		= EXPANDER
-			expander_style	= SEMI_EXPANDED
+			function       = EXPANDER
+			expander_style = EXPANDED
+			state          = NORMAL
+			file           = "img/sym_down_dark_normal.png"
+			border         = {2,2,2,2}
+			stretch        = TRUE
+		}
+		image {
+			function       = EXPANDER
+			expander_style = EXPANDED
+			state          = PRELIGHT
+			file           = "img/sym_down_glow_normal.png"
+			border         = {2,2,2,2}
+			stretch        = TRUE
+		}
+		image {
+			function       = EXPANDER
+			expander_style = EXPANDED
+			state          = ACTIVE
+			file           = "img/sym_down_dark_selected.png"
+			border         = {2,2,2,2}
+			stretch        = TRUE
 		}
 
 		image {
-			function		= EXPANDER
-			expander_style	= COLLAPSED
-			state			= NORMAL
-			file			= "img/sym_right_light_normal.png"
-			border			= {2,2,2,2}
-			stretch			= TRUE
-		}
-		image {
-			function		= EXPANDER
-			expander_style	= COLLAPSED
-			state			= PRELIGHT
-			file			= "img/sym_right_glow_normal.png"
-			border			= {2,2,2,2}
-			stretch			= TRUE
-		}
-		image {
-			function		= EXPANDER
-			expander_style	= COLLAPSED
-			state			= ACTIVE
-			file			= "img/sym_right_dark_selected.png"
-			border			= {2,2,2,2}
-			stretch			= TRUE
+			function       = EXPANDER
+			expander_style = SEMI_EXPANDED
 		}
 
 		image {
-			function		= EXPANDER
-			expander_style	= SEMI_COLLAPSED
+			function       = EXPANDER
+			expander_style = COLLAPSED
+			state          = NORMAL
+			file           = "img/sym_right_light_normal.png"
+			border         = {2,2,2,2}
+			stretch        = TRUE
+		}
+		image {
+			function       = EXPANDER
+			expander_style = COLLAPSED
+			state          = PRELIGHT
+			file           = "img/sym_right_glow_normal.png"
+			border         = {2,2,2,2}
+			stretch        = TRUE
+		}
+		image {
+			function       = EXPANDER
+			expander_style = COLLAPSED
+			state          = ACTIVE
+			file           = "img/sym_right_dark_selected.png"
+			border         = {2,2,2,2}
+			stretch        = TRUE
 		}
 
 		image {
-			function		= RESIZE_GRIP
-			recolorable		= TRUE
-			detail			= "statusbar"
-			overlay_file	= "img/hole_tiny.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
+			function       = EXPANDER
+			expander_style = SEMI_COLLAPSED
 		}
 
 		image {
-			function		= SHADOW
-			shadow			= IN
-			file			= "img/bevel_in.png"
-			border			= {1,1,1,1}
-			stretch			= TRUE
-			overlay_file	= "img/inset_shadow.png"
-			overlay_border	= {2,2,2,2}
-			overlay_stretch	= TRUE
+			function        = RESIZE_GRIP
+			recolorable     = TRUE
+			detail          = "statusbar"
+			overlay_file    = "img/hole_tiny.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
+		}
+
+		image {
+			function = SHADOW
+			shadow   = IN
+			file     = "img/bevel_in.png"
+			border   = {1,1,1,1}
+			stretch  = TRUE
+			overlay_file    = "img/inset_shadow.png"
+			overlay_border  = {2,2,2,2}
+			overlay_stretch = TRUE
 		}
 		image {
-			function	= SHADOW
-			shadow		= OUT
-			file		= "img/bevel_out.png"
-			border		= {1,1,1,1}
-			stretch		= TRUE
+			function = SHADOW
+			shadow   = OUT
+			file     = "img/bevel_out.png"
+			border   = {1,1,1,1}
+			stretch  = TRUE
 		}
 		image {
-			function	= SHADOW
-			shadow		= ETCHED_IN
-			file		= "img/bevel_in.png"
-			border		= {1,1,1,1}
-			stretch 	= TRUE
+			function = SHADOW
+			shadow   = ETCHED_IN
+			file     = "img/bevel_in.png"
+			border   = {1,1,1,1}
+			stretch  = TRUE
 		}
 		image {
-			function	= SHADOW
-			shadow		= ETCHED_OUT
-			file		= "img/bevel_out.png"
-			border		= {1,1,1,1}
-			stretch		= TRUE
+			function = SHADOW
+			shadow   = ETCHED_OUT
+			file     = "img/bevel_out.png"
+			border   = {1,1,1,1}
+			stretch  = TRUE
 		}
 		image {
-			function		= SHADOW_GAP
-			file			= "img/bevel_in.png"
-			border			= {1,1,1,1}
-			stretch 		= TRUE
-			gap_start_file	= "img/frame_gap.png"
+			function = SHADOW_GAP
+			file     = "img/bevel_in.png"
+			border   = {1,1,1,1}
+			stretch  = TRUE
+			gap_start_file  = "img/frame_gap.png"
 			gap_start_border= {0,0,0,0}
-			gap_end_file	= "img/frame_gap.png"
-			gap_end_border	= {0,0,0,0}
+			gap_end_file    = "img/frame_gap.png"
+			gap_end_border  = {0,0,0,0}
 		}
 
 		image {
-			function		= FLAT_BOX
-			state			= SELECTED
-			file			= "img/vgrad_dark.png"
-			border			= {0,0,0,0}
-			stretch			= TRUE
-			overlay_file	= "img/bevel_out.png"
-			overlay_border	= {1,2,1,1}
-			overlay_stretch	= TRUE
+			function = FLAT_BOX
+			state    = SELECTED
+			file     = "img/vgrad_dark.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
+			overlay_file    = "img/bevel_out.png"
+			overlay_border  = {1,2,1,1}
+			overlay_stretch = TRUE
 		}
 	}
 }
@@ -380,425 +380,414 @@ class "GtkWidget" style "default"
 style "button" = "default" {
 	engine "pixmap" {
 		image {
-			function	= SHADOW
+			function = SHADOW
 		}
 
 		image {
-			function 	= BOX
-			state		= PRELIGHT
-			file		= "img/button_normal.png"
-			border		= {4,4,2,2}
-			stretch		= TRUE
+			function = BOX
+			state    = PRELIGHT
+			file     = "img/button_normal.png"
+			border   = {4,4,2,2}
+			stretch  = TRUE
 		}
 		image {
-			function	= BOX
-			state		= ACTIVE
-			file		= "img/button_clicked.png"
-			border		= {4,4,2,4}
-			stretch		= TRUE
+			function = BOX
+			state    = ACTIVE
+			file     = "img/button_clicked.png"
+			border   = {4,4,2,4}
+			stretch  = TRUE
 		}
 		image {
-			function	= BOX
-			state		= INSENSITIVE
-			file		= "img/button_clicked.png"
-			border		= {4,4,2,4}
-			stretch		= TRUE
+			function = BOX
+			state    = INSENSITIVE
+			file     = "img/button_clicked.png"
+			border   = {4,4,2,4}
+			stretch  = TRUE
 		}
 		image {
-			function	= BOX
-			state		= NORMAL
-			file		= "img/button_normal.png"
-			border		= {4,4,2,2}
-			stretch		= TRUE
+			function = BOX
+			state    = NORMAL
+			file     = "img/button_normal.png"
+			border   = {4,4,2,2}
+			stretch  = TRUE
 		}
-
 		image {
-			function	= BOX
-			detail		= "buttondefault"
+			function = BOX
+			detail   = "buttondefault"
 		}
 	}
 }
 
 style "optionmenu" = "default" {
-
 	base[NORMAL] = shade(0.76,@base_color)
 
 	engine "pixmap" {
 		image {
-			function		= TAB
-			state			= INSENSITIVE
-			overlay_file	= "img/sym_down_dark_normal.png"
-			overlay_stretch	= FALSE
+			function = TAB
+			state    = INSENSITIVE
+			overlay_file    = "img/sym_down_dark_normal.png"
+			overlay_stretch = FALSE
 		}
 		image {
-			function		= TAB
-			state			= NORMAL
-			overlay_file	= "img/sym_down_light_normal.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
+			function = TAB
+			state    = NORMAL
+			overlay_file    = "img/sym_down_light_normal.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
 		}
 		image {
-			function		= TAB
-			state			= PRELIGHT
-			overlay_file	= "img/sym_down_glow_normal.png"
-			overlay_border	= {0,0,0,0}
-			overlay_stretch	= FALSE
+			function = TAB
+			state    = PRELIGHT
+			overlay_file    = "img/sym_down_glow_normal.png"
+			overlay_border  = {0,0,0,0}
+			overlay_stretch = FALSE
 		}
 	}
 }
 
-style "radiobutton"	= "default" {
-
-	text[SELECTED] 		= @tooltip_bg_color
-	text[INSENSITIVE] 	= @insens_fg_color
+style "radiobutton" = "default" {
+	text[SELECTED]    = @tooltip_bg_color
+	text[INSENSITIVE] = @insens_fg_color
 
 	engine "pixmap" {
 		image {
-			function	= SHADOW
+			function = SHADOW
 		}
 
 		image {
-			function 		= OPTION
-			state 			= NORMAL
-			shadow 			= OUT
-			overlay_file 	= "img/inset_shadow_circle_tiny.png"
-			overlay_stretch	= FALSE
-		}
-		image {
-			function 		= OPTION
-			state			= PRELIGHT
-			shadow 			= OUT
-			overlay_file 	= "img/inset_shadow_circle_tiny_in.png"
-			overlay_stretch	= FALSE
-		}
-		image {
-			function 		= OPTION
-			state 			= ACTIVE
-			shadow 			= OUT
-			overlay_file 	= "img/inset_shadow_circle_tiny.png"
+			function = OPTION
+			state    = NORMAL
+			shadow   = OUT
+			overlay_file    = "img/inset_shadow_circle_tiny.png"
 			overlay_stretch = FALSE
 		}
 		image {
-			function 		= OPTION
-			state 			= INSENSITIVE
-			shadow 			= OUT
-			overlay_file	= "img/inset_shadow_circle_tiny_ins.png"
-			overlay_stretch	= FALSE
+			function = OPTION
+			state    = PRELIGHT
+			shadow   = OUT
+			overlay_file    = "img/inset_shadow_circle_tiny_in.png"
+			overlay_stretch = FALSE
 		}
 		image {
-				function 		= OPTION
-				state 			= NORMAL
-				shadow 			= IN
-				overlay_file 	= "img/inset_shadow_circle_tiny_in.png"
+			function = OPTION
+			state    = ACTIVE
+			shadow   = OUT
+			overlay_file    = "img/inset_shadow_circle_tiny.png"
+			overlay_stretch = FALSE
+		}
+		image {
+			function = OPTION
+			state    = INSENSITIVE
+			shadow   = OUT
+			overlay_file    = "img/inset_shadow_circle_tiny_ins.png"
+			overlay_stretch = FALSE
+		}
+		image {
+				function = OPTION
+				state    = NORMAL
+				shadow   = IN
+				overlay_file    = "img/inset_shadow_circle_tiny_in.png"
 				overlay_stretch = FALSE
 		}
 		image {
-			function 		= OPTION
-			state 			= PRELIGHT
-			shadow 			= IN
-			overlay_file	= "img/inset_shadow_circle_tiny_in.png"
+			function = OPTION
+			state    = PRELIGHT
+			shadow   = IN
+			overlay_file    = "img/inset_shadow_circle_tiny_in.png"
 			overlay_stretch = FALSE
 		}
 		image {
-			function 		= OPTION
-			state 			= ACTIVE
-			shadow 			= IN
-			overlay_file 	= "img/inset_shadow_circle_tiny_in.png"
-			overlay_stretch	= FALSE
+			function = OPTION
+			state    = ACTIVE
+			shadow   = IN
+			overlay_file    = "img/inset_shadow_circle_tiny_in.png"
+			overlay_stretch = FALSE
 		}
 		image {
-			function 		= OPTION
-			state 			= INSENSITIVE
-			shadow 			= IN
-			overlay_file	= "img/inset_shadow_circle_tiny_ins.png"
-			overlay_stretch	= FALSE
+			function = OPTION
+			state     = INSENSITIVE
+			shadow       = IN
+			overlay_file    = "img/inset_shadow_circle_tiny_ins.png"
+			overlay_stretch    = FALSE
 		}
 
 		image {
-			function 	= FLAT_BOX
-			stretch		= TRUE
-			file 		= "img/slider_run_base_horiz.png"
-			border 		= {0,0,0,0}
-			orientation	= HORIZONTAL
+			function    = FLAT_BOX
+			stretch     = TRUE
+			file        = "img/slider_run_base_horiz.png"
+			border      = {0,0,0,0}
+			orientation = HORIZONTAL
 		}
 		image {
-			function 	= FLAT_BOX
-			stretch		= TRUE
-			file 		= "img/slider_run_base_vert.png"
-			border 		= {0,0,0,0}
-			orientation	= VERTICAL
+			function    = FLAT_BOX
+			stretch     = TRUE
+			file        = "img/slider_run_base_vert.png"
+			border      = {0,0,0,0}
+			orientation = VERTICAL
 		}
 	}
 }
 
-style "checkbutton"	= "default" {
-	text[SELECTED] 		= @tooltip_bg_color
-	text[INSENSITIVE] 	= @bg_color
-	base[PRELIGHT] 		= @tooltip_bg_color
-	base[SELECTED]		= @tooltip_bg_color
-	base[ACTIVE] 		= @selected_bg_color
+style "checkbutton"   = "default" {
+	text[SELECTED]    = @tooltip_bg_color
+	text[INSENSITIVE] = @bg_color
+	base[PRELIGHT]    = @tooltip_bg_color
+	base[SELECTED]    = @tooltip_bg_color
+	base[ACTIVE]      = @selected_bg_color
 
 	engine "pixmap" {
 		image {
-			function 		= CHECK
-			state 			= NORMAL
-			shadow 			= OUT
-			overlay_file 	= "img/inset_shadow_square_tiny.png"
+			function = CHECK
+			state    = NORMAL
+			shadow   = OUT
+			overlay_file    = "img/inset_shadow_square_tiny.png"
 			overlay_stretch = FALSE
 		}
 		image {
-			function 		= CHECK
-			state 			= PRELIGHT
-			shadow 			= OUT
-			overlay_file 	= "img/inset_shadow_square_tiny_in.png"
+			function = CHECK
+			state    = PRELIGHT
+			shadow   = OUT
+			overlay_file    = "img/inset_shadow_square_tiny_in.png"
 			overlay_stretch = FALSE
 		}
 		image {
-			function 		= CHECK
-			state 			= ACTIVE
-			shadow 			= OUT
-			overlay_file 	= "img/inset_shadow_square_tiny.png"
+			function = CHECK
+			state    = ACTIVE
+			shadow   = OUT
+			overlay_file    = "img/inset_shadow_square_tiny.png"
 			overlay_stretch = FALSE
 		}
 		image {
-			function 		= CHECK
-			state 			= INSENSITIVE
-			shadow 			= OUT
-			overlay_file 	= "img/inset_shadow_square_tiny.png"
+			function = CHECK
+			state    = INSENSITIVE
+			shadow   = OUT
+			overlay_file    = "img/inset_shadow_square_tiny.png"
 			overlay_stretch = FALSE
 		}
 		image {
-			function 		= CHECK
-			state 			= NORMAL
-			shadow 			= IN
-			overlay_file 	= "img/inset_shadow_square_tiny_in.png"
+			function = CHECK
+			state    = NORMAL
+			shadow   = IN
+			overlay_file    = "img/inset_shadow_square_tiny_in.png"
 			overlay_stretch = FALSE
 		}
 		image {
-			function 		= CHECK
-			state 			= PRELIGHT
-			shadow 			= IN
-			overlay_file 	= "img/inset_shadow_square_tiny_glow_in.png"
+			function = CHECK
+			state    = PRELIGHT
+			shadow   = IN
+			overlay_file    = "img/inset_shadow_square_tiny_glow_in.png"
 			overlay_stretch = FALSE
 		}
 		image {
-			function 		= CHECK
-			state 			= ACTIVE
-			shadow 			= IN
-			overlay_file 	= "img/inset_shadow_square_tiny_in.png"
+			function = CHECK
+			state    = ACTIVE
+			shadow   = IN
+			overlay_file    = "img/inset_shadow_square_tiny_in.png"
 			overlay_stretch = FALSE
 		}
 		image {
-			function 		= CHECK
-			state 			= INSENSITIVE
-			shadow 			= IN
-			overlay_file 	= "img/inset_shadow_square_tiny_in.png"
+			function = CHECK
+			state    = INSENSITIVE
+			shadow   = IN
+			overlay_file    = "img/inset_shadow_square_tiny_in.png"
 			overlay_stretch = FALSE
 		}
 	
 		image {
-			function 	= FLAT_BOX
+			function = FLAT_BOX
 		}
 	}
 }
 
 style "entry" = "default" {
-
-	GtkWidget::interior-focus			= 0
-
+	GtkWidget::interior-focus = 0
 	xthickness = 2
 	ythickness = 2
-
 	base[NORMAL] = shade(0.86,@bg_color)
 
 	engine "pixmap" {
 		image {
-			function	= FOCUS
-			file		= "img/outline_glow.png"
-			border		= {1,1,1,1}
-			stretch		= TRUE
+			function = FOCUS
+			file     = "img/outline_glow.png"
+			border   = {1,1,1,1}
+			stretch  = TRUE
 		}
 	}
 }
 
 style "spinbutton" = "entry" {
-
 	xthickness = 2
 	ythickness = 2
-
 	base[NORMAL] = shade(0.76,@base_color)
 
 	engine "pixmap" {
 		image {
-			function		= BOX
-			detail			= "spinbutton_up"
-			file			= "img/button_spin_up_normal.png"
-			border			= {0,0,1,0}
+			function = BOX
+			detail   = "spinbutton_up"
+			file     = "img/button_spin_up_normal.png"
+			border   = {0,0,1,0}
 		}
 		image {
-			function		= BOX
-			detail			= "spinbutton_down"
-			file			= "img/button_spin_down_normal.png"
-			border			= {0,0,0,1}
+			function = BOX
+			detail   = "spinbutton_down"
+			file     = "img/button_spin_down_normal.png"
+			border   = {0,0,0,1}
 		}
 	}
 }
 
 style "scrollbar" = "default" {
-
 	xthickness = 0
 	ythickness = 0
-
 	bg[ACTIVE]  = @bg_color
 	bg[NORMAL]  = @bg_color
 	base[NORMAL]= @bg_color
 
 	engine "pixmap" {
 		image {
-			function		= SLIDER
-			state 			= NORMAL
-			file			= "img/slider_horiz.png"
-			border			= {2,2,0,0}
-			stretch			= TRUE
-			orientation		= HORIZONTAL
-			overlay_file	= "img/holes_tiny_horiz.png"
-			overlay_stretch	= FALSE
+			function = SLIDER
+			state    = NORMAL
+			file     = "img/slider_horiz.png"
+			border   = {2,2,0,0}
+			stretch  = TRUE
+			orientation     = HORIZONTAL
+			overlay_file    = "img/holes_tiny_horiz.png"
+			overlay_stretch = FALSE
 		}
 		image {
-			function		= SLIDER
-			state 			= ACTIVE
-			file			= "img/slider_horiz.png"
-			border			= {2,2,0,0}
-			stretch			= TRUE
-			orientation		= HORIZONTAL
-			overlay_file	= "img/holes_tiny_glow_horiz.png"
-			overlay_stretch	= FALSE
+			function = SLIDER
+			state    = ACTIVE
+			file     = "img/slider_horiz.png"
+			border   = {2,2,0,0}
+			stretch  = TRUE
+			orientation     = HORIZONTAL
+			overlay_file    = "img/holes_tiny_glow_horiz.png"
+			overlay_stretch = FALSE
 		}
 		image {
-			function		= SLIDER
-			state 			= PRELIGHT
-			file			= "img/slider_horiz.png"
-			border			= {2,2,0,0}
-			stretch			= TRUE
-			orientation		= HORIZONTAL
-			overlay_file	= "img/holes_tiny_glow_horiz.png"
-			overlay_stretch	= FALSE
+			function = SLIDER
+			state    = PRELIGHT
+			file     = "img/slider_horiz.png"
+			border   = {2,2,0,0}
+			stretch  = TRUE
+			orientation     = HORIZONTAL
+			overlay_file    = "img/holes_tiny_glow_horiz.png"
+			overlay_stretch = FALSE
 		}
 		image {
-			function		= SLIDER
-			state 			= INSENSITIVE
-			file			= "img/slider_horiz.png"
-			border			= {2,2,0,0}
-			stretch			= TRUE
-			orientation		= HORIZONTAL
-			overlay_file	= "img/holes_tiny_horiz.png"
-			overlay_stretch	= FALSE
+			function = SLIDER
+			state    = INSENSITIVE
+			file     = "img/slider_horiz.png"
+			border   = {2,2,0,0}
+			stretch  = TRUE
+			orientation     = HORIZONTAL
+			overlay_file    = "img/holes_tiny_horiz.png"
+			overlay_stretch = FALSE
 		}
 		image {
-			function		= SLIDER
-			state 			= NORMAL
-			file			= "img/slider_vert.png"
-			border			= {0,0,2,2}
-			stretch			= TRUE
-			orientation		= VERTICAL
-			overlay_file	= "img/holes_tiny_vert.png"
-			overlay_stretch	= FALSE
+			function = SLIDER
+			state    = NORMAL
+			file     = "img/slider_vert.png"
+			border   = {0,0,2,2}
+			stretch  = TRUE
+			orientation     = VERTICAL
+			overlay_file    = "img/holes_tiny_vert.png"
+			overlay_stretch = FALSE
 		}
 		image {
-			function		= SLIDER
-			state 			= ACTIVE
-			file			= "img/slider_vert.png"
-			border			= {0,0,2,2}
-			stretch			= TRUE
-			orientation		= VERTICAL
-			overlay_file	= "img/holes_tiny_glow_vert.png"
-			overlay_stretch	= FALSE
+			function  = SLIDER
+			state     = ACTIVE
+			file      = "img/slider_vert.png"
+			border    = {0,0,2,2}
+			stretch   = TRUE
+			orientation     = VERTICAL
+			overlay_file    = "img/holes_tiny_glow_vert.png"
+			overlay_stretch = FALSE
 		}
 		image {
-			function		= SLIDER
-			state 			= PRELIGHT
-			file			= "img/slider_vert.png"
-			border			= {0,0,2,2}
-			stretch			= TRUE
-			orientation		= VERTICAL
-			overlay_file	= "img/holes_tiny_glow_vert.png"
-			overlay_stretch	= FALSE
+			function  = SLIDER
+			state     = PRELIGHT
+			file      = "img/slider_vert.png"
+			border    = {0,0,2,2}
+			stretch   = TRUE
+			orientation     = VERTICAL
+			overlay_file    = "img/holes_tiny_glow_vert.png"
+			overlay_stretch = FALSE
 		}
 		image {
-			function		= SLIDER
-			state 			= INSENSITIVE
-			file			= "img/slider_vert.png"
-			border			= {0,0,2,2}
-			stretch			= TRUE
-			orientation		= VERTICAL
-			overlay_file	= "img/holes_tiny_vert.png"
-			overlay_stretch	= FALSE
-		}
-
-		image {
-			function	= BOX
-			detail		= "trough"
-			file		= "img/trough_horiz.png"
-			border		= {0,0,0,0}
-			stretch		= TRUE
-			orientation	= HORIZONTAL
-		}
-		image {
-			function	= BOX
-			detail		= "trough"
-			file		= "img/trough_vert.png"
-			border		= {0,0,0,0}
-			stretch		= TRUE
-			orientation	= VERTICAL
+			function = SLIDER
+			state    = INSENSITIVE
+			file     = "img/slider_vert.png"
+			border   = {0,0,2,2}
+			stretch  = TRUE
+			orientation     = VERTICAL
+			overlay_file    = "img/holes_tiny_vert.png"
+			overlay_stretch = FALSE
 		}
 
 		image {
-			function		= BOX
+			function = BOX
+			detail   = "trough"
+			file     = "img/trough_horiz.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
+			orientation    = HORIZONTAL
+		}
+		image {
+			function = BOX
+			detail   = "trough"
+			file     = "img/trough_vert.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
+			orientation = VERTICAL
+		}
+
+		image {
+			function = BOX
 		}
 	}
 }
 
 style "progressbar" {
-
-	xthickness 	= 1
-	ythickness 	= 1
+	xthickness     = 1
+	ythickness     = 1
 
 	engine "pixmap" {
 		image {
-			function	= BOX
-			detail		= "trough"
-			file		= "img/progressbar_run_horiz.png"
-			border		= {0,0,0,0}
-			stretch		= TRUE
-			orientation	= HORIZONTAL
-			overlay_file	= "img/bevel_curved_horiz_out.png"
-			overlay_border	= {1,1,1,1}
+			function = BOX
+			detail   = "trough"
+			file     = "img/progressbar_run_horiz.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
+			orientation    = HORIZONTAL
+			overlay_file   = "img/bevel_curved_horiz_out.png"
+			overlay_border = {1,1,1,1}
 		}
 		image {
-			function	= BOX
-			detail		= "bar"
-			file		= "img/progressbar_runner_horiz.png"
-			border		= {0,0,0,0}
-			stretch		= TRUE
-			orientation	= HORIZONTAL
+			function = BOX
+			detail   = "bar"
+			file     = "img/progressbar_runner_horiz.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
+			orientation = HORIZONTAL
 		}
 		image {
-			function	= BOX
-			detail		= "trough"
-			file		= "img/progressbar_run_vert.png"
-			border		= {0,0,0,0}
-			stretch		= TRUE
-			orientation	= VERTICAL
-			overlay_file	= "img/bevel_curved_horiz_out.png"
-			overlay_border	= {1,1,1,1}
+			function = BOX
+			detail   = "trough"
+			file     = "img/progressbar_run_vert.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
+			orientation    = VERTICAL
+			overlay_file   = "img/bevel_curved_horiz_out.png"
+			overlay_border = {1,1,1,1}
 		}
 		image {
-			function	= BOX
-			detail		= "bar"
-			file		= "img/progressbar_runner_vert.png"
-			border		= {0,0,0,0}
-			stretch		= TRUE
-			orientation	= VERTICAL
+			function = BOX
+			detail   = "bar"
+			file     = "img/progressbar_runner_vert.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
+			orientation = VERTICAL
 		}
 	}
 }
@@ -806,53 +795,50 @@ style "progressbar" {
 style "range" = "default" {
 	engine "pixmap" {
 		image {
-			function	= BOX
-			detail		= "trough"
-			file		= "img/trough_base_horiz.png"
-			border		= {2,2,0,0}
-			stretch		= TRUE
-			orientation	= HORIZONTAL
+			function = BOX
+			detail   = "trough"
+			file     = "img/trough_base_horiz.png"
+			border   = {2,2,0,0}
+			stretch  = TRUE
+			orientation = HORIZONTAL
 		}
 		image {
-			function	= BOX
-			detail		= "trough"
-			file		= "img/trough_base_vert.png"
-			border		= {0,0,2,2}
-			stretch		= TRUE
-			orientation	= VERTICAL
+			function = BOX
+			detail   = "trough"
+			file     = "img/trough_base_vert.png"
+			border   = {0,0,2,2}
+			stretch  = TRUE
+			orientation = VERTICAL
 		}
 		image {
-			function		= SLIDER
-			overlay_file	= "img/knob_sz_12.png"
-			overlay_border	= {1,1,0,0}
-			overlay_stretch	= FALSE
+			function        = SLIDER
+			overlay_file    = "img/knob_sz_12.png"
+			overlay_border  = {1,1,0,0}
+			overlay_stretch = FALSE
 		}
 	}
 }
 
 style "toolbar" {
-
 	xthickness = 4
 	ythickness = 4
 
 	engine "pixmap" {
 		image {
-			function	= BOX
-			file		= "img/button_normal.svg"
-			border		= {4,4,2,4}
-			stretch		= TRUE
+			function = BOX
+			file     = "img/button_normal.svg"
+			border   = {4,4,2,4}
+			stretch  = TRUE
 		}
 	}
 }
 
 widget_class "*BonoboDockItem" style "toolbar"
-class "*BonoboDockItem" style "toolbar"
-
-widget_class "*HandleBox" style "toolbar"
-class "*HandleBox" style "toolbar"
-
-widget_class "*Toolbar" style "toolbar"
-class "*Toolbar" style "toolbar"
+class "*BonoboDockItem"        style "toolbar"
+widget_class "*HandleBox"      style "toolbar"
+class "*HandleBox"             style "toolbar"
+widget_class "*Toolbar"        style "toolbar"
+class "*Toolbar"               style "toolbar"
 
 style "toolbuttons" = "toolbar" {
 	xthickness = 1
@@ -860,39 +846,36 @@ style "toolbuttons" = "toolbar" {
 }
 
 widget_class "*Tool*GtkToggleButton" style "toolbuttons"
-widget_class "*Tool*GtkButton" style "toolbuttons"
+widget_class "*Tool*GtkButton"       style "toolbuttons"
 
 style "menu" = "default" {
-
-	xthickness	= 0
-	ythickness	= 0
-
-	GtkMenu::horizontal-offset	= 0
-	GtkMenu::horizontal-padding	= 0
+	xthickness = 0
+	ythickness = 0
+	GtkMenu::horizontal-offset  = 0
+	GtkMenu::horizontal-padding = 0
 
 	engine "pixmap" {
 		image {
-			function	= BOX
-			detail		= "menu"
-			file		= "img/menu.png"
-			border		= {4,4,0,0}
-			stretch		= TRUE
+			function = BOX
+			detail   = "menu"
+			file     = "img/menu.png"
+			border   = {4,4,0,0}
+			stretch  = TRUE
 		}
 	}
 }
 
 style "menuitem" = "default" {
-	
-	xthickness		= 0
-	fg[ACTIVE] 		= @selected_bg_color
-	text[PRELIGHT]	= @selected_bg_color
+	xthickness     = 0
+	fg[ACTIVE]     = @selected_bg_color
+	text[PRELIGHT] = @selected_bg_color
 
 	engine "pixmap" {
 		image {
-			function	= BOX
-			file		= "img/vgrad_dark.png"
-			border		= {0,0,0,0}
-			stretch		= TRUE
+			function = BOX
+			file     = "img/vgrad_dark.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
 		}
 	}
 }
@@ -900,215 +883,213 @@ style "menuitem" = "default" {
 style "tearoffmenuitem" = "menuitem" {
 	engine "pixmap" {
 		image {
-			function		= BOX
-			file			= "img/vertical_separated_bar_glow.png"
-			stretch			= FALSE
+			function = BOX
+			file     = "img/vertical_separated_bar_glow.png"
+			stretch  = FALSE
 		}
 	}
 }
 
 style "menubar" {
+	xthickness = 2
+	ythickness = 2
 
-	xthickness	= 2
-	ythickness	= 2
-
-	fg[PRELIGHT]	= @selected_bg_color
-	fg[NORMAL]		= shade(0.76,@selected_fg_color)
-	fg[ACTIVE]		= @selected_bg_color
-	fg[INSENSITIVE]	= @fg_color
+	fg[PRELIGHT]    = @selected_bg_color
+	fg[NORMAL]      = shade(0.76,@selected_fg_color)
+	fg[ACTIVE]      = @selected_bg_color
+	fg[INSENSITIVE] = @fg_color
 	bg_pixmap[NORMAL] = "img/menubar_separator.png"
 
 	engine "pixmap" {
 		image {
-			function		= BOX
-			state 			= ACTIVE
-			file			= "img/shadow_angled_in_sides_glow.png"
-			border			= {0,0,4,4}
-			stretch			= TRUE
+			function = BOX
+			state    = ACTIVE
+			file     = "img/shadow_angled_in_sides_glow.png"
+			border   = {0,0,4,4}
+			stretch  = TRUE
 		}
 		image {
-			function		= BOX
-			state 			= PRELIGHT
-			file			= "img/shadow_angled_in_sides_glow.png"
-			border			= {0,0,4,4}
-			stretch			= TRUE
+			function = BOX
+			state    = PRELIGHT
+			file     = "img/shadow_angled_in_sides_glow.png"
+			border   = {0,0,4,4}
+			stretch  = TRUE
 		}
 		image {
-			function		= BOX
-			state 			= NORMAL
+			function = BOX
+			state    = NORMAL
 		}
 	}
 }
 
 style "notebook" = "default" {
-
 	xthickness = 1
 	ythickness = 1
 	
-	bg[NORMAL] = "#404040"
+	bg[NORMAL]   = "#404040"
 	text[ACTIVE] = @selected_bg_color
 
 	engine "pixmap" {
 		image {
-			function		= BOX_GAP
-			detail			= "notebook"
-			shadow			= OUT
-			file			= "img/bg_notebook.png"
-			border			= {2,2,2,2}
-			stretch			= TRUE
-			overlay_file	= "img/bevel_out.png"
-			overlay_border	= {1,1,2,1}
-			overlay_stretch	= TRUE
-			gap_side		= BOTTOM
-			gap_start_file	= "img/frame_horiz_start.png"
+			function = BOX_GAP
+			detail   = "notebook"
+			shadow   = OUT
+			file     = "img/bg_notebook.png"
+			border   = {2,2,2,2}
+			stretch  = TRUE
+			overlay_file    = "img/bevel_out.png"
+			overlay_border  = {1,1,2,1}
+			overlay_stretch = TRUE
+			gap_side        = BOTTOM
+			gap_start_file  = "img/frame_horiz_start.png"
 			gap_start_border= {0,0,0,0}
-			gap_end_file	= "img/frame_horiz_end.png"
-			gap_end_border	= {0,0,0,0}
+			gap_end_file    = "img/frame_horiz_end.png"
+			gap_end_border  = {0,0,0,0}
 		}
 		image {
-			function		= BOX_GAP
-			detail			= "notebook"
-			shadow			= OUT
-			file			= "img/bg_notebook.png"
-			border			= {2,2,2,2}
-			stretch			= TRUE
-			overlay_file	= "img/bevel_out.png"
-			overlay_border	= {1,1,2,1}
-			overlay_stretch	= TRUE
-			gap_side		= TOP
-			gap_start_file	= "img/frame_horiz_start.png"
+			function = BOX_GAP
+			detail   = "notebook"
+			shadow   = OUT
+			file     = "img/bg_notebook.png"
+			border   = {2,2,2,2}
+			stretch  = TRUE
+			overlay_file    = "img/bevel_out.png"
+			overlay_border  = {1,1,2,1}
+			overlay_stretch = TRUE
+			gap_side        = TOP
+			gap_start_file  = "img/frame_horiz_start.png"
 			gap_start_border= {0,0,0,0}
-			gap_end_file	= "img/frame_horiz_end.png"
-			gap_end_border	= {0,0,0,0}
+			gap_end_file    = "img/frame_horiz_end.png"
+			gap_end_border  = {0,0,0,0}
 		}
 		image {
-			function		= BOX_GAP
-			detail			= "notebook"
-			shadow			= OUT
-			file			= "img/bg_notebook.png"
-			border			= {2,2,2,2}
-			stretch			= TRUE
-			overlay_file	= "img/bevel_out.png"
-			overlay_border	= {1,1,2,1}
-			overlay_stretch	= TRUE
-			gap_side		= RIGHT
-			gap_start_file	= "img/frame_vert_end.png"
+			function = BOX_GAP
+			detail   = "notebook"
+			shadow   = OUT
+			file     = "img/bg_notebook.png"
+			border   = {2,2,2,2}
+			stretch  = TRUE
+			overlay_file    = "img/bevel_out.png"
+			overlay_border  = {1,1,2,1}
+			overlay_stretch = TRUE
+			gap_side        = RIGHT
+			gap_start_file  = "img/frame_vert_end.png"
 			gap_start_border= {0,0,0,0}
-			gap_end_file	= "img/frame_vert_start.png"
-			gap_end_border	= {0,0,0,0}
+			gap_end_file    = "img/frame_vert_start.png"
+			gap_end_border  = {0,0,0,0}
 		}
 		image {
-			function		= BOX_GAP
-			detail			= "notebook"
-			shadow			= OUT
-			file			= "img/bg_notebook.png"
-			border			= {2,2,2,2}
-			stretch			= TRUE
-			overlay_file	= "img/bevel_out.png"
-			overlay_border	= {1,1,2,1}
-			overlay_stretch	= TRUE
-			gap_side		= LEFT
-			gap_start_file	= "img/frame_vert_end.png"
+			function = BOX_GAP
+			detail   = "notebook"
+			shadow   = OUT
+			file     = "img/bg_notebook.png"
+			border   = {2,2,2,2}
+			stretch  = TRUE
+			overlay_file    = "img/bevel_out.png"
+			overlay_border  = {1,1,2,1}
+			overlay_stretch = TRUE
+			gap_side        = LEFT
+			gap_start_file  = "img/frame_vert_end.png"
 			gap_start_border= {0,0,0,0}
-			gap_end_file	= "img/frame_vert_start.png"
-			gap_end_border	= {0,0,0,0}
+			gap_end_file    = "img/frame_vert_start.png"
+			gap_end_border  = {0,0,0,0}
 		}
 		image {
-			function		= EXTENSION
-			state			= ACTIVE
-			file			= "img/vgrad_med_curved.png"
-			border			= {0,0,0,0}
-			stretch			= TRUE
-			gap_side		= BOTTOM
-			overlay_file	= "img/bevel_out.png"
-			overlay_border	= {1,1,1,1}
-			overlay_stretch	= TRUE
+			function = EXTENSION
+			state    = ACTIVE
+			file     = "img/vgrad_med_curved.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
+			gap_side = BOTTOM
+			overlay_file    = "img/bevel_out.png"
+			overlay_border  = {1,1,1,1}
+			overlay_stretch = TRUE
 		}
 		image {
-			function		= EXTENSION
-			detail			= "tab"
-			file			= "img/vgrad_dark.png"
-			border			= {0,0,0,0}
-			stretch			= TRUE
-			gap_side		= BOTTOM
-			overlay_file	= "img/shadow_angled_in_sides_glow.png"
-			overlay_border	= {0,0,0,4}
-			overlay_stretch	= TRUE
+			function = EXTENSION
+			detail   = "tab"
+			file     = "img/vgrad_dark.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
+			gap_side = BOTTOM
+			overlay_file    = "img/shadow_angled_in_sides_glow.png"
+			overlay_border  = {0,0,0,4}
+			overlay_stretch = TRUE
 		}
 		image {
-			function		= EXTENSION
-			state			= ACTIVE
-			file			= "img/vgrad_med_curved_left.png"
-			border			= {0,0,0,0}
-			stretch			= TRUE
-			gap_side		= LEFT
-			overlay_file	= "img/bevel_out.png"
-			overlay_border	= {1,1,1,1}
-			overlay_stretch	= TRUE
+			function = EXTENSION
+			state    = ACTIVE
+			file     = "img/vgrad_med_curved_left.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
+			gap_side = LEFT
+			overlay_file    = "img/bevel_out.png"
+			overlay_border  = {1,1,1,1}
+			overlay_stretch = TRUE
 		}
 		image {
-			function		= EXTENSION
-			detail			= "tab"
-			file			= "img/vgrad_dark_left.png"
-			border			= {0,0,0,0}
-			stretch			= TRUE
-			gap_side		= LEFT
-			overlay_file	= "img/shadow_angled_in_sides_left.png"
-			overlay_border	= {0,0,0,4}
-			overlay_stretch	= TRUE
+			function = EXTENSION
+			detail   = "tab"
+			file     = "img/vgrad_dark_left.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
+			gap_side = LEFT
+			overlay_file    = "img/shadow_angled_in_sides_left.png"
+			overlay_border  = {0,0,0,4}
+			overlay_stretch = TRUE
 		}
 		image {
-			function		= EXTENSION
-			state			= ACTIVE
-			file			= "img/vgrad_med_curved_right.png"
-			border			= {0,0,0,0}
-			stretch			= TRUE
-			gap_side		= RIGHT
-			overlay_file	= "img/bevel_out.png"
-			overlay_border	= {1,1,1,1}
-			overlay_stretch	= TRUE
+			function = EXTENSION
+			state    = ACTIVE
+			file     = "img/vgrad_med_curved_right.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
+			gap_side = RIGHT
+			overlay_file    = "img/bevel_out.png"
+			overlay_border  = {1,1,1,1}
+			overlay_stretch = TRUE
 		}
 		image {
-			function		= EXTENSION
-			detail			= "tab"
-			file			= "img/vgrad_dark_right.png"
-			border			= {0,0,0,0}
-			stretch			= TRUE
-			gap_side		= RIGHT
-			overlay_file	= "img/shadow_angled_in_sides_right.png"
-			overlay_border	= {0,0,0,4}
-			overlay_stretch	= TRUE
+			function = EXTENSION
+			detail   = "tab"
+			file     = "img/vgrad_dark_right.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
+			gap_side = RIGHT
+			overlay_file    = "img/shadow_angled_in_sides_right.png"
+			overlay_border  = {0,0,0,4}
+			overlay_stretch = TRUE
 		}
 		image {
-			function		= EXTENSION
-			state			= ACTIVE
-			file			= "img/vgrad_med_curved_top.png"
-			border			= {0,0,0,0}
-			stretch			= TRUE
-			gap_side		= TOP
-			overlay_file	= "img/bevel_out.png"
-			overlay_border	= {1,1,1,1}
-			overlay_stretch	= TRUE
+			function  = EXTENSION
+			state     = ACTIVE
+			file      = "img/vgrad_med_curved_top.png"
+			border    = {0,0,0,0}
+			stretch   = TRUE
+			gap_side  = TOP
+			overlay_file    = "img/bevel_out.png"
+			overlay_border  = {1,1,1,1}
+			overlay_stretch = TRUE
 		}
 		image {
-			function		= EXTENSION
-			detail			= "tab"
-			file			= "img/vgrad_dark_top.png"
-			border			= {0,0,0,0}
-			stretch			= TRUE
-			gap_side		= TOP
-			overlay_file	= "img/shadow_angled_in_sides_top.png"
-			overlay_border	= {0,0,0,4}
-			overlay_stretch	= TRUE
+			function = EXTENSION
+			detail   = "tab"
+			file     = "img/vgrad_dark_top.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
+			gap_side = TOP
+			overlay_file    = "img/shadow_angled_in_sides_top.png"
+			overlay_border  = {0,0,0,4}
+			overlay_stretch = TRUE
 		}
 		image {
-			function		= BOX
-			file			= "img/menu.png"
-			border			= {2,2,2,2}
-			stretch			= TRUE
-			overlay_file	= "img/bevel_out.png"
-			overlay_border	= {1,1,1,1}
-			overlay_stretch	= TRUE
+			function = BOX
+			file     = "img/menu.png"
+			border   = {2,2,2,2}
+			stretch  = TRUE
+			overlay_file    = "img/bevel_out.png"
+			overlay_border  = {1,1,1,1}
+			overlay_stretch = TRUE
 		}
 	}
 }
@@ -1120,10 +1101,10 @@ style "tooltips" = "default" {
 	
 	engine "pixmap" {
 		image {
-			function	= BOX
-			file		= "img/bevel_dark_out.png"
-			border		= {1,1,1,1}
-			stretch		= TRUE
+			function = BOX
+			file     = "img/bevel_dark_out.png"
+			border   = {1,1,1,1}
+			stretch  = TRUE
 		}
 	}
 }
@@ -1131,12 +1112,12 @@ style "tooltips" = "default" {
 style "ruler" = "default" {
 	engine "pixmap" {
 		image {
-			function	= BOX
-			detail		= "vruler"
+			function = BOX
+			detail   = "vruler"
 		}
 		image {
-			function	= BOX
-			detail		= "hruler"
+			function = BOX
+			detail   = "hruler"
 		}
 	}
 }
@@ -1152,12 +1133,12 @@ style "flat" = "default" {
 style "layout" = "default" {
 	engine "pixmap" {
 		image {
-			function	= BOX
-			detail		= "button"
-			state		= NORMAL
-			file		= "img/button_normal.png"
-			border		= {4,4,4,4}
-			stretch		= TRUE
+			function = BOX
+			detail   = "button"
+			state    = NORMAL
+			file     = "img/button_normal.png"
+			border   = {4,4,4,4}
+			stretch  = TRUE
 		}
 	}
 }
@@ -1165,51 +1146,51 @@ style "layout" = "default" {
 style "list-header" {
 	engine "pixmap" {
 		image {
-			function 	= BOX
-			state		= NORMAL
-			file 		= "img/vgrad_med_curved.png"
-			border 		= {0,0,0,0}
-			stretch 	= TRUE
-			overlay_file ="img/bevel_out.png"
+			function = BOX
+			state    = NORMAL
+			file     = "img/vgrad_med_curved.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
+			overlay_file    = "img/bevel_out.png"
 			overlay_stretch = TRUE
-			overlay_border = {1,2,1,1}
+			overlay_border  = {1,2,1,1}
 		}
 		image {
-			function 	= BOX
-			state		= ACTIVE
-			file 		= "img/vgrad_med_dark.png"
-			border 		= {0,0,0,0}
-			stretch 	= TRUE
-			overlay_file ="img/bevel_out.png"
+			function  = BOX
+			state     = ACTIVE
+			file      = "img/vgrad_med_dark.png"
+			border    = {0,0,0,0}
+			stretch   = TRUE
+			overlay_file    ="img/bevel_out.png"
 			overlay_stretch = TRUE
-			overlay_border = {1,2,1,1}
+			overlay_border  = {1,2,1,1}
 		}
 		image {
-			function 	= BOX
-			state		= PRELIGHT
-			file 		= "img/vgrad_med_dark.png"
-			border 		= {0,0,0,0}
-			stretch 	= TRUE
-			overlay_file ="img/bevel_out.png"
+			function = BOX
+			state    = PRELIGHT
+			file     = "img/vgrad_med_dark.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
+			overlay_file    = "img/bevel_out.png"
 			overlay_stretch = TRUE
-			overlay_border = {1,1,1,1}
+			overlay_border  = {1,1,1,1}
 		}
 	}
 }
 
-widget_class "GtkList" style "list-header"
-widget_class "GtkTree" style "list-header"
+widget_class "GtkList"  style "list-header"
+widget_class "GtkTree"  style "list-header"
 widget_class "GtkCList" style "list-header"
-widget_class "*Tree*" style "list-header"
-class "GtkItem" style "list-header"
+widget_class "*Tree*"   style "list-header"
+class "GtkItem"         style "list-header"
 
 style "treeview" = "default" {
 	engine "pixmap" {
 		image {
-			function 	= BOX
-			file ="img/menubar_separator.png"
-			stretch = TRUE
-			border = {0,0,0,0}
+			function = BOX
+			file     ="img/menubar_separator.png"
+			stretch  = TRUE
+			border   = {0,0,0,0}
 		}
 	}
 }
@@ -1227,10 +1208,10 @@ class "SPColorSlider" style "unstyle"
 style "SPbutton" {
 	engine "pixmap" {
 		image {
-			function	= BOX
-			file		= "img/bevel_out.png"
-			border		= {1,1,1,1}
-			stretch		= TRUE
+			function = BOX
+			file     = "img/bevel_out.png"
+			border   = {1,1,1,1}
+			stretch  = TRUE
 		}
 	}
 }
@@ -1238,13 +1219,13 @@ style "SPbutton" {
 style "spinner" = "default" {
 	engine "pixmap" {
 		image {
-			function 	= BOX
-			file 		= "img/knob_round_busy.png"
-			border 		= {0,0,0,0}
-			stretch 	= TRUE
-			overlay_file ="img/glow_round_corners.png"
+			function = BOX
+			file     = "img/knob_round_busy.png"
+			border   = {0,0,0,0}
+			stretch  = TRUE
+			overlay_file    ="img/glow_round_corners.png"
 			overlay_stretch = TRUE
-			overlay_border = {0,0,0,0}
+			overlay_border  = {0,0,0,0}
 		}
 	}
 }
@@ -1253,35 +1234,35 @@ style "text" {
 	bg[NORMAL] = shade(0.76,@bg_color)
 }
 
-class "GtkButton" 			style "button"
-class "GtkRadioButton" 		style "radiobutton"
-class "GtkRadioMenuItem" 	style "radiobutton"
-class "GtkCheckButton" 		style "checkbutton"
-class "GtkCheckMenuItem" 	style "checkbutton"
-class "GtkOptionMenu" 		style "optionmenu"
-class "GtkCombo*" 			style "optionmenu"
-class "*Font*" 				style "optionmenu"
-class "GtkEntry" 			style "entry"
-class "GtkOldEditable" 		style "entry"
-class "GtkSpinButton" 	 	style "spinbutton"
-class "GtkSpinner"			style "spinner"
-class "GtkRuler" 			style "ruler"
-class "GtkScrollbar" 		style "scrollbar"
-class "GtkProgressBar" 		style "progressbar"
-class "GtkRange" 			style "range"
-class "GtkMenu" 			style "menu"
-class "GtkMenuBar*" 	 	style "menubar"
-widget_class "*MenuBar.*" 	style "menubar"
-class "GtkMenuItem"			style "menuitem"
-class "GtkTearoffMenuItem"	style "menuitem"
-class "GtkNotebook"	 		style "notebook"
-class "GtkToolbar" 			style "toolbar"
-class "GtkEventBox" 		style "flat"
-class "GtkLayout" 			style "layout"
-class "SPButton" 			style "SPbutton"
-widget "GtkTooltip" 		style "tooltips"
-widget "GtkEditable"		style "text"
-widget_class "*Combo*" 		style "optionmenu"
+class "GtkButton"           style "button"
+class "GtkRadioButton"      style "radiobutton"
+class "GtkRadioMenuItem"    style "radiobutton"
+class "GtkCheckButton"      style "checkbutton"
+class "GtkCheckMenuItem"    style "checkbutton"
+class "GtkOptionMenu"       style "optionmenu"
+class "GtkCombo*"           style "optionmenu"
+class "*Font*"              style "optionmenu"
+class "GtkEntry"            style "entry"
+class "GtkOldEditable"      style "entry"
+class "GtkSpinButton"       style "spinbutton"
+class "GtkSpinner"          style "spinner"
+class "GtkRuler"            style "ruler"
+class "GtkScrollbar"        style "scrollbar"
+class "GtkProgressBar"      style "progressbar"
+class "GtkRange"            style "range"
+class "GtkMenu"             style "menu"
+class "GtkMenuBar*"         style "menubar"
+widget_class "*MenuBar.*"   style "menubar"
+class "GtkMenuItem"         style "menuitem"
+class "GtkTearoffMenuItem"  style "menuitem"
+class "GtkNotebook"	        style "notebook"
+class "GtkToolbar"          style "toolbar"
+class "GtkEventBox"         style "flat"
+class "GtkLayout"           style "layout"
+class "SPButton"            style "SPbutton"
+widget "GtkTooltip"         style "tooltips"
+widget "GtkEditable"        style "text"
+widget_class "*Combo*"      style "optionmenu"
 
 # colorize ugly white line at the top of the vertical scrollbar in Nautilus
 style "searchbar" {
@@ -1296,13 +1277,13 @@ style "separator" {
 widget "*nautilus*side*" 		style:highest "separator"
 
 style "icon-view-fix" {
-        fg[NORMAL] = @text_color
-        fg[SELECTED] = @selected_fg_color
-        base[NORMAL] = @bg_color
+        fg[NORMAL]     = @text_color
+        fg[SELECTED]   = @selected_fg_color
+        base[NORMAL]   = @bg_color
         base[SELECTED] = @selected_fg_color
 }
 widget_class "*.EelEditableLabel" style:highest "icon-view-fix"
-widget_class "GtkViewPort" style:highest "icon-view-fix"
+widget_class "GtkViewPort"        style:highest "icon-view-fix"
 
 include "panelrc"
 include "apps/firefoxrc"
