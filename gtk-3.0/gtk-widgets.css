@@ -355,7 +355,7 @@ column-header .button:hover {
 
 .pane-separator.horizontal,
 .handle.horizontal {
-	background-color: @bg_color;
+	background-color: transparent;
 	background-image: url("img/holes_vert.png");
 	background-origin: border-box;
 	background-position: center;
@@ -364,7 +364,7 @@ column-header .button:hover {
 }
 .pane-separator.vertical,
 .handle.vertical {
-	background-color: @bg_color;
+	background-color: transparent;
 	background-image: url("img/holes_horiz.png");
 	background-origin: border-box;
 	background-position: center;
@@ -743,8 +743,10 @@ GtkSwitch.slider:hover {
 
 .info-bar,
 .tooltip {
-	background: @tooltip_bg_color;
-	border-image: url("img/bevel_dark_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+	background-image: url("img/tooltip-base.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	color: @tooltip_fg_color;
 }
 
@@ -762,6 +764,7 @@ GtkToolItemGroup {
 	padding: 2px;
 }
 
+GtkInfoBar .titlebar,
 GtkDialog .titlebar {
 	background-image: url("img/vgrad_med_curved.png");
 	background-repeat: no-repeat;
@@ -776,6 +779,10 @@ GtkTextView {
 	background-color: @base_color;
 	padding: 2px;
 }
+
+GtkHPaned, GtkVPaned { background-color: shade(@bg_color,0.95) }
+
+GtkWindow { padding: 0px }
 
 /*
  * vim:fenc=utf-8:ft=css:ci:pi:sts=0:sw=4:ts=4:

@@ -12,7 +12,7 @@
  */
 
 @define-color base_color #484848;
-@define-color bg_color #383838;
+@define-color bg_color #424242;
 @define-color fg_color #fafafa;
 @define-color text_color #fafafa;
 @define-color selected_bg_color #245f99;
@@ -127,7 +127,7 @@ GtkLabel:insensitive { color: @insensitive_fg_color }
 GtkSwitch { text-shadow: 2px 2px 2px @selected_fg_color }
 
 GtkTreeView row:nth-child(even) {
-	background-color: shade(@base_color,0.96);
+	background-color: @base_color;
 	background-image: url("img/separator_horiz.png");
 	background-origin: border-box;
 	background-position: center top;
@@ -135,7 +135,7 @@ GtkTreeView row:nth-child(even) {
 	background-size: 100% 2px;
 }
 GtkTreeView row:nth-child(odd) {
-	background-color: shade(@bg_color,1.04);
+	background-color: shade(@bg_color,0.90);
 	background-image: url("img/separator_horiz.png");
 	background-origin: border-box;
 	background-position: center top;
