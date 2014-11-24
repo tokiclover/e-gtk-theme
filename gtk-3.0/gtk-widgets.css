@@ -51,11 +51,17 @@ column-header .button:hover {
 	color: @selected_bg_color;
 }
 
+.menuitem.check,
+.menuitem.check:hover,
+.menuitem.check:insensitive,
 .view.cell.check,
+.view.cell.check:hover,
 .view.cell.check:insensitive,
 .button.check,
+.button.check:hover,
 .button.check:insensitive,
 .check row:selected,
+.check row:selected:hover,
 .check row:selected:insensitive,
 .check,
 .check:insensitive {
@@ -66,6 +72,8 @@ column-header .button:hover {
 	background-size: 11px 11px;
 }
 
+.menuitem.check:active,
+.menuitem.check:active:insensitive,
 .view.cell.check:active,
 .view.cell.check:active:insensitive,
 .view.cell:active:insensitive,
@@ -96,6 +104,18 @@ column-header .button:hover {
 	background-size: 11px 11px;
 }
 
+.menuitem.radio,
+.menuitem.radio:hover,
+.menuitem.radio:insensitive,
+.view.cell.radio,
+.view.cell.radio:hover,
+.view.cell.radio:insensitive,
+.button.radio,
+.button.radio:hover,
+.button.radio:insensitive,
+.radio row:selected,
+.radio row:selected:hover,
+.radio row:selected:insensitive,
 .radio {
 	background-color: transparent;
 	background-image: url("img/inset_shadow_circle_tiny.png");
@@ -104,6 +124,10 @@ column-header .button:hover {
 	background-size: 13px 13px;
 }
 
+.menuitem.radio:insensitive,
+.view.cell.radio:insensitive,
+.button.radio:insensitive,
+.radio row:selected:insensitive,
 .radio:insensitive {
 	background-color: transparent;
 	background-image: url("img/inset_shadow_circle_tiny_ins.png");
@@ -112,6 +136,14 @@ column-header .button:hover {
 	background-size: 13px 13px;
 }
 
+.menuitem.radio:active,
+.menuitem.radio:active:insensitive,
+.view.cell.radio:active,
+.view.cell.radio:active:insensitive,
+.button.radio:active,
+.button.radio:active:insensitive,
+.radio row:selected:active,
+.radio row:selected:active:insensitive,
 .radio:active:insensitive,
 .radio:hover,
 .radio:active {
@@ -294,10 +326,10 @@ column-header .button:hover {
 .entry:focus,
 .entry {
 	background-color: shade(@bg_color,0.95);
-	background-image: url("img/inset_shadow.png");
+	background-image: url("img/inset_shadow_tiny.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: 104% 104%;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	border-width: 1px;
 	padding: 2px;
@@ -305,10 +337,10 @@ column-header .button:hover {
 
 .entry:insensitive {
 	background-color: @bg_color;
-	background-image: url("img/inset_shadow.png");
+	background-image: url("img/inset_shadow_tiny.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: 104% 104%;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	border-width: 1px;
 	padding: 2px;
