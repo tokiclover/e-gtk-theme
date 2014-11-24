@@ -326,7 +326,7 @@ style "default" {
 			file     = "img/bevel_in.png"
 			border   = {1,1,1,1}
 			stretch  = TRUE
-			overlay_file    = "img/inset_shadow.png"
+			overlay_file    = "img/inset_shadow_tiny.png"
 			overlay_border  = {2,2,2,2}
 			overlay_stretch = TRUE
 		}

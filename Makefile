@@ -41,7 +41,7 @@ dist_IMAGES = \
 	holes_tiny_horiz.png \
 	holes_tiny_vert.png \
 	holes_vert.png \
-	inset_shadow.png \
+	inset_shadow_tiny.png \
 	inset_shadow_circle_tiny.png \
 	inset_shadow_circle_tiny_in.png \
 	inset_shadow_circle_tiny_ins.png \
