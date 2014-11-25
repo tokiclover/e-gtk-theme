@@ -44,7 +44,6 @@ dist_IMAGES = \
 	inset_shadow_square_tiny.png \
 	inset_shadow_square_tiny_glow_in.png \
 	inset_shadow_square_tiny_in.png \
-	menu.png \
 	outline_glow.png \
 	separator_horiz.png \
 	separator_vert.png \

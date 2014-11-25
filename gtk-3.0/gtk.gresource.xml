@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
   <gresource prefix="/org/gnome/e">
-    <file preprocess="to-pixdata">img/bevel_dark_out.png</file>
     <file preprocess="to-pixdata">img/bevel_in.png</file>
     <file preprocess="to-pixdata">img/bevel_out.png</file>
     <file preprocess="to-pixdata">img/bg_bevel_in_big.png</file>
@@ -30,7 +29,6 @@
     <file preprocess="to-pixdata">img/knob_sz_14.png</file>
     <file preprocess="to-pixdata">img/led_dark.png</file>
     <file preprocess="to-pixdata">img/led_light.png</file>
-    <file preprocess="to-pixdata">img/menu.png</file>
     <file preprocess="to-pixdata">img/outline_glow.png</file>
     <file preprocess="to-pixdata">img/runner_glow_horiz.png</file>
     <file preprocess="to-pixdata">img/runner_glow_vert.png</file>
@@ -66,13 +64,7 @@
     <file preprocess="to-pixdata">img/trough_vert.png</file>
     <file preprocess="to-pixdata">img/vert_glow_run.png</file>
     <file preprocess="to-pixdata">img/vgrad_dark.png</file>
-    <file preprocess="to-pixdata">img/vgrad_dark_left.png</file>
-    <file preprocess="to-pixdata">img/vgrad_dark_right.png</file>
-    <file preprocess="to-pixdata">img/vgrad_dark_top.png</file>
     <file preprocess="to-pixdata">img/vgrad_med_curved.png</file>
-    <file preprocess="to-pixdata">img/vgrad_med_curved_left.png</file>
-    <file preprocess="to-pixdata">img/vgrad_med_curved_right.png</file>
-    <file preprocess="to-pixdata">img/vgrad_med_curved_top.png</file>
     <file>apps/term.css</file>
     <file>gtk-widgets.css</file>
     <file>gtk-main.css</file>
