@@ -13,6 +13,7 @@
 
 @define-color base_color #484848;
 @define-color bg_color #424242;
+@define-color bg_color_dark shade(@bg_color,0.95);
 @define-color fg_color #fafafa;
 @define-color text_color #fafafa;
 @define-color selected_bg_color #245f99;
@@ -56,11 +57,14 @@
 
 	-GtkNotebook-tab-overlap: -1;
 	-GtkNotebook-tab-curvature: 0;
+	-GtkNotebook-has-tab-gap: false;
+	-GtkNotebook-initial-gap: 8;
 
 	-GtkArrow-arrow-scaling: 0.5;
 	-GtkCheckButton-indicator-size: 11;
 	-GtkCheckMenuItem-indicator-size: 11;
 	-GtkToolButton-icon-spacing: 0;
+	-GtkTooltip-has-tooltip: 1;
 	-GtkTextView-error-underline-color: @text_color;
 	-GtkPaned-handle-size: 6;
 	-GtkProgressBar-min-horizontal-bar-height: 13;
@@ -98,31 +102,25 @@
 * { color: inherit }
 * { background-color: inherit }
 
-*:active,
-*:selected,
-*:selected:focus { color: @selected_bg_color }
-
-*:insensitive { color: @insensitive_fg_color }
-
-.prompt,
-GtkDialog {
-	background-color: @base_color;
-	border-image: url("img/bevel_out.png") 1 1 1 1 / 0px 1px 1px 1px stretch;
-	padding: 2px;
+*:active:focus {
+	color: @selected_bg_color;
+}
+*:active{
+	color: @selected_fg_color;
 }
 
-GtkImage, GtkLabel { background-color: transparent }
-GtkImage { color: @selected_fg_color }
+*:selected:focus {
+	background-color: @selected_fg_color;
+	color: @selected_bg_color;
+}
+*:selected {
+	background-color: @selected_bg_color;
+	color: @selected_fg_color;
+}
 
-GtkImage:active,
-GtkImage:hover,
-GtkImage:selected,
-GtkLabel:active,
-GtkLabel:hover,
-GtkLabel:selected { color: @selected_bg_color }
-
-GtkImage:insensitive,
-GtkLabel:insensitive { color: @insensitive_fg_color }
+*:insensitive {
+	color: @insensitive_fg_color;
+}
 
 GtkSwitch { text-shadow: 2px 2px 2px @selected_fg_color }
 

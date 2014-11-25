@@ -4,13 +4,12 @@
     <file preprocess="to-pixdata">img/bevel_dark_out.png</file>
     <file preprocess="to-pixdata">img/bevel_in.png</file>
     <file preprocess="to-pixdata">img/bevel_out.png</file>
-    <file preprocess="to-pixdata">img/bg_notebook.png</file>
+    <file preprocess="to-pixdata">img/bg_bevel_in_big.png</file>
     <file preprocess="to-pixdata">img/bg_radgrad.png</file>
     <file preprocess="to-pixdata">img/button_clicked.png</file>
     <file preprocess="to-pixdata">img/button_normal.png</file>
     <file preprocess="to-pixdata">img/button_normal.svg</file>
-    <file preprocess="to-pixdata">img/button_spin_down_normal.png</file>
-    <file preprocess="to-pixdata">img/button_spin_up_normal.png</file>
+    <file preprocess="to-pixdata">img/day_middle_normal.png</file>
     <file preprocess="to-pixdata">img/frame_gap.png</file>
     <file preprocess="to-pixdata">img/glow_round_corners.png</file>
     <file preprocess="to-pixdata">img/hole_tiny.png</file>
@@ -38,9 +37,6 @@
     <file preprocess="to-pixdata">img/separator_horiz.png</file>
     <file preprocess="to-pixdata">img/separator_vert.png</file>
     <file preprocess="to-pixdata">img/shadow_angled_in_sides_glow.png</file>
-    <file preprocess="to-pixdata">img/shadow_angled_in_sides_left.png</file>
-    <file preprocess="to-pixdata">img/shadow_angled_in_sides_right.png</file>
-    <file preprocess="to-pixdata">img/shadow_angled_in_sides_top.png</file>
     <file preprocess="to-pixdata">img/shadow_square_tiny.png</file>
     <file preprocess="to-pixdata">img/shine.png</file>
     <file preprocess="to-pixdata">img/slider_horiz.png</file>

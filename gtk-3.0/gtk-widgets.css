@@ -8,25 +8,41 @@
 .background { background-color: @bg_color }
 .color { background-color: @fg_color }
 
+.toolbar.button:hover,
 .button,
 .button:hover {
 	background-color: transparent;
 	background-image: url("img/button_normal.png");
+	background-origin: content-box;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 110% 100%;
 	border: none;
 	padding: 2px;
 }
-.button:active,
-.button:insensitive {
+.toolbar.button:active;
+.button:active {
 	background-color: transparent;
 	background-image: url("img/button_clicked.png");
+	background-origin: content-box;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 110% 100%;
 	border: none;
 	padding: 2px;
+}
+
+.toolbar.button:insensitive,
+.button:insensitive {
+	background-color: transparent;
+	background-image: url("img/button_clicked.png");
+	background-origin: content-box;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 110% 100%;
+	border: none;
+	padding: 2px;
+	-gtk-image-effect: dim;
 }
 
 column-header .button,
@@ -325,7 +341,7 @@ column-header .button:hover {
 
 .entry:focus,
 .entry {
-	background-color: shade(@bg_color,0.95);
+	background-color: @bg_color_dark;
 	background-image: url("img/inset_shadow_tiny.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -355,27 +371,6 @@ column-header .button:hover {
 	background-color: @bg_color;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 }
-.frame shadow-gap,
-.notebook > shadow-gap {
-	background-color: @bg_color;
-	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
-}
-.frame gap-end,
-.notebook > gap-end {
-	background-color: @bg_color;
-	background-image: url("img/frame_gap.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-.frame gap-start,
-.notebook > gap-start {
-	background-color: @bg_color;
-	background-image: url("img/frame_gap.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
 
 .grip {
 	background-color: transparent;
@@ -387,7 +382,7 @@ column-header .button:hover {
 
 .pane-separator.horizontal,
 .handle.horizontal {
-	background-color: transparent;
+	background-color: @bg_color_dark;
 	background-image: url("img/holes_vert.png");
 	background-origin: border-box;
 	background-position: center;
@@ -396,7 +391,7 @@ column-header .button:hover {
 }
 .pane-separator.vertical,
 .handle.vertical {
-	background-color: transparent;
+	background-color: @bg_color_dark;
 	background-image: url("img/holes_horiz.png");
 	background-origin: border-box;
 	background-position: center;
@@ -436,7 +431,7 @@ column-header .button:hover {
 .menubar {
 	background-color: @bg_color;
 	background-image: url("img/separator_horiz.png");
-	background-origin: border-box;
+	background-origin: content-box;
 	background-position: center bottom;
 	background-repeat: no-repeat;
 	background-size: 100% 2px;
@@ -608,42 +603,47 @@ GtkSwitch.trough,
 	background-color: transparent;
 }
 
-.spinbutton .button.down { padding: 1px 2px }
-.spinbutton .button.down {
-	background-image: url("img/button_spin_down_normal.png");
-	background-origin: padding-box;
+.spinbutton.button {
+	background-image: url("img/day_middle_normal.png");
+	background-origin: border-box;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
-}
-.spinbutton .button.up {
-	background-image: url("img/button_spin_up_normal.png");
-	background-origin: padding-box;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-size: 110% 110%;
+	padding: 1px;
 }
 
-.box,
 .grid,
 .table,
 .notebook {
-	background-color: #404040;
-	background-image: url("img/bg_notebook.png");
-	background-origin: padding-box;
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-size: 100% 163px;
-	border-image: url("img/bevel_out.png") 2 1 1 1 / 1px 1px 1px 1px stretch;
+	background-color: @base_color;
+	border-image: url("img/bg_bevel_in_big.png") 4 4 4 4 / 4px 4px 4px 4px stretch;
+	color: @fg_color;
+	padding: 2px;
 }
-.notebook:active,
-.notebook:focus {
-	background-image: url("img/runner_glow_horiz.png"), url("img/runner_glow_horiz.png"),
-		url("img/runner_glow_vert.png"), url("img/runner_glow_vert.png"),
-		url("img/bg_notebook.png");
-	background-origin: padding-box;
-	background-position: center top, center bottom, left center, right center, center top;
-	background-repeat: no-repeat;
-	background-size: 100% 1px, 100% 1px, 1px 100%, 1px 100%, 100% 163px;
-	border-image: url("img/bevel_out.png") 2 1 1 1 / 1px 1px 1px 1px stretch;
+
+.notebook.header {
+	background-color: @bg_color;
+	border-image: none;
+	padding: 1px;
+}
+
+.notebook.header.bottom:active,
+.notebook.header.bottom:focus {
+	border-image: url("img/runner_glow_horiz.png") 0 0 0 1 / 0px 0px 0px 1px;
+}
+
+.notebook.header.top:active,
+.notebook.header.top:focus {
+	border-image: url("img/runner_glow_horiz.png") 0 0 1 0 / 0px 0px 1px 0px;
+}
+
+.notebook.header.left:active,
+.notebook.header.letf:focus {
+	border-image: url("img/runner_glow_vert.png") 0 1 0 0 / 0px 1px 0px 0px;
+}
+
+.notebook.header.right:active,
+.notebook.header.right:focus {
+	border-image: url("img/runner_glow_vert.png") 1 0 0 0 / 1px 0px 0px 0px;
 }
 
 .spinner {
@@ -654,94 +654,27 @@ GtkSwitch.trough,
 	background-size: 100% 100%, 100% 100%;
 }
 
-.tab.top,
-.notebook tab.top {
-	padding: 0px;
-	background-image: url("img/vgrad_med_curved.png");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
-}
-.tab.top:active,
-.notebook tab.top:active {
-	padding: 0px;
-	background-image: url("img/shine.png"),
-		url("img/shadow_angled_in_sides_glow.png"), url("img/vgrad_dark.png");
-	background-position: center -2px, center, center;
-	background-repeat: no-repeat;
-	background-size: auto, 100% 100%, 100% 100%;
-}
-
-.tab.right,
-.notebook tab.right {
-	padding: 0px;
-	background-image: url("img/vgrad_med_curved_left.png");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
-}
-.tab.right:active,
-.notebook tab.right:active {
-	padding: 0px;
-	background-image: url("img/shadow_angled_in_sides_left.png"),
-		url("img/vgrad_dark_left.png");
-	background-position: center, center;
-	background-repeat: no-repeat, no-repeat;
-	background-size: 110% 100%, 100% 100%;
-}
-
-.tab.left,
-.notebook tab.left {
-	padding: 0px;
-	background-image: url("img/vgrad_med_curved_right.png");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
-}
-.tab.left:active,
-.notebook tab.left:active {
-	padding: 0px;
-	background-image: url("img/shadow_angled_in_sides_right.png"),
-		url("img/vgrad_dark_right.png");
-	background-position: center, center;
-	background-repeat: no-repeat, no-repeat;
-	background-size: 100% 100%, 100% 100%;
-}
-
-.tab.bottom,
-.notebook tab.bottom {
-	padding: 0px;
-	background-image: url("img/vgrad_med_curved_top.png");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
-}
-.tab.bottom:active,
-.notebook tab.bottom:active {
-	padding: 0px;
-	background-image: url("img/shadow_angled_in_sides_top.png"),
-		url("img/vgrad_dark_top.png");
-	background-position: center, center;
-	background-repeat: no-repeat, no-repeat;
-	background-size: 100% 100%, 100% 100%;
-}
-
 .tab,
 .notebook tab {
 	padding: 0px;
 	background-image: url("img/vgrad_med_curved.png");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
+	background-origin: content-box;
+	background-size: 100% 100%, 100% 100%;
 	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+	background-color: transparent;
 }
+
 .tab:active,
 .notebook tab:active {
 	padding: 0px;
-	background-image: url("img/shadow_angled_in_sides_glow.png"),
+	background-image: url("img/shine.png"), url("img/shadow_angled_in_sides_glow.png"),
 		url("img/vgrad_dark.png");
-	background-position: center, center;
-	background-repeat: no-repeat, no-repeat;
-	background-size: 100% 100%, 100% 100%;
+	background-origin: border-box;
+	background-position: center -2px, bottom, center;
+	background-repeat: no-repeat;
+	background-size: auto, 100% 100%, 100% 100%;
+	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+	background-color: transparent;
 }
 
 GtkSwitch.slider {
@@ -766,11 +699,12 @@ GtkSwitch.slider:hover {
 .toolbar {
 	background-color: @bg_color;
 	background-image: url("img/button_normal.svg");
+	background-origin: content-box;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 110% 100%;
 	border: none;
-	padding: 2px;
+	padding: 2px 4px;
 }
 
 .info-bar,
@@ -783,8 +717,44 @@ GtkSwitch.slider:hover {
 	color: @tooltip_fg_color;
 }
 
-GtkBox { background: transparent; }
-GtkToolButton { background: transparent }
+.dnd,
+.prompt,
+GtkDialog {
+	background-color: @base_color;
+	border-image: url("img/bevel_out.png") 1 1 1 1 / 0px 1px 1px 1px stretch;
+	padding: 2px;
+}
+
+GtkBox,
+GtkBox:insensitive,
+GtkGrid,
+GtkGrid:insensitive,
+GtkImage,
+GtKImage:insensitive,
+GtkLabel,
+GtkLabel:insensitive,
+GtkToolButton,
+GtkToolButton:insensitive {
+	background-color: transparent;
+}
+
+GtkImage {
+	color: @selected_fg_color;
+}
+
+GtkImage:active,
+GtkImage:hover,
+GtkImage:selected,
+GtkLabel:active,
+GtkLabel:hover,
+GtkLabel:selected {
+	color: @selected_bg_color;
+}
+
+GtkImage:insensitive,
+GtkLabel:insensitive {
+	color: @insensitive_fg_color;
+}
 
 GtkToolItemGroup {
 	background-color: @bg_color;
@@ -813,7 +783,13 @@ GtkTextView {
 	padding: 2px;
 }
 
-GtkHPaned, GtkVPaned { background-color: shade(@bg_color,0.95) }
+GtkViewport,
+GtkPaned,
+GtkHPaned,
+GtkVPaned {
+	background-color: @bg_color_dark;
+	padding: 2px;
+}
 
 GtkWindow { padding: 0px }
 
