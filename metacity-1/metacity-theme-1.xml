@@ -2,10 +2,10 @@
 <metacity_theme>
 <info>
    <name>e-metacity-theme-0.16.2</name>
-   <author>tclover</author>
-   <copyright>BSD-2</copyright>
+   <author>tclover &lt;github.com/tokiclover&gt;</author>
+   <copyright>CopyLeft (c) 2012-2014 tclover/BSD-2</copyright>
    <date>December 10, 2012</date>
-   <description>e-metacity-theme is a theme to match the new enlightenment DR17 default theme</description>
+   <description>e-metacity-theme is a theme to match e-gtk-theme</description>
 </info>
 
    <!-- This is where we need to start specifying your theme -->
