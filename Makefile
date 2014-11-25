@@ -26,13 +26,9 @@ dist_IMAGES = \
 	bevel_dark_out.png \
 	bevel_in.png \
 	bevel_out.png \
-	bg_notebook.png \
 	button_clicked.png \
 	button_normal.png \
 	button_normal.svg \
-	button_spin_down_normal.png \
-	button_spin_up_normal.png \
-	frame_gap.png \
 	glow_round_corners.png \
 	hole_tiny.png \
 	holes_horiz.png \
@@ -53,9 +49,6 @@ dist_IMAGES = \
 	separator_horiz.png \
 	separator_vert.png \
 	shadow_angled_in_sides_glow.png \
-	shadow_angled_in_sides_left.png \
-	shadow_angled_in_sides_right.png \
-	shadow_angled_in_sides_top.png \
 	slider_horiz.png \
 	slider_run_base_horiz.png \
 	slider_run_base_vert.png \
@@ -77,9 +70,6 @@ dist_IMAGES = \
 	trough_horiz.png \
 	trough_vert.png \
 	vgrad_dark.png \
-	vgrad_dark_left.png \
-	vgrad_dark_right.png \
-	vgrad_dark_top.png \
 	vgrad_med_curved.png \
 	vgrad_med_curved_left.png \
 	vgrad_med_curved_right.png

@@ -6,7 +6,11 @@ gtk2_DATA   = \
 	gtkrc \
 	panelrc
 dist_IMAGES+= \
+	bg_notebook.png \
 	bevel_curved_horiz_out.png \
+	button_spin_down_normal.png \
+	button_spin_up_normal.png \
+	frame_gap.png \
 	frame_horiz_end.png \
 	frame_horiz_start.png \
 	frame_vert_end.png \
@@ -19,10 +23,16 @@ dist_IMAGES+= \
 	progressbar_run_vert.png \
 	progressbar_runner_horiz.png \
 	progressbar_runner_vert.png \
+	shadow_angled_in_sides_left.png \
+	shadow_angled_in_sides_right.png \
+	shadow_angled_in_sides_top.png \
 	tasklist_button_normal.png \
 	trough_base_horiz.png \
 	trough_base_vert.png \
 	vertical_separated_bar_glow.png \
+	vgrad_dark_left.png \
+	vgrad_dark_right.png \
+	vgrad_dark_top.png \
 	vgrad_med_curved_top.png \
 	vgrad_med_dark.png
 DISTFILES  += $(gtk2_DATA) $(dist_IMAGES)
