@@ -1,5 +1,10 @@
 Header: e-gtk-theme/ChangeLog, 2014/11/11 18:58:34 Exp
 
+0.18.1:
+
+* major gtk-3 notebook overhaul (visual from gt-2) and clean up;
+* minor spinbutton, button, toolbar and therminal update;
+
 0.18.0:
 
 * Added makefiles to avoid plain copying the whole directory;
