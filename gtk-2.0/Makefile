@@ -35,6 +35,8 @@ dist_IMAGES+= \
 	vgrad_dark_right.png \
 	vgrad_dark_top.png \
 	vgrad_med_curved_top.png \
+	vgrad_med_curved_left.png \
+	vgrad_med_curved_right.png \
 	vgrad_med_dark.png
 DISTFILES  += $(gtk2_DATA) $(dist_IMAGES)
 DISTDIRS   += $(themedir)/gtk-2.0/apps

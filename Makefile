@@ -69,9 +69,7 @@ dist_IMAGES = \
 	trough_horiz.png \
 	trough_vert.png \
 	vgrad_dark.png \
-	vgrad_med_curved.png \
-	vgrad_med_curved_left.png \
-	vgrad_med_curved_right.png
+	vgrad_med_curved.png
 openbox_DATA= \
 	themerc
 DISTDIRS    = \

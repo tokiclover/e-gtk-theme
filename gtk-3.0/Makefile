@@ -24,8 +24,7 @@ dist_IMAGES+= \
 	sym_left_dark_selected.png \
 	sym_up_dark_selected.png \
 	tooltip-base.png \
-	vert_glow_run.png \
-	vgrad_med.png
+	vert_glow_run.png
 DISTFILES  += $(gtk3_DATA) $(dist_IMAGES)
 DISTDIRS   += $(themedir)/gtk-3.0/apps
 
