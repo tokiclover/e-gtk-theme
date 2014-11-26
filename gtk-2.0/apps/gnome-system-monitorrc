@@ -8,11 +8,11 @@
 #
 
 style "gnome-system-monitor-menu" {
-    bg[ACTIVE] = shade(0.76,@bg_color)
+  bg[ACTIVE] = shade(0.76,@bg_color)
 }
 
 widget_class "*Gnome-system-monitor*Menu*" style "gnome-system-monitor-menu"
 
 #
-# vim:fenc=utf-8:ft=gtkrc:ci:pi:sts=0:sw=4:ts=4:
+# vim:fenc=utf-8:ft=gtkrc:ci:pi:sts=2:sw=2:ts=2:
 #

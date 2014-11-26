@@ -53,5 +53,5 @@ widget "*.tasklist-button" style "button"
 widget "GtkWindow.gnome-panel-main-menu*" style "menu"
 
 #
-# vim:fenc=utf-8:ft=gtkrc:ci:pi:sts=0:sw=4:ts=4:
+# vim:fenc=utf-8:ft=gtkrc:ci:pi:sts=2:sw=2:ts=2:
 #

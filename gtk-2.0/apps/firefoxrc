@@ -23,5 +23,5 @@ style "firefox-entry" {
 widget	"MozillaGtkWidget*GtkFixed*GtkEntry*" style:highest "firefox-entry"
 
 #
-# vim:fenc=utf-8:ft=gtkrc:ci:pi:sts=0:sw=4:ts=4:
+# vim:fenc=utf-8:ft=gtkrc:ci:pi:sts=2:sw=2:ts=2:
 #
