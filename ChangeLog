@@ -1,20 +1,27 @@
 Header: e-gtk-theme/ChangeLog, 2014/11/11 18:58:34 Exp
 
-0.18.1:
+0.18.2: (gtk-3)
 
+* fix toolbar buttons state (broken in 0.18.1);
+* entry update with a nice focus/insensitive/progressbar;
+* added a few GtkFlow/ListBox widgets;
+
+0.18.1: (gtk-3)
+
+* BIG gtk-2 clean up (aka TAB HELL);
 * major gtk-3 notebook overhaul (visual from gt-2) and clean up;
 * minor spinbutton, button, toolbar and therminal update;
 
-0.18.0:
+0.18.0: (gtk-3)
 
 * Added makefiles to avoid plain copying the whole directory;
 * (gtk-3:) entry update; insensitive sym_{lef,righ}t update;
 
-0.17.4:
+0.17.4: (gtk-3)
 
 * Fix button, dialog, separator and menuitem widget;
 
-0.17.3:
+0.17.3: (gtk-3)
 
 * Fix arrow-size and GtkTexView (transparent background in GtkDialog);
 
@@ -24,7 +31,7 @@ Header: e-gtk-theme/ChangeLog, 2014/11/11 18:58:34 Exp
 * Re-fixed dialog; Fix separator; Fix check (almost functionnal);
 button update (nicer look).
 
-0.17.1:
+0.17.1: (gtk-3)
 
 * fixed scroll button (removed unecessary adwaita engine),
 gtk+-3.0 support themable scroll button (arrows are not);
