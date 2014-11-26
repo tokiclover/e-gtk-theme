@@ -4,6 +4,8 @@
 # Author: -tclover <tokiclover@gmail.com>  Exp
 # Licence: 2-clause BSD                    Exp
 #
+# CopyLeft (c) 2012-2014 tclover <tokiclover@gmail.com>
+#
 
 style "firefox-entry" {
 	GtkWidget::interior-focus = 0

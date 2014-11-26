@@ -4,6 +4,8 @@
 # Author: -tclover <tokiclover@gmail.com>  Exp
 # Licence: 2-clause BSD                    Exp
 #
+# CopyLeft (c) 2012-2014 tclover <tokiclover@gmail.com>
+#
 
 style "gnome-panel" {
 	PanelToplevel::arrow-size = DEFAULT_ARROW_SIZE 

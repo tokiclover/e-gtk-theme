@@ -9,6 +9,8 @@
 # this is a gtk+-2 theme to match the new enlightenment DR17
 # window manager dark default theme
 #
+# CopyLeft (c) 2012-2014 tclover <tokiclover@gmail.com>
+#
 
 gtk-menu-drop-shadow = 0
 gtk-menu-shadow-delay = 0
