@@ -7,9 +7,11 @@ gtk3_DATA   = \
 	settings.ini
 dist_IMAGES+= \
 	bg_bevel_in_big.png \
+	bg_glow_in.png \
 	bg_radgrad.png \
 	day_middle_normal.png \
 	horiz_glow_run.png \
+	horiz_glow_run_big.png \
 	knob_sz_14.png \
 	led_dark.png \
 	led_light.png \

@@ -4,6 +4,7 @@
     <file preprocess="to-pixdata">img/bevel_in.png</file>
     <file preprocess="to-pixdata">img/bevel_out.png</file>
     <file preprocess="to-pixdata">img/bg_bevel_in_big.png</file>
+    <file preprocess="to-pixdata">img/bg_glow_in.png</file>
     <file preprocess="to-pixdata">img/bg_radgrad.png</file>
     <file preprocess="to-pixdata">img/button_clicked.png</file>
     <file preprocess="to-pixdata">img/button_normal.png</file>
@@ -19,6 +20,7 @@
     <file preprocess="to-pixdata">img/holes_tiny_vert.png</file>
     <file preprocess="to-pixdata">img/holes_vert.png</file>
     <file preprocess="to-pixdata">img/horiz_glow_run.png</file>
+    <file preprocess="to-pixdata">img/horiz_glow_run_big.png</file>
     <file preprocess="to-pixdata">img/inset_shadow_tiny.png</file>
     <file preprocess="to-pixdata">img/inset_shadow_circle_tiny.png</file>
     <file preprocess="to-pixdata">img/inset_shadow_circle_tiny_in.png</file>
