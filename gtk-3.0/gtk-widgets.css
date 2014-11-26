@@ -339,10 +339,20 @@ column-header .button:hover {
 	background-size: 15px 15px;
 }
 
-.entry:focus,
 .entry {
-	background-color: @bg_color_dark;
+	background-color: @bg_color;
 	background-image: url("img/inset_shadow_tiny.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 104% 104%;
+	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+	border-width: 1px;
+	padding: 2px;
+}
+
+.entry:focus {
+	background-color: @bg_color;
+	background-image: url("img/inset_shadow_tiny.png"), url("img/bg_glow_in.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 104% 104%;
@@ -356,15 +366,21 @@ column-header .button:hover {
 	background-image: url("img/inset_shadow_tiny.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 104% 104%;
+	background-size: 124% 124%;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	border-width: 1px;
 	padding: 2px;
 }
 
 .entry.progressbar {
-	background-color: @selected_fg_color;
-	color: @selected_bg_color;
+	background-color: @bg_color;
+	background-image: url("img/inset_shadow_tiny.png"), url("img/horiz_glow_run_big.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 104% 104%;
+	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
+	border-width: 1px;
+	padding: 2px;
 }
 
 .frame {
@@ -408,6 +424,12 @@ column-header .button:hover {
 	background-size: 100% 40px;
 	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	padding: 0px;
+}
+
+GtkComboBox,
+.notebook.arrow.left,
+.menu .menuitem {
+	-GtkMenuItem-arrow-scaling: 0.5;
 }
 
 .menuitem,
@@ -465,7 +487,7 @@ GtkSwitch.trough,
 	background-color: transparent;
 	background-image: url("img/slider_run_bevel_horiz.png"),
 		url("img/slider_run_base_horiz.png");
-	background-position: center;
+	background-position: center 5px;
 	background-repeat: no-repeat, no-repeat;
 	background-size: 100% 5px, 100% 5px;
 }
@@ -475,7 +497,7 @@ GtkSwitch.trough,
 	background-color: transparent;
 	background-image: url("img/slider_run_bevel_vert.png"),
 		url("img/slider_run_base_vert.png");
-	background-position: center;
+	background-position: 5px center;
 	background-repeat: no-repeat, no-repeat;
 	background-size: 5px 100%, 5px 100%;
 }
@@ -733,6 +755,8 @@ GtkImage,
 GtKImage:insensitive,
 GtkLabel,
 GtkLabel:insensitive,
+GtkStatusIcon,
+GtkStatusIcon:insensitive,
 GtkToolButton,
 GtkToolButton:insensitive {
 	background-color: transparent;
@@ -776,6 +800,9 @@ GtkDialog .titlebar {
 	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 }
 
+GtkFlowBox,
+GtkListBox,
+GtkFixed,
 GtkIconView,
 GtkTreeView,
 GtkTextView {
