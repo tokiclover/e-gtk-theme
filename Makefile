@@ -1,5 +1,5 @@
 PACKAGE     = e-gtk-theme
-VERSION     = $(shell sed -nre '3s/(.*):/\1/p' ChangeLog)
+VERSION     = $(shell sed -nre '3s/(.*):.*/\1/p' ChangeLog)
 THEME_NAME  = e
 
 prefix      = /usr/local
