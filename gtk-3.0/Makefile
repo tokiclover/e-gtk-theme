@@ -12,6 +12,7 @@ dist_IMAGES+= \
 	day_middle_normal.png \
 	horiz_glow_run.png \
 	horiz_glow_run_big.png \
+	inset_circle_tiny.png \
 	knob_sz_14.png \
 	led_dark.png \
 	led_light.png \
