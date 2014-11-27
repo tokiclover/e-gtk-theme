@@ -3,7 +3,8 @@ Header: e-gtk-theme/ChangeLog, 2014/11/11 18:58:34 Exp
 0.18.3:
 
 * gtk-2: use bg_notebok for menu; gtk-[23]: use png button for toolbar;
-  gtk-3: improved (gain) (small) button, toolbar view and GtkGrid fix;
+* gtk-3: improved (again) (small) button and toolbar; GtkGrid fix;
+* gtk-3: spinner update; minor image clean up; toolbar separator fix;
 
 0.18.2: (gtk-3)
 
