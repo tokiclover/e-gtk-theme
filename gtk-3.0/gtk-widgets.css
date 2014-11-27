@@ -421,7 +421,6 @@ column-header .button:hover {
 	padding: 0px;
 }
 
-GtkComboBox,
 .menu .menuitem {
 	-GtkMenuItem-arrow-scaling: 0.5;
 }
@@ -749,6 +748,11 @@ GtkDialog {
 	padding: 2px;
 }
 
+GtkComboBox {
+	padding: 1px;
+	-GtkComboBox-arrow-scaling: 0.5;
+}
+
 GtkBox,
 GtkBox:insensitive,
 GtkGrid,
@@ -795,7 +799,8 @@ GtkToolItemGroup {
 }
 
 GtkInfoBar .titlebar,
-GtkDialog .titlebar {
+GtkDialog .titlebar,
+.titlebar {
 	background-image: url("img/vgrad_med_curved.png");
 	background-repeat: no-repeat;
 	background-origin: border-box;

@@ -89,8 +89,8 @@
 	-GtkWidget-wide-separators: 1;
 	-GtkWidget-separator-height: 2px;
 	-GtkWidget-separator-width: 2px;
-	-GtkWindow-resize-grip-width: 5;
-	-GtkWindow-resize-grip-height: 5; 
+	-GtkWindow-resize-grip-width: 15;
+	-GtkWindow-resize-grip-height: 15;
 	-GtkWidget-cursor-color: @text_color;
 	-GtkWidget-cursor-aspect-ratio: 0.1; 
 	-GtkWidget-secondary-cursor-color: darker(@text_color);  
