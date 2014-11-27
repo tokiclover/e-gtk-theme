@@ -17,7 +17,6 @@ dist_IMAGES+= \
 	frame_vert_start.png \
 	knob_round_busy.png \
 	knob_sz_12.png \
-	menu.png \
 	menubar_separator.png \
 	panel_bg.png \
 	progressbar_run_horiz.png \

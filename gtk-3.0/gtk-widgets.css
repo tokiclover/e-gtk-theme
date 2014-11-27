@@ -17,7 +17,7 @@
 	background-origin: content-box;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 110% 100%;
+	background-size: 110% 108%;
 	border: none;
 	padding: 2px;
 }
@@ -27,7 +27,7 @@
 	background-origin: content-box;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 110% 100%;
+	background-size: 110% 108%;
 	border: none;
 	padding: 2px;
 }
@@ -38,7 +38,7 @@
 	background-origin: content-box;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 114% 100%;
+	background-size: 114% 108%;
 	border: none;
 	padding: 2px;
 	-gtk-image-effect: dim;
@@ -189,7 +189,7 @@ column-header .button:hover {
 	border-image: url("img/separator_horiz.png") 1 0 1 0 / 1px 0px 1px 0px stretch;
 }
 
-.button.seprator,
+.button.separator,
 .separator.vertical {
 	border-style: solid;
 	padding: 4px 0px;
@@ -339,7 +339,7 @@ column-header .button:hover {
 }
 
 .entry {
-	background-color: @bg_color;
+	background-color: @bg_color_dark;
 	background-image: url("img/inset_shadow_tiny.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -350,7 +350,7 @@ column-header .button:hover {
 }
 
 .entry:focus {
-	background-color: @bg_color;
+	background-color: @bg_color_dark;
 	background-image: url("img/inset_shadow_tiny.png"), url("img/bg_glow_in.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -361,7 +361,7 @@ column-header .button:hover {
 }
 
 .entry:insensitive {
-	background-color: @bg_color;
+	background-color: @bg_color_dark;
 	background-image: url("img/inset_shadow_tiny.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -372,7 +372,7 @@ column-header .button:hover {
 }
 
 .entry.progressbar {
-	background-color: @bg_color;
+	background-color: @bg_color_dark;
 	background-image: url("img/inset_shadow_tiny.png"), url("img/horiz_glow_run_big.png");
 	background-position: center;
 	background-repeat: no-repeat;
@@ -426,7 +426,6 @@ column-header .button:hover {
 }
 
 GtkComboBox,
-.notebook.arrow.left,
 .menu .menuitem {
 	-GtkMenuItem-arrow-scaling: 0.5;
 }
@@ -632,8 +631,6 @@ GtkSwitch.trough,
 	padding: 1px;
 }
 
-.grid,
-.table,
 .notebook {
 	background-color: @base_color;
 	border-image: url("img/bg_bevel_in_big.png") 4 4 4 4 / 4px 4px 4px 4px stretch;
@@ -719,11 +716,11 @@ GtkSwitch.slider:hover {
 .search-bar,
 .toolbar {
 	background-color: @bg_color;
-	background-image: url("img/button_normal.svg");
+	background-image: url("img/button_normal.png");
 	background-origin: content-box;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 110% 100%;
+	background-size: 110% 108%;
 	border: none;
 	padding: 2px 4px;
 }
@@ -803,10 +800,21 @@ GtkFlowBox,
 GtkListBox,
 GtkFixed,
 GtkIconView,
+GtkTable,
 GtkTreeView,
 GtkTextView {
 	background-color: @base_color;
-	padding: 2px;
+	padding: 4px;
+}
+
+GtkGrid.pane-separator {
+	background-color: @base_color;
+	background-image: url("img/holes_vert.png");
+	background-origin: border-box;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	border-image: none;
 }
 
 GtkViewport,

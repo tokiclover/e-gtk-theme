@@ -828,7 +828,7 @@ style "toolbar" {
 	engine "pixmap" {
 		image {
 			function = BOX
-			file     = "img/button_normal.svg"
+			file     = "img/button_normal.png"
 			border   = {4,4,2,4}
 			stretch  = TRUE
 		}
@@ -860,7 +860,7 @@ style "menu" = "default" {
 		image {
 			function = BOX
 			detail   = "menu"
-			file     = "img/menu.png"
+			file     = "img/bg_notebook.png"
 			border   = {4,4,0,0}
 			stretch  = TRUE
 		}

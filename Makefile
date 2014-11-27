@@ -28,7 +28,6 @@ dist_IMAGES = \
 	bevel_out.png \
 	button_clicked.png \
 	button_normal.png \
-	button_normal.svg \
 	glow_round_corners.png \
 	hole_tiny.png \
 	holes_horiz.png \
