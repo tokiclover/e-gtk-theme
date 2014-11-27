@@ -121,16 +121,12 @@ column-header .button:hover {
 
 .menuitem.radio,
 .menuitem.radio:hover,
-.menuitem.radio:insensitive,
 .view.cell.radio,
 .view.cell.radio:hover,
-.view.cell.radio:insensitive,
 .button.radio,
 .button.radio:hover,
-.button.radio:insensitive,
 .radio row:selected,
 .radio row:selected:hover,
-.radio row:selected:insensitive,
 .radio {
 	background-color: transparent;
 	background-image: url("img/inset_shadow_circle_tiny.png");
