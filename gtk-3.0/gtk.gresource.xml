@@ -31,7 +31,7 @@
     <file preprocess="to-pixdata">img/knob_sz_14.png</file>
     <file preprocess="to-pixdata">img/led_dark.png</file>
     <file preprocess="to-pixdata">img/led_light.png</file>
-    <file preprocess="to-pixdata">img/outline_glow.png</file>
+    <file preprocess="to-pixdata">img/box_glow.png</file>
     <file preprocess="to-pixdata">img/runner_glow_horiz.png</file>
     <file preprocess="to-pixdata">img/runner_glow_vert.png</file>
     <file preprocess="to-pixdata">img/separator_horiz.png</file>
