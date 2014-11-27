@@ -189,6 +189,7 @@ column-header .button:hover {
 	border-image: url("img/separator_horiz.png") 1 0 1 0 / 1px 0px 1px 0px stretch;
 }
 
+.toolbar .separator,
 .button.separator,
 .separator.vertical {
 	border-style: solid;
