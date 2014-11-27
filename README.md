@@ -28,7 +28,7 @@ dependent engine theme. They should just respect the user choice!
 
 `make prefix=/usr install-all` will suffice to have a lean copy of the theme to
 the usual place (/usr/share/theme/e). gtk-3.0 has a glib compilable counterpart
-but there are buggy widgets so use `make install` with care.
+use `make install` instead for this alternative.
 
 # TO DO:
 
