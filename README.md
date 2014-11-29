@@ -55,6 +55,7 @@ to be able to theme almost everything with images. help needed...
 
 ## gtk+-3 specific:
 
+* dialog action-area label are not well centered;
 * there is no way to crop image like border={1,1,1,1} (pixmap engine);
 * check/radio buttons are way too messy and inpredicable with nasty state;
 * nothing use global arrow(s);
