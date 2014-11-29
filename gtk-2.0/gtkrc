@@ -924,10 +924,10 @@ style "menubar" {
 }
 
 style "notebook" = "default" {
-	xthickness = 1
-	ythickness = 1
+	xthickness = 4
+	ythickness = 2
 	
-	bg[NORMAL]   = "#404040"
+	bg[NORMAL]   = @bg_color
 	text[ACTIVE] = @selected_bg_color
 
 	engine "pixmap" {
@@ -938,9 +938,6 @@ style "notebook" = "default" {
 			file     = "img/bg_notebook.png"
 			border   = {2,2,2,2}
 			stretch  = TRUE
-			overlay_file    = "img/bevel_out.png"
-			overlay_border  = {1,1,2,1}
-			overlay_stretch = TRUE
 			gap_side        = BOTTOM
 			gap_start_file  = "img/frame_horiz_start.png"
 			gap_start_border= {0,0,0,0}
@@ -954,9 +951,6 @@ style "notebook" = "default" {
 			file     = "img/bg_notebook.png"
 			border   = {2,2,2,2}
 			stretch  = TRUE
-			overlay_file    = "img/bevel_out.png"
-			overlay_border  = {1,1,2,1}
-			overlay_stretch = TRUE
 			gap_side        = TOP
 			gap_start_file  = "img/frame_horiz_start.png"
 			gap_start_border= {0,0,0,0}
@@ -970,9 +964,6 @@ style "notebook" = "default" {
 			file     = "img/bg_notebook.png"
 			border   = {2,2,2,2}
 			stretch  = TRUE
-			overlay_file    = "img/bevel_out.png"
-			overlay_border  = {1,1,2,1}
-			overlay_stretch = TRUE
 			gap_side        = RIGHT
 			gap_start_file  = "img/frame_vert_end.png"
 			gap_start_border= {0,0,0,0}
@@ -986,9 +977,6 @@ style "notebook" = "default" {
 			file     = "img/bg_notebook.png"
 			border   = {2,2,2,2}
 			stretch  = TRUE
-			overlay_file    = "img/bevel_out.png"
-			overlay_border  = {1,1,2,1}
-			overlay_stretch = TRUE
 			gap_side        = LEFT
 			gap_start_file  = "img/frame_vert_end.png"
 			gap_start_border= {0,0,0,0}
@@ -1085,12 +1073,9 @@ style "notebook" = "default" {
 		}
 		image {
 			function = BOX
-			file     = "img/menu.png"
-			border   = {2,2,2,2}
+			file     = "img/bg_notebook.png"
+			border   = {0,0,0,0}
 			stretch  = TRUE
-			overlay_file    = "img/bevel_out.png"
-			overlay_border  = {1,1,1,1}
-			overlay_stretch = TRUE
 		}
 	}
 }
