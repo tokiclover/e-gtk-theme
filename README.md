@@ -57,10 +57,9 @@ to be able to theme almost everything with images. help needed...
 
 * dialog action-area label are not well centered;
 * there is no way to crop image like border={1,1,1,1} (pixmap engine);
-* check/radio buttons are way too messy and inpredicable with nasty state;
 * nothing use global arrow(s);
-* inset shadow can only be included in entry; otherwise, impossible because
-  every single child widget should choose a shadow type (e.g. GtkPane...;
+* inset shadow can only be included in entry; impossible in notebook
+  page (too much shadow with provided images/ugly box-shadow);
 
 ## both major versions specific:
 
