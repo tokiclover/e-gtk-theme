@@ -422,9 +422,8 @@ column-header .button:hover {
 }
 
 .menu .menuitem {
-	-GtkMenuItem-arrow-scaling: 0.5;
+	-GtkMenuItem-arrow-scaling: 0.6;
 }
-
 .menuitem,
 .menuitem:active,
 .menuitem:hover {
@@ -738,11 +737,6 @@ GtkDialog {
 	padding: 2px;
 }
 
-GtkComboBox {
-	padding: 1px;
-	-GtkComboBox-arrow-scaling: 0.5;
-}
-
 GtkBox,
 GtkBox:insensitive,
 GtkGrid,
@@ -797,6 +791,7 @@ GtkDialog .titlebar,
 	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 }
 
+GtkCellView,
 GtkFlowBox,
 GtkListBox,
 GtkFixed,
@@ -816,14 +811,6 @@ GtkGrid.pane-separator {
 	background-repeat: no-repeat;
 	background-size: auto;
 	border-image: none;
-}
-
-GtkViewport,
-GtkPaned,
-GtkHPaned,
-GtkVPaned {
-	background-color: @bg_color_dark;
-	padding: 2px;
 }
 
 GtkWindow { padding: 0px }

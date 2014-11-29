@@ -59,7 +59,7 @@
 	-GtkNotebook-has-tab-gap: false;
 	-GtkNotebook-initial-gap: 8;
 
-	-GtkArrow-arrow-scaling: 0.5;
+	-GtkArrow-arrow-size: 15;
 	-GtkCheckButton-indicator-size: 11;
 	-GtkCheckMenuItem-indicator-size: 11;
 	-GtkToolButton-icon-spacing: 0;
