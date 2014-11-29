@@ -639,26 +639,6 @@ GtkSwitch.trough,
 	padding: 1px;
 }
 
-.notebook.header.bottom:active,
-.notebook.header.bottom:focus {
-	border-image: url("img/runner_glow_horiz.png") 0 0 0 1 / 0px 0px 0px 1px;
-}
-
-.notebook.header.top:active,
-.notebook.header.top:focus {
-	border-image: url("img/runner_glow_horiz.png") 0 0 1 0 / 0px 0px 1px 0px;
-}
-
-.notebook.header.left:active,
-.notebook.header.letf:focus {
-	border-image: url("img/runner_glow_vert.png") 0 1 0 0 / 0px 1px 0px 0px;
-}
-
-.notebook.header.right:active,
-.notebook.header.right:focus {
-	border-image: url("img/runner_glow_vert.png") 1 0 0 0 / 1px 0px 0px 0px;
-}
-
 .spinner {
 	background-color: transparent;
 	background-image: url("img/knob_round_busy.png"), url("img/inset_circle_tiny.png");
@@ -740,6 +720,15 @@ GtkSwitch.slider:hover {
 	color: @tooltip_fg_color;
 }
 
+.dialog-action-area {
+	background-color: @bg_color;
+	background-image: url("img/separator_horiz.png");
+	background-origin: border-box;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100% 2px;
+}
+
 .dnd,
 .prompt,
 GtkDialog {
@@ -766,7 +755,6 @@ GtkStatusIcon:insensitive,
 GtkToolButton,
 GtkToolButton:insensitive {
 	background-color: transparent;
-	padding: 4px;
 }
 
 GtkImage {
