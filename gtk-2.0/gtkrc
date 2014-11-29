@@ -602,8 +602,6 @@ style "checkbutton"   = "default" {
 
 style "entry" = "default" {
 	GtkWidget::interior-focus = 0
-	xthickness = 2
-	ythickness = 2
 	base[NORMAL] = shade(0.86,@bg_color)
 
 	engine "pixmap" {
@@ -617,8 +615,6 @@ style "entry" = "default" {
 }
 
 style "spinbutton" = "entry" {
-	xthickness = 2
-	ythickness = 2
 	base[NORMAL] = shade(0.76,@base_color)
 
 	engine "pixmap" {
@@ -751,7 +747,6 @@ style "scrollbar" = "default" {
 
 style "progressbar" {
 	xthickness     = 4
-	ythickness     = 2
 
 	engine "pixmap" {
 		image {
@@ -839,7 +834,6 @@ class "*Toolbar"               style "toolbar"
 
 style "toolbuttons" = "toolbar" {
 	xthickness = 1
-	ythickness = 2
 }
 
 widget_class "*Tool*GtkToggleButton" style "toolbuttons"
@@ -888,9 +882,6 @@ style "tearoffmenuitem" = "menuitem" {
 }
 
 style "menubar" {
-	xthickness = 2
-	ythickness = 2
-
 	fg[PRELIGHT]    = @selected_bg_color
 	fg[NORMAL]      = shade(0.76,@selected_fg_color)
 	fg[ACTIVE]      = @selected_bg_color
@@ -921,7 +912,6 @@ style "menubar" {
 
 style "notebook" = "default" {
 	xthickness = 4
-	ythickness = 2
 	
 	bg[NORMAL]   = @bg_color
 	text[ACTIVE] = @selected_bg_color
