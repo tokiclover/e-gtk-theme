@@ -630,7 +630,7 @@ GtkSwitch.trough,
 	background-color: @base_color;
 	border-image: url("img/bg_bevel_in_big.png") 4 4 4 4 / 4px 4px 4px 4px stretch;
 	color: @fg_color;
-	padding: 2px;
+	padding: 4px;
 }
 
 .notebook.header {
@@ -715,9 +715,10 @@ GtkSwitch.slider:hover {
 	background-image: url("img/tooltip-base.png");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 110% 100%;
+	background-size: 110% 108%;
 	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	color: @tooltip_fg_color;
+	padding: 2px;
 }
 
 .dialog-action-area {
