@@ -18,7 +18,6 @@
 	background-repeat: no-repeat;
 	background-size: 110% 108%;
 	border: none;
-	padding: 2px;
 }
 .button:active {
 	background-color: transparent;
@@ -28,7 +27,6 @@
 	background-repeat: no-repeat;
 	background-size: 110% 108%;
 	border: none;
-	padding: 2px;
 }
 
 .button:insensitive {
@@ -39,7 +37,6 @@
 	background-repeat: no-repeat;
 	background-size: 114% 108%;
 	border: none;
-	padding: 2px;
 	-gtk-image-effect: dim;
 }
 
@@ -342,7 +339,6 @@ column-header .button:hover {
 	background-size: 104% 104%;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	border-width: 1px;
-	padding: 2px;
 }
 
 .entry:focus {
@@ -353,7 +349,6 @@ column-header .button:hover {
 	background-size: 104% 104%;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	border-width: 1px;
-	padding: 2px;
 }
 
 .entry:insensitive {
@@ -364,7 +359,6 @@ column-header .button:hover {
 	background-size: 124% 124%;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	border-width: 1px;
-	padding: 2px;
 }
 
 .entry.progressbar {
@@ -375,7 +369,6 @@ column-header .button:hover {
 	background-size: 104% 104%;
 	border-image: url("img/bevel_in.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	border-width: 1px;
-	padding: 2px;
 }
 
 .frame {
@@ -428,7 +421,6 @@ column-header .button:hover {
 .menuitem:active,
 .menuitem:hover {
 	background-color: transparent;
-	padding: 2px 2px;
 }
 
 .menuitem:active,
@@ -717,7 +709,6 @@ GtkSwitch.slider:hover {
 	background-size: 110% 108%;
 	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	color: @tooltip_fg_color;
-	padding: 2px;
 }
 
 .dialog-action-area {
@@ -734,7 +725,6 @@ GtkSwitch.slider:hover {
 GtkDialog {
 	background-color: @base_color;
 	border-image: url("img/bevel_out.png") 1 1 1 1 / 0px 1px 1px 1px stretch;
-	padding: 2px;
 }
 
 GtkBox,
@@ -778,7 +768,6 @@ GtkToolItemGroup {
 	background-repeat: repeat, no-repeat;
 	background-size: auto, 100% 100%;
 	background-origin: content-box;
-	padding: 2px;
 }
 
 GtkInfoBar .titlebar,
