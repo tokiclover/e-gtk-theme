@@ -34,7 +34,6 @@
 @define-color error_bg_color @base_color;
 
 * {
-	border-width: 2px;
 	padding: 2px;
 	background-color: @base_color;
 	background-clip: padding-box;
