@@ -750,8 +750,8 @@ style "scrollbar" = "default" {
 }
 
 style "progressbar" {
-	xthickness     = 1
-	ythickness     = 1
+	xthickness     = 4
+	ythickness     = 2
 
 	engine "pixmap" {
 		image {
@@ -761,8 +761,6 @@ style "progressbar" {
 			border   = {0,0,0,0}
 			stretch  = TRUE
 			orientation    = HORIZONTAL
-			overlay_file   = "img/bevel_curved_horiz_out.png"
-			overlay_border = {1,1,1,1}
 		}
 		image {
 			function = BOX
@@ -779,8 +777,6 @@ style "progressbar" {
 			border   = {0,0,0,0}
 			stretch  = TRUE
 			orientation    = VERTICAL
-			overlay_file   = "img/bevel_curved_horiz_out.png"
-			overlay_border = {1,1,1,1}
 		}
 		image {
 			function = BOX
