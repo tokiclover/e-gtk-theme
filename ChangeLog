@@ -1,5 +1,10 @@
 Header: e-gtk-theme/ChangeLog, 2014/11/11 18:58:34 Exp
 
+0.18.4:
+
+* gtk-[23]: notebook clean up; gtk-2: progressbar clean up (removed bevel);
+* gtk-3: added dialog action-area separator; notebook border fix;
+
 0.18.3:
 
 * gtk-2: use bg_notebok for menu; gtk-[23]: use png button for toolbar;
