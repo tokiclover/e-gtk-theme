@@ -602,16 +602,9 @@ style "checkbutton"   = "default" {
 
 style "entry" = "default" {
 	GtkWidget::interior-focus = 0
-	base[NORMAL] = shade(0.80,@bg_color)
+	base[NORMAL] = shade(0.86,@bg_color)
 
 	engine "pixmap" {
-		image {
-			function = FLAT_BOX
-			detail   = "entry_bg"
-			file     = "img/inset_shadow_tiny.png"
-			border   = {1,1,0,0}
-			stretch  = TRUE
-		}
 		image {
 			function = FOCUS
 			file     = "img/outline_glow.png"
