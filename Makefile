@@ -36,6 +36,9 @@ dist_IMAGES = \
 	holes_tiny_horiz.png \
 	holes_tiny_vert.png \
 	holes_vert.png \
+	horiz_bar_bottom_glow.png \
+	horiz_bar_top_glow.png \
+	inset_shadow.png \
 	inset_shadow_tiny.png \
 	inset_shadow_circle_tiny.png \
 	inset_shadow_circle_tiny_in.png \
@@ -66,6 +69,8 @@ dist_IMAGES = \
 	sym_up_light_normal.png \
 	trough_horiz.png \
 	trough_vert.png \
+	vert_bar_left_glow.png \
+	vert_bar_right_glow.png \
 	vgrad_dark.png \
 	vgrad_med_curved.png
 openbox_DATA= \

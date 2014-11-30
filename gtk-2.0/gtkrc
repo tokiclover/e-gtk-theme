@@ -59,7 +59,7 @@ style "default" {
 	GtkSpinButton::shadow-type          = GTK_SHADOW_IN
 
 	GtkNotebook::tab-curvature          = 0
-	GtkNotebook::tab-overlap            = -1
+	GtkNotebook::tab-overlap            = 0
 
 	xthickness = 2
 	ythickness = 2
@@ -924,138 +924,51 @@ style "notebook" = "default" {
 			file     = "img/bg_notebook.png"
 			border   = {2,2,2,2}
 			stretch  = TRUE
-			gap_side        = BOTTOM
-			gap_start_file  = "img/frame_horiz_start.png"
-			gap_start_border= {0,0,0,0}
-			gap_end_file    = "img/frame_horiz_end.png"
-			gap_end_border  = {0,0,0,0}
-		}
-		image {
-			function = BOX_GAP
-			detail   = "notebook"
-			shadow   = OUT
-			file     = "img/bg_notebook.png"
-			border   = {2,2,2,2}
-			stretch  = TRUE
-			gap_side        = TOP
-			gap_start_file  = "img/frame_horiz_start.png"
-			gap_start_border= {0,0,0,0}
-			gap_end_file    = "img/frame_horiz_end.png"
-			gap_end_border  = {0,0,0,0}
-		}
-		image {
-			function = BOX_GAP
-			detail   = "notebook"
-			shadow   = OUT
-			file     = "img/bg_notebook.png"
-			border   = {2,2,2,2}
-			stretch  = TRUE
-			gap_side        = RIGHT
-			gap_start_file  = "img/frame_vert_end.png"
-			gap_start_border= {0,0,0,0}
-			gap_end_file    = "img/frame_vert_start.png"
-			gap_end_border  = {0,0,0,0}
-		}
-		image {
-			function = BOX_GAP
-			detail   = "notebook"
-			shadow   = OUT
-			file     = "img/bg_notebook.png"
-			border   = {2,2,2,2}
-			stretch  = TRUE
-			gap_side        = LEFT
-			gap_start_file  = "img/frame_vert_end.png"
-			gap_start_border= {0,0,0,0}
-			gap_end_file    = "img/frame_vert_start.png"
-			gap_end_border  = {0,0,0,0}
+			overlay_file    = "img/bevel_out.png"
+			overlay_border  = {2,1,2,1}
+			overlay_stretch = TRUE
 		}
 		image {
 			function = EXTENSION
 			state    = ACTIVE
-			file     = "img/vgrad_med_curved.png"
-			border   = {0,0,0,0}
+			file     = "img/inset_shadow.png"
+			border   = {4,4,0,0}
+			stretch  = TRUE
+			overlay_file    = "img/bevel_in.png"
+			overlay_border  = {2,1,2,1}
+			overlay_stretch = TRUE
+		}
+		image {
+			function = EXTENSION
+			detail   = "tab"
+			file     = "img/horiz_bar_bottom_glow.png"
+			border   = {1,1,2,0}
 			stretch  = TRUE
 			gap_side = BOTTOM
-			overlay_file    = "img/bevel_out.png"
-			overlay_border  = {1,1,1,1}
-			overlay_stretch = TRUE
 		}
 		image {
 			function = EXTENSION
 			detail   = "tab"
-			file     = "img/vgrad_dark.png"
-			border   = {0,0,0,0}
-			stretch  = TRUE
-			gap_side = BOTTOM
-			overlay_file    = "img/shadow_angled_in_sides_glow.png"
-			overlay_border  = {0,0,0,4}
-			overlay_stretch = TRUE
-		}
-		image {
-			function = EXTENSION
-			state    = ACTIVE
-			file     = "img/vgrad_med_curved_left.png"
-			border   = {0,0,0,0}
+			file     = "img/vert_bar_left_glow.png"
+			border   = {2,0,1,1}
 			stretch  = TRUE
 			gap_side = LEFT
-			overlay_file    = "img/bevel_out.png"
-			overlay_border  = {1,1,1,1}
-			overlay_stretch = TRUE
 		}
 		image {
 			function = EXTENSION
 			detail   = "tab"
-			file     = "img/vgrad_dark_left.png"
-			border   = {0,0,0,0}
-			stretch  = TRUE
-			gap_side = LEFT
-			overlay_file    = "img/shadow_angled_in_sides_left.png"
-			overlay_border  = {0,0,0,4}
-			overlay_stretch = TRUE
-		}
-		image {
-			function = EXTENSION
-			state    = ACTIVE
-			file     = "img/vgrad_med_curved_right.png"
-			border   = {0,0,0,0}
+			file     = "img/vert_bar_right_glow.png"
+			border   = {0,2,1,1}
 			stretch  = TRUE
 			gap_side = RIGHT
-			overlay_file    = "img/bevel_out.png"
-			overlay_border  = {1,1,1,1}
-			overlay_stretch = TRUE
 		}
 		image {
 			function = EXTENSION
 			detail   = "tab"
-			file     = "img/vgrad_dark_right.png"
-			border   = {0,0,0,0}
-			stretch  = TRUE
-			gap_side = RIGHT
-			overlay_file    = "img/shadow_angled_in_sides_right.png"
-			overlay_border  = {0,0,0,4}
-			overlay_stretch = TRUE
-		}
-		image {
-			function  = EXTENSION
-			state     = ACTIVE
-			file      = "img/vgrad_med_curved_top.png"
-			border    = {0,0,0,0}
-			stretch   = TRUE
-			gap_side  = TOP
-			overlay_file    = "img/bevel_out.png"
-			overlay_border  = {1,1,1,1}
-			overlay_stretch = TRUE
-		}
-		image {
-			function = EXTENSION
-			detail   = "tab"
-			file     = "img/vgrad_dark_top.png"
-			border   = {0,0,0,0}
+			file     = "img/horiz_bar_top_glow.png"
+			border   = {1,1,0,2}
 			stretch  = TRUE
 			gap_side = TOP
-			overlay_file    = "img/shadow_angled_in_sides_top.png"
-			overlay_border  = {0,0,0,4}
-			overlay_stretch = TRUE
 		}
 		image {
 			function = BOX
