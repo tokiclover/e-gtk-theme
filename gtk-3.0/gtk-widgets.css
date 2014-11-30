@@ -9,6 +9,7 @@
 .background { background-color: @bg_color }
 .color { background-color: @fg_color }
 
+.button:active:hover,
 .button,
 .button:hover {
 	background-color: transparent;
@@ -625,8 +626,11 @@ GtkSwitch.trough,
 }
 
 .notebook.header {
-	background-color: @bg_color;
-	border-image: none;
+	background-color: @bg_color_dark;
+	background-image: url("img/inset_shadow.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 	padding: 1px;
 }
 
@@ -650,25 +654,57 @@ GtkSwitch.trough,
 
 .tab,
 .notebook tab {
-	padding: 0px;
-	background-image: url("img/vgrad_med_curved.png");
-	background-origin: content-box;
-	background-size: 100% 100%, 100% 100%;
-	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	background-color: transparent;
+	border-image: none;
+	padding: 2px 0px;
 }
 
-.tab:active,
-.notebook tab:active {
-	padding: 0px;
-	background-image: url("img/shine.png"), url("img/shadow_angled_in_sides_glow.png"),
-		url("img/vgrad_dark.png");
-	background-origin: border-box;
-	background-position: center -2px, bottom, center;
+.tab.bottom:active,
+.notebook tab.bottom:active {
+	background-color: @bg_color;
+	background-image: url("img/horiz_bar_top_glow.png");
+	background-origin: content-box;
+	background-position: center bottom;
 	background-repeat: no-repeat;
-	background-size: auto, 100% 100%, 100% 100%;
-	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
-	background-color: transparent;
+	background-size: 108% 20px;
+	border-image: none;
+	padding: 2px 0px;
+}
+
+.tab.top:active,
+.notebook tab.top:active {
+	background-color: @bg_color;
+	background-image: url("img/horiz_bar_bottom_glow.png");
+	background-origin: content-box;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 108% 20px;
+	border-image: none;
+	padding: 2px 0px;
+}
+
+.tab.left:active,
+.notebook tab.left:active {
+	background-color: @bg_color;
+	background-image: url("img/vert_bar_right_glow.png");
+	background-origin: content-box;
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 20px 108%;
+	border-image: none;
+	padding: 0px 2px;
+}
+
+.tab.right:active,
+.notebook tab.right:active {
+	background-color: @bg_color;
+	background-image: url("img/vert_bar_left_glow.png");
+	background-origin: content-box;
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 20px 108%;
+	border-image: none;
+	padding: 0px 2px;
 }
 
 GtkSwitch.slider {
