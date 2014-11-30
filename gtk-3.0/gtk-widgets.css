@@ -748,10 +748,8 @@ GtkImage {
 
 GtkImage:active,
 GtkImage:hover,
-GtkImage:selected,
 GtkLabel:active,
-GtkLabel:hover,
-GtkLabel:selected {
+GtkLabel:hover {
 	color: @selected_bg_color;
 }
 
@@ -773,10 +771,11 @@ GtkToolItemGroup {
 GtkInfoBar .titlebar,
 GtkDialog .titlebar,
 .titlebar {
-	background-image: url("img/vgrad_med_curved.png");
+	background-image: url("img/shine.png"),url("img/vgrad_med_curved.png");
+	background-position: center -2px, center;
 	background-repeat: no-repeat;
 	background-origin: border-box;
-	background-size: 100% 100%;
+	background-size: auto, 100% 100%;
 	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 }
 
