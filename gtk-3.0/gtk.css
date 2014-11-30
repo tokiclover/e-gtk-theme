@@ -72,9 +72,10 @@
 	-GtkProgressBar-min-vertical-bar-width: 13;
 	-GtkScrolledWindow-scrollbar-spacing: 0;
 	-GtkScrolledWindow-scrollbars-within-bevel: false;
-	-GtkToolItemGroup-expander-size: 15;
+	-GtkToolItemGroup-expander-size: 11;
+	-GtkTreeView-expander-size: 11;
 	-GtkTreeView-indent-expanders: true;
-	-GtkExpander-expander-size: 15;
+	-GtkExpander-expander-size: 11;
 	-GtkMenu-horizontal-padding: 0;
 	-GtkMenu-vertical-padding: 0;
 	-GtkIMHtml-hyperlink-color: @link_color;
@@ -101,11 +102,10 @@
 * { color: inherit }
 * { background-color: inherit }
 
-*:active:focus {
+*:active
+*:active:focus,
+*:hover {
 	color: @selected_bg_color;
-}
-*:active{
-	color: @selected_fg_color;
 }
 
 *:selected:focus {
