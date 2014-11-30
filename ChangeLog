@@ -1,5 +1,10 @@
 Header: e-gtk-theme/ChangeLog, 2014/11/11 18:58:34 Exp
 
+0.19.0:
+
+gtk-[23]: tab-bar-v2: update/clean up notebook tabs (gtk-2 is better?/);
+(idea: e.org tab like because e like tab are not possible especially for gtk-2);
+
 0.18.4:
 
 * gtk-[23]: notebook clean up; gtk-2: progressbar clean up (removed bevel);
