@@ -851,6 +851,7 @@ widget_class "*Tool*GtkButton"       style "toolbuttons"
 style "menu" = "default" {
 	xthickness = 0
 	ythickness = 0
+
 	GtkMenu::horizontal-offset  = 0
 	GtkMenu::horizontal-padding = 0
 
@@ -858,9 +859,12 @@ style "menu" = "default" {
 		image {
 			function = BOX
 			detail   = "menu"
-			file     = "img/bg_notebook.png"
+			file     = "img/bg_menu.png"
 			border   = {4,4,0,0}
 			stretch  = TRUE
+			overlay_file    = "img/bevel_out.png"
+			overlay_border  = {1,1,1,1}
+			overlay_stretch = TRUE
 		}
 	}
 }

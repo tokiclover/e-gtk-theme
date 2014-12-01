@@ -6,7 +6,7 @@ gtk2_DATA   = \
 	gtkrc \
 	panelrc
 dist_IMAGES+= \
-	bg_notebook.png \
+	bg_menu.png \
 	button_spin_down_normal.png \
 	button_spin_up_normal.png \
 	frame_gap.png \
