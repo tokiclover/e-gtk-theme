@@ -602,6 +602,8 @@ style "checkbutton"   = "default" {
 
 style "entry" = "default" {
 	GtkWidget::interior-focus = 0
+	xthickness = 1
+	ythickness = 1
 	base[NORMAL] = shade(0.80,@bg_color)
 
 	engine "pixmap" {
