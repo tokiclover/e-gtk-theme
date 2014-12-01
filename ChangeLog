@@ -5,6 +5,7 @@ Header: e-gtk-theme/ChangeLog, 2014/11/11 18:58:34 Exp
 gtk-[23]: tab-bar-v2: update/clean up notebook tabs (gtk-2 is better?/);
 (idea: e.org tab like because e like tab are not possible especially for gtk-2);
 gtk-2: added inset shadow in entry; and use bevel-in frame in notebook;
+gtk-2: use default fg_color for menubar; and new menu (v3);
 
 0.18.4:
 
