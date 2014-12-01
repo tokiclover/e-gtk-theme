@@ -49,7 +49,6 @@ to be able to theme almost everything with images. help needed...
 
 ## gtk+-2 specific:
 
-* inset_shadow.png cannot be included in GtkWidget... gtk+-3 may improve this;
 * there is no way to fill GtkRange trough;
 * get outlined slider when pressed? (tried already but nothing different is rendered);
 
