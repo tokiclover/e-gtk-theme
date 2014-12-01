@@ -34,8 +34,6 @@ use `make install` instead for this alternative.
 
 * better slider images (slider_{horiz,vert}.png);
 * improve panel buttons?;
-* finish gtk+-3 theme (need documentation), coming... (gtk+-3 grows to be much more
-better than gtk+-2 counterpart if themable);
 
 Note: i will try to migrate pixmap engine, as an exercise to improve my c capabilities,
 to be able to theme almost everything with images. help needed...
@@ -57,8 +55,6 @@ to be able to theme almost everything with images. help needed...
 * dialog action-area label are not well centered;
 * there is no way to crop image like border={1,1,1,1} (pixmap engine);
 * nothing use global arrow(s);
-* inset shadow can only be included in entry; impossible in notebook
-  page (too much shadow with provided images/ugly box-shadow);
 
 ## both major versions specific:
 
