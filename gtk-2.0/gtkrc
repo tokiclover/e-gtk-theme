@@ -896,9 +896,7 @@ style "tearoffmenuitem" = "menuitem" {
 
 style "menubar" {
 	fg[PRELIGHT]    = @selected_bg_color
-	fg[NORMAL]      = shade(0.76,@selected_fg_color)
 	fg[ACTIVE]      = @selected_bg_color
-	fg[INSENSITIVE] = @fg_color
 	bg_pixmap[NORMAL] = "img/menubar_separator.png"
 
 	engine "pixmap" {
