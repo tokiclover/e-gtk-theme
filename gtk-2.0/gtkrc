@@ -930,12 +930,9 @@ style "notebook" = "default" {
 			function = BOX_GAP
 			detail   = "notebook"
 			shadow   = OUT
-			file     = "img/bg_notebook.png"
-			border   = {2,2,2,2}
-			stretch  = TRUE
-			overlay_file    = "img/bevel_out.png"
-			overlay_border  = {2,1,2,1}
-			overlay_stretch = TRUE
+			file    = "img/bevel_in.png"
+			border  = {1,1,1,1}
+			stretch = TRUE
 		}
 		image {
 			function = EXTENSION
@@ -978,12 +975,6 @@ style "notebook" = "default" {
 			border   = {1,1,0,2}
 			stretch  = TRUE
 			gap_side = TOP
-		}
-		image {
-			function = BOX
-			file     = "img/bg_notebook.png"
-			border   = {0,0,0,0}
-			stretch  = TRUE
 		}
 	}
 }
