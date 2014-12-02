@@ -47,6 +47,7 @@ to be able to theme almost everything with images. help needed...
 
 * there is no way to fill GtkRange trough;
 * get outlined slider when pressed? (tried already but nothing different is rendered);
+* combox has an unusual rendering of entry inset shadow (added in 0.19.0);
 
 ## gtk+-3 specific:
 
