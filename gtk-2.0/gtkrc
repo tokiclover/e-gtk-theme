@@ -420,7 +420,7 @@ style "button" = "default" {
 }
 
 style "optionmenu" = "default" {
-	base[NORMAL] = shade(0.76,@base_color)
+	base[NORMAL] = shade(0.80,@base_color)
 
 	engine "pixmap" {
 		image {
@@ -624,7 +624,7 @@ style "entry" = "default" {
 }
 
 style "spinbutton" = "entry" {
-	base[NORMAL] = shade(0.76,@base_color)
+	base[NORMAL] = shade(0.80,@base_color)
 
 	engine "pixmap" {
 		image {
@@ -1118,7 +1118,7 @@ style "spinner" = "default" {
 }
 
 style "text" {
-	bg[NORMAL] = shade(0.76,@bg_color)
+	bg[NORMAL] = shade(0.80,@bg_color)
 }
 
 class "GtkButton"           style "button"
@@ -1153,13 +1153,13 @@ widget_class "*Combo*"      style "optionmenu"
 
 # colorize ugly white line at the top of the vertical scrollbar in Nautilus
 style "searchbar" {
-	bg[NORMAL] = shade(0.76,@bg_color)
+	bg[NORMAL] = shade(0.80,@bg_color)
 }
 widget "*.nautilus-extra-view-widget" style:highest "searchbar"
 
 # separator in Nautilus sidebar
 style "separator" {
-	bg[NORMAL] = shade(0.76,@bg_color)
+	bg[NORMAL] = shade(0.80,@bg_color)
 }
 widget "*nautilus*side*" 		style:highest "separator"
 
