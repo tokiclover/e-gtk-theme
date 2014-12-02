@@ -11,7 +11,7 @@ style "firefox-entry" {
 	GtkEntry::inner-border    = {2,2,2,2}
 	xthickness = 0
 	ythickness = 0
-	bg[NORMAL] = shade(0.76,@bg_color)
+	bg[NORMAL] = shade(0.80,@bg_color)
 
 	engine "pixmap" {
 		image {

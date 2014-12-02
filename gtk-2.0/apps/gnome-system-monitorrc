@@ -7,7 +7,7 @@
 #
 
 style "gnome-system-monitor-menu" {
-  bg[ACTIVE] = shade(0.76,@bg_color)
+  bg[ACTIVE] = shade(0.80,@bg_color)
 }
 
 widget_class "*Gnome-system-monitor*Menu*" style "gnome-system-monitor-menu"
