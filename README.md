@@ -1,4 +1,4 @@
-Header: e-gtk-theme/README.md, 2014/11/14 13:41:26 Exp
+Header: e-gtk-theme/README.md, 2014/12/01 13:41:26 Exp
 
 ---
 
@@ -33,7 +33,6 @@ use `make install` instead for this alternative.
 # TO DO:
 
 * better slider images (slider_{horiz,vert}.png);
-* improve panel buttons?;
 
 Note: i will try to migrate pixmap engine, as an exercise to improve my c capabilities,
 to be able to theme almost everything with images. help needed...
@@ -41,7 +40,6 @@ to be able to theme almost everything with images. help needed...
 * convert close, maximize... image to 6x6px X bitmap images for openbox;
 * improve metacity theme (I had enough of it despite metacity drawigs capabilities);
 * improve openbox menu (gradient);
-* improve gtk+-2 notebook frame (lready tried);
 
 # Issues:
 
