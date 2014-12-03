@@ -125,19 +125,11 @@ GtkSwitch { text-shadow: 2px 2px 2px @selected_fg_color }
 
 GtkTreeView row:nth-child(even) {
 	background-color: @base_color;
-	background-image: url("img/separator_horiz.png");
-	background-origin: border-box;
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-size: 100% 2px;
+	border-image: url("img/bevel_curved_horiz_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 }
 GtkTreeView row:nth-child(odd) {
 	background-color: shade(@bg_color,0.90);
-	background-image: url("img/separator_horiz.png");
-	background-origin: border-box;
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-size: 100% 2px;
+	border-image: url("img/bevel_curved_horiz_out.png") 2 1 1 1 / 1px 1px 1px 1px stretch;
 }
 GtkTreeView row:selected {
 	background-image: url("img/vgrad_dark.png");

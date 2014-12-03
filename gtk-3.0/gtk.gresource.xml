@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
   <gresource prefix="/org/gnome/e">
+    <file preprocess="to-pixdata">img/bevel_curved_horiz_out.png</file>
     <file preprocess="to-pixdata">img/bevel_in.png</file>
     <file preprocess="to-pixdata">img/bevel_out.png</file>
     <file preprocess="to-pixdata">img/bg_bevel_in_big.png</file>

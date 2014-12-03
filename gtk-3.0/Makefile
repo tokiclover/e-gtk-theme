@@ -9,6 +9,7 @@ dist_IMAGES+= \
 	bg_bevel_in_big.png \
 	bg_glow_in.png \
 	bg_radgrad.png \
+	bevel_curved_horiz_out.png \
 	box_glow.png \
 	day_middle_normal.png \
 	horiz_glow_run.png \
