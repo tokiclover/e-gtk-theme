@@ -27,9 +27,6 @@ dist_IMAGES+= \
 	trough_base_horiz.png \
 	trough_base_vert.png \
 	vertical_separated_bar_glow.png \
-	vgrad_dark_left.png \
-	vgrad_dark_right.png \
-	vgrad_dark_top.png \
 	vgrad_med_dark.png
 DISTFILES  += $(gtk2_DATA) $(dist_IMAGES)
 DISTDIRS   += $(themedir)/gtk-2.0/apps
