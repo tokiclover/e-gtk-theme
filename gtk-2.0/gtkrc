@@ -466,7 +466,7 @@ style "radiobutton" = "default" {
 			function = OPTION
 			state    = PRELIGHT
 			shadow   = OUT
-			overlay_file    = "img/inset_shadow_circle_tiny_in.png"
+			overlay_file    = "img/inset_shadow_circle_tiny.png"
 			overlay_stretch = FALSE
 		}
 		image {
@@ -511,21 +511,6 @@ style "radiobutton" = "default" {
 			overlay_file    = "img/inset_shadow_circle_tiny_ins.png"
 			overlay_stretch    = FALSE
 		}
-
-		image {
-			function    = FLAT_BOX
-			stretch     = TRUE
-			file        = "img/slider_run_base_horiz.png"
-			border      = {0,0,0,0}
-			orientation = HORIZONTAL
-		}
-		image {
-			function    = FLAT_BOX
-			stretch     = TRUE
-			file        = "img/slider_run_base_vert.png"
-			border      = {0,0,0,0}
-			orientation = VERTICAL
-		}
 	}
 }
 
@@ -548,7 +533,7 @@ style "checkbutton"   = "default" {
 			function = CHECK
 			state    = PRELIGHT
 			shadow   = OUT
-			overlay_file    = "img/inset_shadow_square_tiny_in.png"
+			overlay_file    = "img/inset_shadow_square_tiny.png"
 			overlay_stretch = FALSE
 		}
 		image {
