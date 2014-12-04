@@ -983,13 +983,12 @@ style "notebook" = "default" {
 
 style "tooltips" = "default" {
 	bg[NORMAL] = @tooltip_bg_color
-	bg[ACTIVE] = @tooltip_bg_color
 	fg[NORMAL] = @tooltip_fg_color
 	
 	engine "pixmap" {
 		image {
-			function = BOX
-			file     = "img/bevel_dark_out.png"
+			function = FLAT_BOX
+			file     = "img/bevel_out.png"
 			border   = {1,1,1,1}
 			stretch  = TRUE
 		}

@@ -23,7 +23,6 @@ dist_EXTRA  = \
 	README.md \
 	ChangeLog
 dist_IMAGES = \
-	bevel_dark_out.png \
 	bevel_in.png \
 	bevel_out.png \
 	button_clicked.png \
