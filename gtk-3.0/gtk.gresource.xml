@@ -66,7 +66,6 @@
     <file preprocess="to-pixdata">img/sym_up_dark_selected.png</file>
     <file preprocess="to-pixdata">img/sym_up_glow_normal.png</file>
     <file preprocess="to-pixdata">img/sym_up_light_normal.png</file>
-    <file preprocess="to-pixdata">img/tooltip-base.png</file>
     <file preprocess="to-pixdata">img/trough_horiz.png</file>
     <file preprocess="to-pixdata">img/trough_vert.png</file>
     <file preprocess="to-pixdata">img/vert_glow_run.png</file>

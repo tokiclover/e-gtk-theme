@@ -740,10 +740,7 @@ GtkSwitch.slider:hover {
 
 .info-bar,
 .tooltip {
-	background-image: url("img/tooltip-base.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 110% 108%;
+	background-color: @tooltip_bg_color;
 	border-image: url("img/bevel_out.png") 1 1 1 1 / 1px 1px 1px 1px stretch;
 	color: @tooltip_fg_color;
 }
