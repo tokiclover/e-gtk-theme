@@ -76,6 +76,7 @@ column-header .button:hover {
 .check row:selected:hover,
 .check row:selected:insensitive,
 .check,
+.check:hover,
 .check:insensitive {
 	background-color: transparent;
 	background-image: -gtk-scaled(url("img/inset_shadow_square_tiny.png"));
@@ -95,8 +96,7 @@ column-header .button:hover {
 .check row:selected:active:insensitive,
 .check:inconsistent,
 .check:active,
-.check:active:insensitive,
-.check:hover {
+.check:active:insensitive {
 	background-color: transparent;
 	background-image: -gtk-scaled(url("img/inset_shadow_square_tiny_in.png"));
 	background-position: center;
@@ -124,6 +124,7 @@ column-header .button:hover {
 .button.radio:hover,
 .radio row:selected,
 .radio row:selected:hover,
+.radio:hover,
 .radio {
 	background-color: transparent;
 	background-image: url("img/inset_shadow_circle_tiny.png");
@@ -153,7 +154,6 @@ column-header .button:hover {
 .radio row:selected:active,
 .radio row:selected:active:insensitive,
 .radio:active:insensitive,
-.radio:hover,
 .radio:active {
 	background-color: transparent;
 	background-image: url("img/inset_shadow_circle_tiny_in.png");
