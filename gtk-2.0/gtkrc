@@ -1147,6 +1147,7 @@ class "GtkEventBox"         style "flat"
 class "GtkLayout"           style "layout"
 class "SPButton"            style "SPbutton"
 widget "GtkTooltip"         style "tooltips"
+widget "gtk-tooltip*"       style "tooltips"
 widget "GtkEditable"        style "text"
 widget_class "*Combo*"      style "optionmenu"
 
