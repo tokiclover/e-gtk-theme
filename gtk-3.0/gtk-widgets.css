@@ -109,7 +109,7 @@ column-header .button:hover {
 .check:active:hover,
 .check row:selected:hover {
 	background-color: transparent;
-	background-image: url("img/inset_shadow_square_tiny_glow_in.png");
+	background-image: url("img/inset_shadow_square_tiny_in.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 11px 11px;
@@ -117,28 +117,21 @@ column-header .button:hover {
 
 .menuitem.radio,
 .menuitem.radio:hover,
+.menuitem.radio:insensitive,
 .view.cell.radio,
 .view.cell.radio:hover,
+.view.cell.radio:insensitive,
 .button.radio,
 .button.radio:hover,
+.button.radio:insensitive,
 .radio row:selected,
 .radio row:selected:hover,
-.radio:hover,
-.radio {
-	background-color: transparent;
-	background-image: url("img/inset_shadow_circle_tiny.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: 13px 13px;
-}
-
-.menuitem.radio:insensitive,
-.view.cell.radio:insensitive,
-.button.radio:insensitive,
 .radio row:selected:insensitive,
+.radio,
+.radio:hover,
 .radio:insensitive {
 	background-color: transparent;
-	background-image: url("img/inset_shadow_circle_tiny_ins.png");
+	background-image: url("img/inset_shadow_circle_tiny.png");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 13px 13px;

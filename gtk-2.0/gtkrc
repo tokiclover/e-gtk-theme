@@ -480,7 +480,7 @@ style "radiobutton" = "default" {
 			function = OPTION
 			state    = INSENSITIVE
 			shadow   = OUT
-			overlay_file    = "img/inset_shadow_circle_tiny_ins.png"
+			overlay_file    = "img/inset_shadow_circle_tiny.png"
 			overlay_stretch = FALSE
 		}
 		image {
@@ -561,7 +561,7 @@ style "checkbutton"   = "default" {
 			function = CHECK
 			state    = PRELIGHT
 			shadow   = IN
-			overlay_file    = "img/inset_shadow_square_tiny_glow_in.png"
+			overlay_file    = "img/inset_shadow_square_tiny_in.png"
 			overlay_stretch = FALSE
 		}
 		image {
@@ -1058,10 +1058,10 @@ class "GtkItem"         style "list-header"
 style "treeview" = "default" {
 	engine "pixmap" {
 		image {
-			function = BOX
-			file     ="img/menubar_separator.png"
+			function = FLAT_BOX
+			file     = "img/bevel_curved_horiz_out.png"
 			stretch  = TRUE
-			border   = {0,0,0,0}
+			border   = {1,1,1,1}
 		}
 	}
 }

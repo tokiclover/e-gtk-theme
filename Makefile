@@ -41,9 +41,7 @@ dist_IMAGES = \
 	inset_shadow_tiny.png \
 	inset_shadow_circle_tiny.png \
 	inset_shadow_circle_tiny_in.png \
-	inset_shadow_circle_tiny_ins.png \
 	inset_shadow_square_tiny.png \
-	inset_shadow_square_tiny_glow_in.png \
 	inset_shadow_square_tiny_in.png \
 	separator_horiz.png \
 	separator_vert.png \

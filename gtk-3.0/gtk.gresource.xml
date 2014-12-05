@@ -28,9 +28,7 @@
     <file preprocess="to-pixdata">img/inset_shadow_tiny.png</file>
     <file preprocess="to-pixdata">img/inset_shadow_circle_tiny.png</file>
     <file preprocess="to-pixdata">img/inset_shadow_circle_tiny_in.png</file>
-    <file preprocess="to-pixdata">img/inset_shadow_circle_tiny_ins.png</file>
     <file preprocess="to-pixdata">img/inset_shadow_square_tiny.png</file>
-    <file preprocess="to-pixdata">img/inset_shadow_square_tiny_glow_in.png</file>
     <file preprocess="to-pixdata">img/inset_shadow_square_tiny_in.png</file>
     <file preprocess="to-pixdata">img/knob_sz_14.png</file>
     <file preprocess="to-pixdata">img/knob_round_busy.png</file>
