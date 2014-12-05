@@ -17,7 +17,6 @@ dist_IMAGES+= \
 	knob_round_busy.png \
 	knob_sz_12.png \
 	menubar_separator.png \
-	outline_glow.png \
 	panel_bg.png \
 	progressbar_run_horiz.png \
 	progressbar_run_vert.png \

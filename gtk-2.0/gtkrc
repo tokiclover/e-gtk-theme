@@ -588,7 +588,7 @@ style "checkbutton"   = "default" {
 }
 
 style "entry" = "default" {
-	GtkWidget::interior-focus = 0
+	GtkWidget::interior-focus = 1
 	xthickness = 1
 	ythickness = 1
 	base[NORMAL] = shade(0.80,@bg_color)
@@ -603,9 +603,6 @@ style "entry" = "default" {
 		}
 		image {
 			function = FOCUS
-			file     = "img/outline_glow.png"
-			border   = {1,1,1,1}
-			stretch  = TRUE
 		}
 	}
 }
@@ -1153,7 +1150,6 @@ widget_class "*.EelEditableLabel" style:highest "icon-view-fix"
 widget_class "GtkViewPort"        style:highest "icon-view-fix"
 
 include "panelrc"
-include "apps/firefoxrc"
 include "apps/gnome-panelrc"
 include "apps/gnome-system-monitorrc"
 include "apps/gnome-terminalrc"
