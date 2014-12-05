@@ -649,7 +649,6 @@ GtkSwitch.trough,
 .notebook tab {
 	background-color: transparent;
 	border-image: none;
-	padding: 2px 0px;
 }
 
 .tab.bottom:active,
@@ -661,7 +660,6 @@ GtkSwitch.trough,
 	background-repeat: no-repeat;
 	background-size: 108% 20px;
 	border-image: none;
-	padding: 2px 0px;
 }
 
 .tab.top:active,
@@ -673,7 +671,6 @@ GtkSwitch.trough,
 	background-repeat: no-repeat;
 	background-size: 108% 20px;
 	border-image: none;
-	padding: 2px 0px;
 }
 
 .tab.left:active,
@@ -685,7 +682,6 @@ GtkSwitch.trough,
 	background-repeat: no-repeat;
 	background-size: 20px 108%;
 	border-image: none;
-	padding: 0px 2px;
 }
 
 .tab.right:active,
@@ -697,7 +693,6 @@ GtkSwitch.trough,
 	background-repeat: no-repeat;
 	background-size: 20px 108%;
 	border-image: none;
-	padding: 0px 2px;
 }
 
 GtkSwitch.slider {
