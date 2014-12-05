@@ -379,6 +379,8 @@ style "default" {
 class "GtkWidget" style "default"
 
 style "button" = "default" {
+	xthickness = 4
+
 	engine "pixmap" {
 		image {
 			function = SHADOW
@@ -825,13 +827,6 @@ widget_class "*HandleBox"      style "toolbar"
 class "*HandleBox"             style "toolbar"
 widget_class "*Toolbar"        style "toolbar"
 class "*Toolbar"               style "toolbar"
-
-style "toolbuttons" = "toolbar" {
-	xthickness = 1
-}
-
-widget_class "*Tool*GtkToggleButton" style "toolbuttons"
-widget_class "*Tool*GtkButton"       style "toolbuttons"
 
 style "menu" = "default" {
 	xthickness = 0
