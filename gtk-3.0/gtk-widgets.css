@@ -76,7 +76,6 @@ column-header .button:hover {
 .check row:selected:hover,
 .check row:selected:insensitive,
 .check,
-.check:hover,
 .check:insensitive {
 	background-color: transparent;
 	background-image: -gtk-scaled(url("img/inset_shadow_square_tiny.png"));
@@ -627,7 +626,7 @@ GtkSwitch.trough,
 }
 
 .notebook.header {
-	background-color: @bg_color_dark;
+	background-color: shade(@bg_color_dark,0.90);
 	background-image: url("img/inset_shadow.png");
 	background-position: center;
 	background-repeat: no-repeat;
