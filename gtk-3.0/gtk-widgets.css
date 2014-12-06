@@ -645,11 +645,22 @@ GtkSwitch.trough,
 	padding: 4px;
 }
 
-.tab,
-.notebook tab {
+.tab.bottom,
+.notebook tab.bottom,
+.tab.top,
+.notebook tab.top {
 	background-color: transparent;
 	border-image: none;
 	padding: 2px 0px;
+}
+
+.tab.letf,
+.notebook tab.left,
+.tab.right,
+.notebook tab.right {
+	background-color: transparent;
+	border-image: none;
+	padding: 0px 2px;
 }
 
 .tab.bottom:active,
