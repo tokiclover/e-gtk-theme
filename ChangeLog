@@ -3,6 +3,8 @@ Header: e-gtk-theme/ChangeLog, 2014/11/11 18:58:34 Exp
 0.19.1:
 
 gtk-[23]: tooltip (v2) update; use normal check/radio on hover;
+removed entry outline glow;
+gtk-3: use bevel curved in list (a la e);
 
 0.19.0:
 
