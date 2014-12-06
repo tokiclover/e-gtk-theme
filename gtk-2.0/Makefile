@@ -1,5 +1,4 @@
 gtk2_DATA   = \
-	apps/firefoxrc \
 	apps/gnome-panelrc \
 	apps/gnome-system-monitorrc \
 	apps/gnome-terminalrc \
