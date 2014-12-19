@@ -857,6 +857,9 @@ style "menuitem" = "default" {
 			file     = "img/vgrad_dark.png"
 			border   = {0,0,0,0}
 			stretch  = TRUE
+			overlay_file    = "img/bevel_out.png"
+			overlay_border  = {1,1,2,1}
+			overlay_stretch = TRUE
 		}
 	}
 }
