@@ -510,7 +510,7 @@ style "radiobutton" = "default" {
 			function = OPTION
 			state     = INSENSITIVE
 			shadow       = IN
-			overlay_file    = "img/inset_shadow_circle_tiny_ins.png"
+			overlay_file    = "img/inset_shadow_circle_tiny_in.png"
 			overlay_stretch    = FALSE
 		}
 	}
