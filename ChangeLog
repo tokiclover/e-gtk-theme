@@ -1,5 +1,9 @@
 Header: e-gtk-theme/ChangeLog, 2014/11/11 18:58:34 Exp
 
+0.19.3:
+
+gtk-3: update gtk-widgets.css (which was not included in the previous push);
+
 0.19.2:
 
 gtk-2: use bigger image for tab highlight (fix ugly left/right active tab);
