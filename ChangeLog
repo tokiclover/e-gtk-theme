@@ -1,5 +1,10 @@
 Header: e-gtk-theme/ChangeLog, 2014/11/11 18:58:34 Exp
 
+0.19.2:
+
+gtk-2: use bigger image for tab highlight (fix ugly left/right active tab);
+minor active menuitem fix;
+
 0.19.1:
 
 gtk-[23]: tooltip (v2) update; use normal check/radio on hover;
