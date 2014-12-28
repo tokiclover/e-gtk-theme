@@ -670,7 +670,7 @@ GtkSwitch.trough,
 	background-origin: content-box;
 	background-position: center bottom;
 	background-repeat: no-repeat;
-	background-size: 108% 20px;
+	background-size: 108% 22px;
 	border-image: none;
 	padding: 2px 0px;
 }
@@ -682,7 +682,7 @@ GtkSwitch.trough,
 	background-origin: content-box;
 	background-position: center top;
 	background-repeat: no-repeat;
-	background-size: 108% 20px;
+	background-size: 108% 22px;
 	border-image: none;
 	padding: 2px 0px;
 }
@@ -694,7 +694,7 @@ GtkSwitch.trough,
 	background-origin: content-box;
 	background-position: left center;
 	background-repeat: no-repeat;
-	background-size: 20px 108%;
+	background-size: 96px 108%;
 	border-image: none;
 	padding: 0px 2px;
 }
@@ -704,9 +704,9 @@ GtkSwitch.trough,
 	background-color: @bg_color;
 	background-image: url("img/vert_bar_left_glow.png");
 	background-origin: content-box;
-	background-position: left center;
+	background-position: right center;
 	background-repeat: no-repeat;
-	background-size: 20px 108%;
+	background-size: 96px 108%;
 	border-image: none;
 	padding: 0px 2px;
 }
