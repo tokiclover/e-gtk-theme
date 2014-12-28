@@ -45,12 +45,15 @@ to be able to theme almost everything with images. help needed...
 
 ## gtk+-2 specific:
 
+* left/right active tabs are messy theme (no way left/right center image
+  as gtk-3; workaround: bigger image);
 * there is no way to fill GtkRange trough;
 * get outlined slider when pressed? (tried already but nothing different is rendered);
 * combox has an unusual rendering of entry inset shadow (added in 0.19.0);
 
 ## gtk+-3 specific:
 
+* low cost, to not say ugly, image rendering;
 * dialog action-area label are not well centered;
 * there is no way to crop image like border={1,1,1,1} (pixmap engine);
 * nothing use global arrow(s);
