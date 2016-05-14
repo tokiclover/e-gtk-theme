@@ -1,9 +1,9 @@
 /*
- * Header:  e/gtk-3.0/gtk-widgets.css       Exp
- * Author:  -tclover <tokiclover@gmail.com> Exp
- * License: 2-clause BSD (see COPYING file) Exp
+ * Header:  e/gtk-3.0/gtk-widgets.css                   Exp
+ * Author:  tokiclover <tokiclover@gmail.com>           Exp
+ * License: 2-clause BSD (see COPYING file)             Exp
  *
- * CopyLeft (c) 2012-2014 tclover <tokiclover@gmail.com>
+ * CopyLeft (c) 2012-2016 tokiclover <tokiclover@gmail.com>
  */
 
 .background { background-color: @bg_color }

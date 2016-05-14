@@ -1,9 +1,9 @@
 #
-# Header: e/gtk-2.0/panelrc                Exp
-# Author: -tclover <tokiclover@gmail.com>  Exp
-# Licence: 2-clause BSD                    Exp
+# Header: e/gtk-2.0/panelrc                            Exp
+# Author: tokiclover <tokiclover@gmail.com>            Exp
+# Licence: 2-clause BSD                                Exp
 #
-# CopyLeft (c) 2012-2014 tclover <tokiclover@gmail.com>
+# CopyLeft (c) 2012-2016 tokiclover <tokiclover@gmail.com>
 #
 
 style "tasklist-button" {

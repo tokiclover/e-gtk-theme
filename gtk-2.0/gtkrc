@@ -1,14 +1,13 @@
 #
-# Header: e/gtk-2.0/gtkrc                     Exp
-# Author: -tclover <tokiclover@gmail.com>     Exp
-# License: 2-clause BSD (see COPYING file)    Exp
-#
-# HomePage: https://github.com/tokiclover/e-gtk-theme
+# Header: e/gtk-2.0/gtkrc                             Exp
+# Author: tokiclover <tokiclover@gmail.com>           Exp
+# License: 2-clause BSD (see COPYING file)            Exp
+# Home: https://github.com/tokiclover/e-gtk-theme     Exp
 #
 # this is a gtk+-2 theme to match the new enlightenment DR17
 # window manager dark default theme
 #
-# CopyLeft (c) 2012-2014 tclover <tokiclover@gmail.com>
+# CopyLeft (c) 2012-2016 tokiclover <tokiclover@gmail.com>
 #
 
 gtk-menu-drop-shadow = 0
