@@ -167,6 +167,7 @@ column-header .button:hover {
 	color: transparent;
 }
 
+GtkComboBox .separator:horizontal,
 .toolbar.separator.horizontal,
 .menuitem.separator,
 .separator.horizontal {
@@ -175,6 +176,7 @@ column-header .button:hover {
 	border-image: url("img/separator_horiz.png") 1 0 1 0 / 1px 0px 1px 0px stretch;
 }
 
+GtkComboBox .separator:vertical,
 .toolbar.separator.vertical,
 .button.separator,
 .separator.vertical {
@@ -325,6 +327,7 @@ column-header .button:hover {
 	background-size: 15px 15px;
 }
 
+.combobox-entry .entry,
 .entry {
 	background-color: @bg_color_dark;
 	background-image: url("img/inset_shadow_tiny.png");
@@ -335,6 +338,7 @@ column-header .button:hover {
 	border-width: 1px;
 }
 
+.combobox-entry .entry:focus,
 .entry:focus {
 	background-color: @bg_color_dark;
 	background-image: url("img/inset_shadow_tiny.png"), url("img/bg_glow_in.png");
@@ -345,6 +349,7 @@ column-header .button:hover {
 	border-width: 1px;
 }
 
+.combobox-entry .entry:insensitive,
 .entry:insensitive {
 	background-color: @bg_color_dark;
 	background-image: url("img/inset_shadow_tiny.png");
@@ -411,12 +416,18 @@ column-header .button:hover {
 .menu .menuitem {
 	-GtkMenuItem-arrow-scaling: 0.6;
 }
+GtkTreeMenu.menu .menuitem, /* Fix GtkCombBox drop-down menu gtk+-3.18 */
+GtkTreeMenu.menu .menuitem GtkCellView,
+GtkComboBox .menuitem,
 .menuitem,
 .menuitem:active,
 .menuitem:hover {
 	background-color: transparent;
 }
 
+GtkTreeMenu.menu .menuitem:active, /* Fix GtkCombBox drop-down menu gtk+-3.18 */
+GtkTreeMenu.menu .menuitem:active GtkCellView,
+GtkComboBox .menuitem:active,
 .menuitem:active,
 .menuitem:hover {
 	color: @selected_bg_color;
@@ -821,6 +832,8 @@ GtkFlowBox,
 GtkListBox,
 GtkFixed,
 GtkIconView,
+GtkStake,
+GtkStackSidebar,
 GtkTable,
 GtkTreeView,
 GtkTextView {
