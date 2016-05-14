@@ -6,13 +6,13 @@ Header: e-gtk-theme/README.md, 2015/01/18 13:41:26 Exp
 
 **BIG FAT WARNING:**
 
-    **The name imply that *this is not a GNOME/SystemD OS* theme.**
+    **The name imply that this is not a GNOME/SystemD OS theme.**
 
 REQUIREMENTS
 ------------
 
-* gtk-3.0: >=gtk+-3.6 (background multilayersi required);
-* gtk-2.0: pixmap engine (gtk-engines package);
+* gtk+-3: >=gtk+-3.6 (background multilayers required);
+* gtk+-2: pixmap engine (gtk-engines package);
 
 USAGE
 -----
@@ -24,7 +24,7 @@ No hardcoded style is needed. That's all. It should be normaly the opposite,
 don't you think? Why te hell Mozzilla is hardcoding the UI theme.
 They should just respect the user choice!)
 
-INSTATION
+INSTALLATION
 ---------
 
 `make prefix=/usr install-all` will suffice to have a lean copy of the theme to
@@ -39,8 +39,18 @@ TODO
 * improve metacity theme (I had enough of it despite metacity drawigs capabilities);
 * improve openbox menu (gradient);
 
-ISSUES
+(WELL-KNOWN-)ISSUES
 ------
+
+### web-browsers colors issue:
+
+Be sure to get (firefox)[Classic Theme Restorer][2] addon to get almost everything
+as expected but entry background color (forced to be white with white foreground
+color) for some web-site like youtube et al. Who can see anything when typing
+anything to entry boxes? Sory for that... but the issue is third party forcing
+only eitheir back/foreground to be a certain color while leaving the other to be
+whatever the UI theme define as default; nothing can be done but try to make the
+same mistake on the other end, meaning, forcing both back/foreground colors.
 
 ### gtk+-2:
 
@@ -71,5 +81,6 @@ PS: an [ebuild][1] is available in my overlay (on github) for gentoo users.
 ---
 
 [1]: https://github.com/tokiclover/bar-overlay
+[2]: https://addons.mozilla.org/en-US/firefox/addon/classicthemerestorer/
 
 vim:fenc=utf-8:
