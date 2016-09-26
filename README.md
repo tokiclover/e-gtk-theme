@@ -15,7 +15,7 @@ gtk-2
 
 ![](https://cn.pling.com/img//hive/content-pre1/156023-1.png)
 
-gtk-3
+gtk-3.16
 -----
 
 ![](https://cn.pling.com/img//hive/content-pre2/156023-2.png)
