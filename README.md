@@ -8,6 +8,18 @@ Header: e-gtk-theme/README.md, 2015/01/18 13:41:26 Exp
 
     **The name imply that this is not a GNOME/SystemD OS theme.**
 
+**Eye candy preview:**
+
+gtk-2
+-----
+
+![](https://cn.pling.com/img//hive/content-pre1/156023-1.png)
+
+gtk-3
+-----
+
+![](https://cn.pling.com/img//hive/content-pre2/156023-2.png)
+
 REQUIREMENTS
 ------------
 
