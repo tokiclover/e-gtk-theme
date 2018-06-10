@@ -92,7 +92,7 @@ PS: an [ebuild][1] is available in my overlay (on github) for gentoo users.
 
 ---
 
-[1]: https://github.com/tokiclover/bar-overlay
+[1]: https://gitlab.com/tokiclover/bar-overlay
 [2]: https://addons.mozilla.org/en-US/firefox/addon/classicthemerestorer/
 
 vim:fenc=utf-8:
